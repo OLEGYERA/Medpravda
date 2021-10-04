@@ -1,0 +1,252 @@
+@import "../customization";
+
+.main-wrapper{
+    header{
+        height: 65px;
+        min-width: 320px;
+        background-color: $white;
+        border-radius: 0 0 $radius $radius;
+        @include shadow;
+        .header-wrap{
+            padding: 0 30px;
+        }
+        .menu-wrap{
+            height: calc(100vh - 65px);
+            background-color: $dark-gray;
+            z-index: -1;
+        }
+    }
+    .header-menu-box{
+        display: none;
+        min-width: 320px;
+        overflow-y: auto;
+        height: calc(100vh - 65px);
+        background-color: $dark-gray;
+        z-index: -1;
+        &[menu-open]{
+            display: block;
+        }
+        .menu-wrap{
+            padding: 0 30px;
+        }
+    }
+
+    &.full {
+        header {
+            border-radius: unset;
+            @include wrap-width(0, 1300, 12);
+            .header-wrap{
+                padding: 0 12px;
+            }
+        }
+        .header-menu-box{
+            @include wrap-width(0, 1300, 12);
+            .menu-wrap{
+                padding: 0 12px;
+            }
+        }
+    }
+}
+.header-wrap{
+    @include init-flex(0, center, between);
+    position: relative;
+    .burger-box{
+        min-width: 64px;
+        .glyph.burger{
+            font-size: 26px;
+            &:before{
+                color: $blue;
+            }
+        }
+        .clear{
+            width: 22px;
+            color: $blue;
+        }
+        #toggle-header-menu{
+            cursor: pointer;
+        }
+    }
+    a.logo-box {
+        margin-top: 12px;
+        img {
+            filter: invert(89%) sepia(79%) saturate(6709%) hue-rotate(218deg) brightness(84%) contrast(101%);
+        }
+    }
+    .switch-local{
+        min-width: 64px;
+        @include init-flex(0, center);
+        .switch-item{
+            @include init-flex(0, center, center);
+            font-size: 15px;
+            width: 30px;
+            height: 30px;
+            color: $blue;
+            text-decoration: underline;
+            &:first-child{
+                margin-right: 4px;
+            }
+            &.switched{
+                color: $white;
+                border-radius: 3px;
+                background-color: $blue;
+                text-decoration: none;
+            }
+        }
+    }
+}
+.menu-wrap{
+    .menu-box-row{
+        padding: 40px 0 0;
+        .mp-menu-title{
+            line-height: 1.3em;
+            font-size: 28px;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            color: $white;
+        }
+
+        .mp-menu-item{
+            @include wrap-on;
+            list-style: none;
+            padding-bottom: 30px;
+            border-bottom: 1px solid $border;
+            li{
+                width: 25%;
+                padding: 0 2px;
+                font-weight: 400;
+                a{
+                    transition: .3s;
+                    line-height: 2em;
+                    color: $border;
+                    &:hover{
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .main-wrapper{
+        &.full {
+            header,
+            .header-menu-box{
+                @include wrap-width(0, 1080, 12);
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1080px){
+    .main-wrapper{
+        header{
+            .header-wrap{
+                padding: 0 12px;
+            }
+        }
+        .header-menu-box{
+            .menu-wrap{
+                padding: 0 12px;
+                .menu-box-row{
+                    .mp-menu-item{
+                        li{
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .main-wrapper {
+        .header-menu-box {
+            .menu-wrap {
+                .menu-box-row {
+                    .mp-menu-title {
+                        font-size: 24px;
+                        margin-bottom: 20px;
+                    }
+                    .mp-menu-item{
+                        li{
+                            a{
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 680px){
+    .main-wrapper{
+        header{
+            height: 55px;
+        }
+        .header-menu-box{
+            height: calc(100vh - 55px);
+            .menu-wrap{
+                .menu-box-row{
+                    .mp-menu-item{
+                        li{
+                            a{
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .header-wrap{
+        a.logo-box {
+            img {
+                height: 35px;
+            }
+        }
+        .switch-local{
+            .switch-item{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .main-wrapper {
+        .header-menu-box {
+            .menu-wrap {
+                .menu-box-row {
+                    padding-top: 30px;
+                    .mp-menu-title {
+                        font-size: 22px;
+                        margin-bottom: 15px;
+                    }
+                    .mp-menu-item{
+                        li{
+                            width: 100%;
+                            a{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 480px){
+    .header-wrap{
+        .burger-box{
+            min-width: 50px;
+        }
+        a.logo-box {
+            margin-top: 10px;
+            img {
+                height: 30px;
+            }
+        }
+    }
+}

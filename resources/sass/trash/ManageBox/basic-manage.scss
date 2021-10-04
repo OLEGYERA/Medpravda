@@ -1,0 +1,289 @@
+@import "../colors";
+@import "../fonts";
+@import "../vars";
+@import "../functions";
+@import "../clear";
+
+html, body{
+    margin: 0;
+    padding: 0;
+    line-height: 18px!important;
+    font-size: 16px!important;
+    font-family: $UC!important;
+}
+
+.mp-shell{
+    width: 100vw;
+    height: 100vh;
+
+    .aside-panel{
+        height: 100%;
+        width: 230px;
+        min-width: 230px;
+        background-color: $bg-aside;
+        -webkit-user-select: none; /* Chrome all / Safari all */
+        -moz-user-select: none; /* Firefox all */
+        -ms-user-select: none; /* IE 10+ */
+        user-select: none;
+        transition: 0.5s all ease-out;
+
+        .manager-box{
+            padding: 15px;
+            border-bottom: 2px solid $bg-aside-separator;
+            overflow: hidden;
+            box-sizing: border-box;
+            transition: 0.5s all ease-out;
+
+            .manager-info{
+                .manager-avatar{
+                    width: 120px;
+                    height: 120px;
+                    background-color: $bg-grey;
+                    border-radius: 50%;
+                    font-size: 4em;
+                    color: $bg-aside-select;
+                    transition: 0.5s all ease-out;
+                }
+
+                .manager-name{
+                    font-family: $UC;
+                    font-size: em(16);
+                    color: #fff;
+                    margin: 0px;
+                    margin-top: 10px;
+                    cursor: pointer;
+                    white-space: nowrap;
+
+                    i{
+                        margin-left: 5px;
+                        font-size: em(12);
+                    }
+                }
+            }
+
+            ul.manager-profile-menu{
+                display: none;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                margin-top: 10px;
+
+                li.mpm-link{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    a{
+                        font-family: $UC;
+                        font-size: em(16);
+                        color: $text-aside-disabled-link;
+                        text-decoration: none;
+
+                        &:hover{
+                            color: #fff;
+                        }
+                    }
+                }
+
+                &.active{
+                    display: block;
+                }
+            }
+        }
+
+        nav.manager-navigation{
+            .manager-menu{
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+
+                .mm-item{
+                    width: 100%;
+                    border-bottom: 2px solid $bg-aside-separator;
+
+                    .mm-title{
+                        display: inline-block;
+                        margin: 10px 0px 10px 20px;
+                        font-family: $UC;
+                        font-size: em(14);
+                        color: $text-aside-category;
+                        cursor: pointer;
+
+                        i{
+                            margin-left: 3px;
+                            font-size: em(10);
+                        }
+
+                        &:hover{
+                            color: #fff;
+                        }
+                    }
+
+                    .mm-links{
+                        width: 100%;
+                        margin: 0;
+                        padding: 0;
+                        list-style: none;
+                        display: none;
+
+                        .mm-link{
+                            a{
+                                display: flex;
+                                align-items: center;
+                                padding: 7px 0px 8px 20px;
+                                font-family: $UC;
+                                font-size: em(18);
+                                color: $text-aside-disabled-link;
+                                cursor: pointer;
+                                text-decoration: none;
+
+                                i{
+                                    width: 20px;
+                                    text-align: center;
+                                    margin-right: 12px;
+                                    font-size: em(14);
+                                }
+
+                                &:hover{
+                                    background-color: $bg-aside-select;
+                                }
+                            }
+
+                            &.active{
+                                border-left: 4px solid;
+
+                                &.red{
+                                    border-color: $red-select-aside;
+                                }
+
+                                &.blue{
+                                    border-color: $blue-select-aside;
+                                }
+
+                                &.orange{
+                                    border-color: $orange-select-aside;
+                                }
+
+                                a{
+                                    color: #fff;
+                                    padding-left: 16px;
+                                    background-color: $bg-aside-select
+                                }
+
+                            }
+                        }
+                    }
+
+                    &.active{
+                        .mm-title{
+                            color: #fff;
+                        }
+
+                        .mm-links{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.small{
+            width: 60px;
+            min-width: 60px;
+
+            .manager-box{
+                padding: 5px;
+
+                .manager-info{
+                    .manager-avatar{
+                        width: 40px;
+                        height: 40px;
+                        font-size: 1.5em;
+                    }
+
+                    .manager-name{
+                        display: none;
+                    }
+                }
+
+            }
+
+            nav.manager-navigation{
+                .mm-item{
+                    box-sizing: border-box;
+
+                    .mm-title{
+                        margin: 0px;
+                        height: 35px;
+                        width: 60px;
+                        overflow: hidden;
+                        color: $bg-aside !important;
+
+                        &:first-letter{
+                            font-size: em(24);
+                            line-height: 37px;
+                            width: 50px;
+                            display: flex;
+                            padding-left: 23px;
+                            color: $text-aside-category;
+                        }
+                    }
+
+                    &.active,
+                    &:hover{
+                        .mm-title{
+                            &:first-letter{
+                                color: #fff;
+                            }
+                        }
+
+                        .mm-links{
+                            .mm-link{
+                                a{
+                                    padding-left: 21px;
+                                    color: $bg-aside;
+
+                                    i{
+                                        width: 24px;
+                                        color: $text-aside-disabled-link;
+                                    }
+                                }
+
+                                &.active{
+                                    a{
+                                        color: $bg-aside-select;
+                                        padding-left: 16px;
+
+                                        i{
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+
+                                &:hover{
+                                    a{
+                                        color: $bg-aside-select;
+
+                                        i{
+                                            //color: #fff;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .mp-worksection{
+        height: 100%;
+        width: 100%;
+        min-width: 180px;
+        background-color: $bg-worksection;
+    }
+}

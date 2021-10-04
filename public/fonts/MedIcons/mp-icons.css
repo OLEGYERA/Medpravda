@@ -1,0 +1,239 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?jirxz6');
+    src:  url('fonts/icomoon.eot?jirxz6#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?jirxz6') format('truetype'),
+    url('fonts/icomoon.woff?jirxz6') format('woff'),
+    url('fonts/icomoon.svg?jirxz6#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="glyph"], [class*=" glyph"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.drug:before {
+    content: "\e93c";
+    color: #2D9CDB;
+}
+.bad:before {
+    content: "\e93b";
+    color: #2D9CDB;
+}
+.cosmetic:before {
+    content: "\e93a";
+    color: #2D9CDB;
+}
+.ware:before {
+    content: "\e939";
+    color: #2D9CDB;
+}
+.inname:before {
+    content: "\e92f";
+    color: #2D9CDB;
+}
+.pharma:before {
+    content: "\e936";
+    color: #2D9CDB;
+}
+.pharma_bad:before{
+    content: "\e937";
+    color: #2D9CDB;
+}
+
+
+.drug_atx:before {
+    content: "\e934";
+    color: #2D9CDB;
+}
+.bad_atx:before {
+    content: "\e933";
+    color: #2D9CDB;
+}
+.cosmetic_atx:before {
+    content: "\e932";
+    color: #2D9CDB;
+}
+.ware_atx:before {
+    content: "\e931";
+    color: #2D9CDB;
+}
+
+.pharma_group:before {
+    content: "\e92c";
+    color: #2D9CDB;
+}
+.physical_chemical:before {
+  content: "\e91a";
+  color: #2D9CDB;
+}
+.home:before {
+  content: "\e900";
+  color: #2D9CDB;
+}
+.burger:before {
+  content: "\e901";
+  color: #2D9CDB;
+}
+.official_manual:before {
+  content: "\e902";
+  color: #2D9CDB;
+}
+.search-ic:before {
+  content: "\e903";
+  color: #2D9CDB;
+}
+.ambulance:before {
+  content: "\e904";
+  color: #2D9CDB;
+}
+.doctor:before {
+  content: "\e905";
+  color: #2D9CDB;
+}
+.adapted_manual:before {
+  content: "\e926";
+  color: #2D9CDB;
+}
+.icon-Terms:before {
+  content: "\e907";
+  color: #2D9CDB;
+}
+.other:before {
+  content: "\e908";
+  color: #2D9CDB;
+}
+.icon-Istochnik:before {
+  content: "\e909";
+  color: #2D9CDB;
+}
+.recipe:before {
+  content: "\e90a";
+  color: #2D9CDB;
+}
+.dosage_form:before {
+  content: "\e90b";
+  color: #2D9CDB;
+}
+.fabricator_location:before {
+  content: "\e927";
+  color: #2D9CDB;
+}
+.features:before {
+  content: "\e90d";
+  color: #2D9CDB;
+}
+.overdose:before {
+  content: "\e90e";
+  color: #2D9CDB;
+}
+.icon-Print:before {
+  content: "\e90f";
+  color: #2D9CDB;
+}
+.indications:before {
+  content: "\e910";
+  color: #2D9CDB;
+}
+.pregnancy:before {
+  content: "\e911";
+  color: #2D9CDB;
+}
+.fabricator:before {
+  content: "\e912";
+  color: #2D9CDB;
+}
+.contraindications:before {
+  content: "\e913";
+  color: #2D9CDB;
+}
+.usage_and_dose:before {
+  content: "\e929";
+  color: #2D9CDB;
+}
+.driver:before {
+  content: "\e915";
+  color: #2D9CDB;
+}
+.time_life:before {
+  content: "\e916";
+  color: #2D9CDB;
+}
+.icon-7:before {
+  content: "\e917";
+  color: #2D9CDB;
+}
+.storage_conditions:before {
+  content: "\e918";
+  color: #2D9CDB;
+}
+.pharma_props:before {
+  content: "\e919";
+  color: #2D9CDB;
+}
+.scroll:before {
+  content: "\e91b";
+  color: #2D9CDB;
+}
+.children:before {
+  content: "\e92a";
+  color: #2D9CDB;
+}
+.interaction:before {
+  content: "\e92b";
+  color: #2D9CDB;
+}
+.side_effects:before {
+  content: "\e91e";
+  color: #2D9CDB;
+}
+.composition:before {
+  content: "\e91f";
+  color: #2D9CDB;
+}
+.release_form:before {
+  content: "\e920";
+  color: #2D9CDB;
+}
+.blank_link:before {
+    content: "\e91d";
+    color: #2D9CDB;
+}
+.star:before {
+    content: "\e922";
+    color: #2D9CDB;
+}
+.half-star:before {
+    content: "\e923";
+    color: #2D9CDB;
+}
+.empty-star:before {
+    content: "\e921";
+    color: #2D9CDB;
+}
+.editor-fb:before {
+    content: "\e914";
+    color: #2D9CDB;
+}
+.editor-in:before {
+    content: "\e906";
+    color: #2D9CDB;
+}
+.mp-fb:before {
+    content: "\e91c";
+    color: #2D9CDB;
+}
+

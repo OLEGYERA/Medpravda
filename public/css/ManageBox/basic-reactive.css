@@ -1,0 +1,2133 @@
+html,
+body {
+  overflow: hidden;
+}
+
+.mp-reactive {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.mp-reactive .reactive-toolbar {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  border-bottom: 2px solid #EEEEEE;
+}
+
+.mp-reactive .reactive-toolbar .toggle-menu,
+.mp-reactive .reactive-toolbar .error-menu,
+.mp-reactive .reactive-toolbar .notification-menu {
+  height: 100%;
+  width: 70px;
+  font-size: 1.4em;
+  color: rgba(109, 109, 109, 0.8);
+  border-right: 2px solid #EEEEEE;
+  box-sizing: border-box;
+  transition: 0.25s all ease-out;
+  cursor: pointer;
+}
+
+.mp-reactive .reactive-toolbar .toggle-menu:hover,
+.mp-reactive .reactive-toolbar .error-menu:hover,
+.mp-reactive .reactive-toolbar .notification-menu:hover {
+  color: #525151;
+}
+
+.mp-reactive .reactive-toolbar .reactive-search {
+  width: 100%;
+  height: 100%;
+}
+
+.mp-reactive .reactive-toolbar .reactive-search .search-field {
+  width: 100%;
+  height: 100%;
+}
+
+.mp-reactive .reactive-toolbar .reactive-search .search-field i {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1.28em;
+  color: rgba(109, 109, 109, 0.8);
+}
+
+.mp-reactive .reactive-toolbar .reactive-search .search-field input {
+  width: 100%;
+  height: 47px;
+  outline: none;
+  border: none;
+  font-size: 1.2em;
+  font-family: "Ubuntu Condensed", sans-serif;
+}
+
+.mp-reactive .reactive-toolbar .reactive-search .search-field input::-moz-placeholder {
+  font-family: "Ubuntu Condensed", sans-serif;
+}
+
+.mp-reactive .reactive-toolbar .reactive-search .search-field input:-ms-input-placeholder {
+  font-family: "Ubuntu Condensed", sans-serif;
+}
+
+.mp-reactive .reactive-toolbar .reactive-search .search-field input::placeholder {
+  font-family: "Ubuntu Condensed", sans-serif;
+}
+
+.mp-reactive .reactive-toolbar .reactive-search .search-result {
+  display: none;
+}
+
+.mp-reactive .reactive-toolbar .notification-menu {
+  border-left: 2px solid #EEEEEE;
+  border-right: none;
+}
+
+.mp-reactive .reactive-content {
+  width: 100%;
+  overflow: hidden;
+}
+
+.mp-reactive .reactive-content .reactive-page-header {
+  padding: 15px 25px 0px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.mp-reactive .reactive-content .reactive-page-header .header-left .reactive-title {
+  margin: 0px 0px 10px;
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-size: 1.75em;
+  font-weight: normal;
+  color: #4f4f4f;
+  display: flex;
+  align-items: baseline;
+  cursor: default;
+}
+
+.mp-reactive .reactive-content .reactive-page-header .header-left .reactive-title i {
+  font-size: 0.7em;
+  margin: 0px 5px;
+}
+
+.mp-reactive .reactive-content .reactive-page-header .header-left .reactive-title b {
+  font-size: 0.85em;
+}
+
+.mp-reactive .reactive-content .reactive-page-header .header-left .reactive-title.red i,
+.mp-reactive .reactive-content .reactive-page-header .header-left .reactive-title.red b {
+  color: #DC3545;
+}
+
+.mp-reactive .reactive-content .reactive-page-header .header-left .reactive-title.blue i,
+.mp-reactive .reactive-content .reactive-page-header .header-left .reactive-title.blue b {
+  color: #2F80ED;
+}
+
+.mp-reactive .reactive-content .reactive-page-header .header-left .reactive-title.orange i,
+.mp-reactive .reactive-content .reactive-page-header .header-left .reactive-title.orange b {
+  color: #EF8F3A;
+}
+
+.mp-reactive .reactive-content .reactive-page-header .header-left .reactive-sub-titles {
+  display: flex;
+  align-items: center;
+}
+
+.mp-reactive .reactive-content .reactive-page-header .header-left .reactive-sub-titles .info-line {
+  position: relative;
+  margin-right: 15px;
+}
+
+.mp-reactive .reactive-content .reactive-page-header .header-left .reactive-sub-titles .info-line .visual-inline {
+  display: flex;
+  align-items: center;
+  color: #8b8b8b;
+  font-size: 1em;
+  font-family: "Ubuntu", sans-serif;
+  transition: 0.5s all ease-out;
+  cursor: pointer;
+}
+
+.mp-reactive .reactive-content .reactive-page-header .header-left .reactive-sub-titles .info-line .visual-inline i:first-child {
+  margin-right: 7px;
+  font-size: 1.2em;
+}
+
+.mp-reactive .reactive-content .reactive-page-header .header-left .reactive-sub-titles .info-line .visual-inline i:last-child {
+  margin-left: 4px;
+  font-size: 0.6em;
+}
+
+.mp-reactive .reactive-content .reactive-page-header .header-left .reactive-sub-titles .info-line .hidden-box {
+  width: 300px;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 20px;
+  list-style: none;
+  background-color: #fff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.47);
+  z-index: 9;
+}
+
+.mp-reactive .reactive-content .reactive-page-header .header-left .reactive-sub-titles .info-line .hidden-box li {
+  background: #fff;
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-size: 1em;
+  padding: 5px;
+  color: #4f4f4f;
+}
+
+.mp-reactive .reactive-content .reactive-page-header .header-left .reactive-sub-titles .info-line .hidden-box .hidden-box-title {
+  background: #6F7E95;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  font-size: 0.75em;
+}
+
+.mp-reactive .reactive-content .reactive-page-header .header-left .reactive-sub-titles .info-line .hidden-box .data {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.mp-reactive .reactive-content .reactive-page-header .header-left .reactive-sub-titles .info-line .hidden-box .data i {
+  margin-right: 4px;
+}
+
+.mp-reactive .reactive-content .reactive-page-header .header-left .reactive-sub-titles .info-line:hover .visual-inline {
+  transition: all 0.3s ease;
+  color: #4f4f4f;
+}
+
+.mp-reactive .reactive-content .reactive-page-header .header-right .edit,
+.mp-reactive .reactive-content .reactive-page-header .header-right .watch {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.mp-reactive .reactive-content .reactive-page-header .header-right .edit i,
+.mp-reactive .reactive-content .reactive-page-header .header-right .watch i {
+  font-size: 1.4em;
+}
+
+.mp-reactive .reactive-content .reactive-page-header .header-right .edit:hover,
+.mp-reactive .reactive-content .reactive-page-header .header-right .watch:hover {
+  border-color: #2d9cdb;
+  color: #2d9cdb;
+}
+
+.mp-reactive .reactive-content .reactive-page-header .header-right .edit:hover {
+  border-color: #F2994A;
+  color: #F2994A;
+}
+
+.mp-reactive .reactive-content .reactive-navigation {
+  padding: 10px 25px 0px;
+  background-color: #fff;
+  border-bottom: 3px solid #EEEEEE;
+}
+
+.mp-reactive .reactive-content .reactive-navigation a {
+  display: inline-block;
+  padding-bottom: 10px;
+  margin-right: 15px;
+  margin-top: 14px;
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-weight: bold;
+  color: rgba(109, 109, 109, 0.8);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.875em;
+  position: relative;
+}
+
+.mp-reactive .reactive-content .reactive-navigation a:after {
+  content: "";
+  position: absolute;
+  top: 23px;
+  border-radius: 16px;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background-color: #EEEEEE;
+  opacity: 0;
+}
+
+.mp-reactive .reactive-content .reactive-navigation a.red:after {
+  background-color: #DC3545;
+}
+
+.mp-reactive .reactive-content .reactive-navigation a.blue:after {
+  background-color: #2F80ED;
+}
+
+.mp-reactive .reactive-content .reactive-navigation a.orange:after {
+  background-color: #EF8F3A;
+}
+
+.mp-reactive .reactive-content .reactive-navigation a.active {
+  color: #6D6D6D;
+}
+
+.mp-reactive .reactive-content .reactive-navigation a.active:after,
+.mp-reactive .reactive-content .reactive-navigation a:hover:after {
+  opacity: 1;
+}
+
+.mp-reactive .reactive-content .reactive-navigation a.active.disabled,
+.mp-reactive .reactive-content .reactive-navigation a:hover.disabled {
+  color: rgba(109, 109, 109, 0.8);
+  cursor: default;
+}
+
+.mp-reactive .reactive-content .reactive-navigation a.active.disabled:after,
+.mp-reactive .reactive-content .reactive-navigation a:hover.disabled:after {
+  opacity: 0.5;
+}
+
+.mp-reactive .reactive-content .reactive-ws {
+  width: 100%;
+  height: 81vh;
+  padding: 25px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  bottom: 0;
+  overflow-y: scroll;
+}
+
+.mp-reactive .reactive-content .reactive-ws .wsr {
+  display: flex;
+  flex-direction: column;
+}
+
+.mp-reactive .reactive-content .reactive-ws .wsr.ws-5 {
+  width: 5%;
+  min-width: 40px;
+  max-width: 45px;
+}
+
+.mp-reactive .reactive-content .reactive-ws .wsr.ws-20 {
+  width: 18%;
+}
+
+.mp-reactive .reactive-content .reactive-ws .wsr.ws-50 {
+  width: 48%;
+}
+
+.mp-reactive .reactive-content .reactive-ws .wsr.ws-60 {
+  width: 58%;
+}
+
+.mp-reactive .reactive-content .reactive-ws .wsr.ws-70 {
+  width: 68%;
+}
+
+.mp-reactive .reactive-content .reactive-ws .wsr.ws-40 {
+  width: 38%;
+}
+
+.mp-reactive .reactive-content .reactive-ws .wsr.ws-30 {
+  min-width: 320px;
+  width: 28%;
+}
+
+.mp-reactive .reactive-content .reactive-ws .wsr.ws-90 {
+  width: 88%;
+}
+
+.mp-reactive .reactive-content .reactive-ws .wsr.ws-95 {
+  width: 93%;
+}
+
+.mp-reactive .reactive-content .reactive-ws .wsr.ws-100 {
+  width: 100%;
+}
+
+.mp-reactive .reactive-content .reactive-ws .instruction-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.mp-reactive .reactive-content .reactive-ws .instruction-nav .instruction-item {
+  position: relative;
+  height: 40px;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: rgba(73, 119, 235, 0.75);
+}
+
+.mp-reactive .reactive-content .reactive-ws .instruction-nav .instruction-item:first-child {
+  border-radius: 4px 4px 0px 0px;
+}
+
+.mp-reactive .reactive-content .reactive-ws .instruction-nav .instruction-item:last-child {
+  border-radius: 0px 0px 4px 4px;
+}
+
+.mp-reactive .reactive-content .reactive-ws .instruction-nav .instruction-item:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.mp-reactive .reactive-content .reactive-ws .instruction-nav .instruction-item:hover,
+.mp-reactive .reactive-content .reactive-ws .instruction-nav .instruction-item.active {
+  background-color: #4977EB;
+}
+
+.mp-reactive .reactive-content .reactive-ws .instruction-nav .instruction-item .glyph:before {
+  color: #fff;
+  font-size: 18px;
+}
+
+.mp-reactive .reactive-content .reactive-ws .trext-title {
+  border-radius: 4px 4px 0px 0px;
+  background-color: #6F7E95;
+  color: #fff;
+  font-size: 1.25em;
+  padding: 8px 15px;
+  margin: 0;
+  left: 0;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-box .box-header {
+  background-color: #6F7E95;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  font-family: "Ubuntu", sans-serif;
+  letter-spacing: -0.5px;
+  font-size: 0.875em;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid #EEEEEE;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-box .box-header i {
+  padding: 5px;
+  background: #fff;
+  border-radius: 4px;
+  color: #6F7E95;
+  cursor: pointer;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-box .box-header i:hover {
+  color: #525151;
+  background-color: #EDF2F6;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-box .box-content {
+  background-color: #fff;
+  padding: 0px;
+  margin: 0;
+  list-style: none;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-box .box-content li {
+  font-family: "Ubuntu Condensed", sans-serif;
+  padding: 10px 20px 14px;
+  font-size: 1em;
+  position: relative;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-box .box-content li:after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  left: 5%;
+  background-color: #EEEEEE;
+  height: 2px;
+  bottom: -0.5px;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-box .box-content li:last-child:after {
+  height: 0;
+  width: 100%;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-box .box-content li.list-item-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-box .box-content li.list-item-row .item-col-data {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-box .box-content li.list-item-row .item-col-data .data-description {
+  color: #8b8b8b;
+  text-align: justify;
+  line-height: 1.4em;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-box .box-content li.list-item-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-box .box-content li.list-item-col textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 200px;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-box .box-content li.list-item-col a {
+  color: #2d9cdb;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-box .box-content li.list-item-col a:hover {
+  color: #167bb5;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-box .box-content li.list-item-col .r-input-error {
+  color: #F05050;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-box .box-content li.list-item-col .item-title {
+  font-weight: 500;
+  color: #4f4f4f;
+  font-size: 1.25em;
+  margin: 0px;
+  margin-bottom: 5px;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-box .box-content li.list-item-col .item-title b {
+  color: #2d9cdb;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-box .box-content li.list-item-col .item-manager {
+  margin: 5px 0;
+  padding: 0px 10px;
+  cursor: default;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-box .box-content li.list-item-col .item-manager .r-cheker {
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-box .box-content li.list-item-col .item-manager .r-cheker:last-child {
+  margin-right: 0;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-box .box-content li.list-item-col .item-information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-box .box-content li.list-item-col .item-information .manager-info {
+  display: flex;
+  align-items: center;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-box .box-content li.list-item-col .item-information .manager-info .manager-avatar {
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid #6F7E95;
+  box-sizing: border-box;
+  margin-right: 5px;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-box .box-content li.list-item-col .item-information .manager-info .manager-avatar img {
+  width: 110%;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-box .box-content li.list-item-col .item-information .manager-info .manager-name {
+  color: #2d9cdb;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-box .box-content li.list-item-col .item-information .manager-start-date {
+  color: #8b8b8b;
+  font-size: 14px;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-box .box-content li.list-item-col .r-selector {
+  height: 45px;
+  width: 100%;
+  border: 2px solid #6F7E95;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-box .box-content li.list-item-col .r-selector .selector_title {
+  height: 100%;
+  align-items: center;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-box .box-content li h2.item-title,
+.mp-reactive .reactive-content .reactive-ws .reactive-box .box-content li h2.data-title {
+  font-weight: 500;
+  color: #4f4f4f;
+  font-size: 1.25em;
+  margin: 0px;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-box .box-content li h2.item-title b,
+.mp-reactive .reactive-content .reactive-ws .reactive-box .box-content li h2.data-title b {
+  color: #2d9cdb;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-box .box-content.col {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-box .box-content.col li {
+  width: 48%;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-box .box-content.col li:after {
+  opacity: 0;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-box:last-child {
+  margin-bottom: 0;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-nude-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-nude-box .avatar {
+  margin: 0;
+  display: flex;
+  width: 260px;
+  height: 260px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #fff;
+  border: 2px solid #6F7E95;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-nude-box .avatar img {
+  width: 100%;
+}
+
+.mp-reactive .reactive-content .reactive-ws .reactive-nude-box .r-gallery {
+  width: 260px;
+}
+
+.mp-reactive .r-link {
+  text-decoration: none;
+  font-size: 1em;
+  font-family: "Ubuntu Condensed", sans-serif;
+  color: #2d9cdb;
+}
+
+.mp-reactive .r-link:hover {
+  color: #167bb5;
+}
+
+.mp-reactive .r-btn {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 10px 6px 25px;
+  border-radius: 16px;
+  background-color: #fff;
+  position: relative;
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+  letter-spacing: -0.5px;
+  font-size: 0.75em;
+  line-height: 1.6em;
+  text-transform: uppercase;
+  transition: 0.5s all ease-in-out;
+  position: relative;
+  cursor: pointer;
+}
+
+.mp-reactive .r-btn .visual-status {
+  cursor: default;
+}
+
+.mp-reactive .r-btn .visual-status i {
+  font-size: 0.8em;
+  margin-left: 5px;
+}
+
+.mp-reactive .r-btn .hidden-box {
+  width: 450px;
+  z-index: 2;
+  position: absolute;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  top: 35px;
+  list-style: none;
+  background-color: #fff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.47);
+}
+
+.mp-reactive .r-btn .hidden-box .hidden-box-title {
+  padding: 5px;
+  background: #6F7E95;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  font-size: 14px;
+}
+
+.mp-reactive .r-btn .hidden-box .status-line {
+  display: flex;
+  margin-bottom: 9px;
+  font-family: "Ubuntu Condensed", sans-serif;
+  padding: 5px;
+  font-size: 1.125em;
+  line-height: 1.5em;
+  position: relative;
+}
+
+.mp-reactive .r-btn .hidden-box .status-line .status-title {
+  font-weight: 600;
+  position: relative;
+  margin-left: 18px;
+  display: flex;
+  align-items: center;
+  min-width: 115px;
+}
+
+.mp-reactive .r-btn .hidden-box .status-line .status-title b {
+  padding: 0px 5px;
+}
+
+.mp-reactive .r-btn .hidden-box .status-line .status-title:after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fff;
+  left: -13px;
+}
+
+.mp-reactive .r-btn .hidden-box .status-line .status-title.warning {
+  color: #F2994A;
+}
+
+.mp-reactive .r-btn .hidden-box .status-line .status-title.warning:after {
+  background: #F2994A;
+}
+
+.mp-reactive .r-btn .hidden-box .status-line .status-title.error {
+  color: #F05050;
+}
+
+.mp-reactive .r-btn .hidden-box .status-line .status-title.error:after {
+  background: #F05050;
+}
+
+.mp-reactive .r-btn .hidden-box .status-line .status-title.process {
+  color: #88118A;
+}
+
+.mp-reactive .r-btn .hidden-box .status-line .status-title.process:after {
+  background: #88118A;
+}
+
+.mp-reactive .r-btn .hidden-box .status-line .status-title.success {
+  color: #2DB542;
+}
+
+.mp-reactive .r-btn .hidden-box .status-line .status-title.success:after {
+  background: #2DB542;
+}
+
+.mp-reactive .r-btn .hidden-box .status-line .status-def {
+  font-size: 1.125em;
+  text-transform: initial;
+  font-weight: 500;
+  padding-right: 5px;
+  color: #4f4f4f;
+}
+
+.mp-reactive .r-btn .hidden-box .status-line:after {
+  content: "";
+  position: absolute;
+  width: 85%;
+  height: 2px;
+  left: 7.5%;
+  bottom: -5px;
+  background-color: #EEEEEE;
+}
+
+.mp-reactive .r-btn .hidden-box .status-line:last-child {
+  margin-bottom: 4px;
+}
+
+.mp-reactive .r-btn .hidden-box .status-line:last-child:after {
+  opacity: 0;
+}
+
+.mp-reactive .r-btn:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+  left: 11px;
+}
+
+.mp-reactive .r-btn:hover {
+  transition: 0.3s all ease-in-out;
+}
+
+.mp-reactive .r-btn.r-warning {
+  background-color: #F2994A;
+}
+
+.mp-reactive .r-btn.r-error {
+  background-color: #F05050;
+}
+
+.mp-reactive .r-btn.r-process {
+  background-color: #88118A;
+}
+
+.mp-reactive .r-btn.r-process:before {
+  background-color: #fff;
+  -webkit-animation: ping 1s linear alternate infinite;
+          animation: ping 1s linear alternate infinite;
+}
+
+.mp-reactive .r-btn.r-success {
+  background-color: #2DB542;
+}
+
+.mp-reactive .r-btn.r-lnk {
+  background-color: #2d9cdb;
+}
+
+.mp-reactive .r-btn.r-lnk:hover {
+  opacity: 0.8;
+}
+
+.mp-reactive .r-btn.r-circle {
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+}
+
+.mp-reactive .r-btn.r-circle:before {
+  display: none;
+}
+
+.mp-reactive .r-delete,
+.mp-reactive .r-add {
+  margin-left: 5px;
+}
+
+.mp-reactive .r-delete .visual-circle-icon,
+.mp-reactive .r-add .visual-circle-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #6D6D6D;
+  border: 2px solid #EEEEEE;
+}
+
+.mp-reactive .r-delete .visual-circle-icon:hover,
+.mp-reactive .r-add .visual-circle-icon:hover {
+  transition: all 0.3s ease-in-out;
+  border-color: #F05050;
+  color: #F05050;
+}
+
+.mp-reactive .r-delete .visual-icon,
+.mp-reactive .r-add .visual-icon {
+  margin-left: -5px;
+  margin-bottom: 1px;
+}
+
+.mp-reactive .r-delete .r-btn,
+.mp-reactive .r-add .r-btn {
+  cursor: pointer;
+}
+
+.mp-reactive .r-delete .modal-window,
+.mp-reactive .r-add .modal-window {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.47);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.mp-reactive .r-delete .modal-window .modal-content,
+.mp-reactive .r-add .modal-window .modal-content {
+  width: 700px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mp-reactive .r-delete .modal-window .modal-content .icon-field,
+.mp-reactive .r-add .modal-window .modal-content .icon-field {
+  width: 35%;
+  font-size: 12em;
+  display: flex;
+}
+
+.mp-reactive .r-delete .modal-window .modal-content .icon-field .left-icon,
+.mp-reactive .r-delete .modal-window .modal-content .icon-field .right-icon,
+.mp-reactive .r-add .modal-window .modal-content .icon-field .left-icon,
+.mp-reactive .r-add .modal-window .modal-content .icon-field .right-icon {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.mp-reactive .r-delete .modal-window .modal-content .icon-field.list_size .left-icon i,
+.mp-reactive .r-delete .modal-window .modal-content .icon-field.list_size .right-icon i,
+.mp-reactive .r-add .modal-window .modal-content .icon-field.list_size .left-icon i,
+.mp-reactive .r-add .modal-window .modal-content .icon-field.list_size .right-icon i {
+  font-size: 1em;
+}
+
+.mp-reactive .r-delete .modal-window .modal-content .icon-field.list_size .left-icon i,
+.mp-reactive .r-add .modal-window .modal-content .icon-field.list_size .left-icon i {
+  color: #000 !important;
+}
+
+.mp-reactive .r-delete .modal-window .modal-content .icon-field .left-icon,
+.mp-reactive .r-add .modal-window .modal-content .icon-field .left-icon {
+  justify-content: flex-end;
+  background-color: #F05050;
+}
+
+.mp-reactive .r-delete .modal-window .modal-content .icon-field .left-icon i,
+.mp-reactive .r-add .modal-window .modal-content .icon-field .left-icon i {
+  position: absolute;
+  right: -80%;
+}
+
+.mp-reactive .r-delete .modal-window .modal-content .icon-field .right-icon,
+.mp-reactive .r-add .modal-window .modal-content .icon-field .right-icon {
+  justify-content: flex-start;
+}
+
+.mp-reactive .r-delete .modal-window .modal-content .icon-field .right-icon i,
+.mp-reactive .r-add .modal-window .modal-content .icon-field .right-icon i {
+  color: #F05050;
+  position: absolute;
+  left: -80%;
+}
+
+.mp-reactive .r-delete .modal-window .modal-content .content-field,
+.mp-reactive .r-add .modal-window .modal-content .content-field {
+  width: 65%;
+}
+
+.mp-reactive .r-delete .modal-window .modal-content .content-field h1.modal-title,
+.mp-reactive .r-add .modal-window .modal-content .content-field h1.modal-title {
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-weight: bold;
+  color: #525151;
+  font-size: 1.75em;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.mp-reactive .r-delete .modal-window .modal-content .content-field h1.modal-title strong,
+.mp-reactive .r-add .modal-window .modal-content .content-field h1.modal-title strong {
+  margin-left: 5px;
+  color: #F05050;
+}
+
+.mp-reactive .r-delete .modal-window .modal-content .content-field h1.modal-title .input-error,
+.mp-reactive .r-add .modal-window .modal-content .content-field h1.modal-title .input-error {
+  font-weight: 500;
+  font-size: 0.5625em;
+  position: absolute;
+  bottom: -18px;
+  color: #F05050;
+  width: 100%;
+}
+
+.mp-reactive .r-delete .modal-window .modal-content .content-field .modal-desc,
+.mp-reactive .r-add .modal-window .modal-content .content-field .modal-desc {
+  padding: 0px 15px 5px 0;
+  font-family: "Ubuntu Condensed", sans-serif;
+  color: #555555;
+  font-size: 1.25em;
+  line-height: 1.7em;
+  margin-bottom: 20px;
+}
+
+.mp-reactive .r-delete .modal-window .modal-content .content-field .modal-manage,
+.mp-reactive .r-add .modal-window .modal-content .content-field .modal-manage {
+  padding: 0px 15px 0px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+
+.mp-reactive .r-add .modal-window .modal-content .icon-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2DB542;
+  width: 33%;
+}
+
+.mp-reactive .r-add .modal-window .modal-content .icon-field i {
+  color: #fff;
+}
+
+.mp-reactive .r-add .modal-window .modal-content .content-field .r-input {
+  width: 90%;
+  margin: 0 auto 10px;
+}
+
+.mp-reactive .r-add .modal-window .modal-content .content-field .modal-desc {
+  line-height: 1.6em;
+  padding: 0px 15px 5px 22px;
+}
+
+.mp-reactive .r-switch {
+  position: relative;
+  width: 80px;
+}
+
+.mp-reactive .r-switch label.slider {
+  position: relative;
+  display: block;
+  width: 45px;
+  height: 20px;
+  cursor: pointer;
+  border-radius: 1.5em;
+  transition: 350ms;
+  background: #EEEEEE;
+  overflow: hidden;
+}
+
+.mp-reactive .r-switch label.slider:after {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  top: 3px;
+  left: 5px;
+  border-radius: 1.5em;
+  transition: width 200ms ease-out, height 300ms 50ms ease-in, top 300ms 50ms ease-in, left 250ms 50ms ease-in, background 300ms ease-in, box-shadow 300ms ease-in;
+  background: #C4C4C4;
+  box-shadow: 0 0 0 1.5em #C4C4C4 inset;
+}
+
+.mp-reactive .r-switch input {
+  position: absolute;
+  left: -9999px;
+}
+
+.mp-reactive .r-switch input:checked + .slider::after {
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 24px;
+  box-shadow: 0 0 0 0 #f2f2f2 inset;
+}
+
+.mp-reactive .r-switch.red input:checked + .slider {
+  background: rgba(224, 73, 88, 0.45);
+}
+
+.mp-reactive .r-switch.red input:checked + .slider::after {
+  background: #e04958;
+}
+
+.mp-reactive .r-switch.blue input:checked + .slider {
+  background: rgba(47, 128, 237, 0.45);
+}
+
+.mp-reactive .r-switch.blue input:checked + .slider::after {
+  background: #3399FF;
+}
+
+.mp-reactive .r-switch.orange input:checked + .slider {
+  background: rgba(242, 153, 74, 0.45);
+}
+
+.mp-reactive .r-switch.orange input:checked + .slider::after {
+  background: #F2994A;
+}
+
+.mp-reactive .r-switch.disabled label {
+  opacity: 0.6;
+  cursor: not-allowed !important;
+}
+
+.mp-reactive .r-cheker {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mp-reactive .r-cheker .cheker-title {
+  color: #4f4f4f;
+  font-weight: 500;
+  margin: 0;
+  cursor: pointer;
+}
+
+.mp-reactive .r-cheker .cheker-box {
+  margin-right: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  min-width: 15px;
+  height: 15px;
+  cursor: pointer;
+  border-radius: 1.5em;
+  transition: 350ms;
+  background: #EEEEEE;
+  overflow: hidden;
+  margin-bottom: 2px;
+}
+
+.mp-reactive .r-cheker .cheker-box:after {
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 1.5em;
+  transition: width 200ms ease-out, height 300ms 50ms ease-in, background 300ms ease-in, box-shadow 300ms ease-in;
+  background: #C4C4C4;
+  box-shadow: 0 0 0 1.5em #C4C4C4 inset;
+}
+
+.mp-reactive .r-cheker input {
+  opacity: 0;
+  position: absolute;
+  left: -9999px;
+}
+
+.mp-reactive .r-cheker input:disabled {
+  cursor: not-allowed;
+}
+
+.mp-reactive .r-cheker input:checked + .cheker-box::after {
+  width: 15px;
+  height: 15px;
+  box-shadow: 0 0 0 0 #f2f2f2 inset;
+}
+
+.mp-reactive .r-cheker.red input:checked + .cheker-box::after {
+  background: #e04958;
+}
+
+.mp-reactive .r-cheker.blue input:checked + .cheker-box::after {
+  background: #3399FF;
+}
+
+.mp-reactive .r-cheker.orange input:checked + .cheker-box::after {
+  background: #F2994A;
+}
+
+.mp-reactive .r-cheker.disabled label {
+  opacity: 0.6;
+  cursor: not-allowed !important;
+}
+
+.mp-reactive .r-input {
+  width: 100%;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  font-family: "Ubuntu Condensed", sans-serif;
+  outline: none;
+  font-size: 1.125em;
+  border: 2px solid #6F7E95;
+  color: #525151;
+}
+
+.mp-reactive .r-input::-moz-placeholder {
+  font-family: "Ubuntu Condensed", sans-serif;
+  color: rgba(109, 109, 109, 0.8);
+}
+
+.mp-reactive .r-input:-ms-input-placeholder {
+  font-family: "Ubuntu Condensed", sans-serif;
+  color: rgba(109, 109, 109, 0.8);
+}
+
+.mp-reactive .r-input::placeholder {
+  font-family: "Ubuntu Condensed", sans-serif;
+  color: rgba(109, 109, 109, 0.8);
+}
+
+.mp-reactive .r-input:disabled {
+  border-color: #fff;
+  background-color: #EDF2F6;
+}
+
+.mp-reactive .r-input:focus {
+  border-color: #4977EB;
+}
+
+.mp-reactive .r-input:focus::-moz-placeholder {
+  color: #525151;
+}
+
+.mp-reactive .r-input:focus:-ms-input-placeholder {
+  color: #525151;
+}
+
+.mp-reactive .r-input:focus::placeholder {
+  color: #525151;
+}
+
+.mp-reactive .r-input.error {
+  border-color: #F05050;
+  color: #F05050;
+}
+
+.mp-reactive .r-table {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 2px solid #EEEEEE;
+}
+
+.mp-reactive .r-table .table-header {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.mp-reactive .r-table .table-header .table-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #6F7E95;
+  border-bottom: 1px solid rgba(30, 37, 47, 0.3);
+}
+
+.mp-reactive .r-table .table-header .table-toolbar .r-search {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.mp-reactive .r-table .table-header .table-toolbar .r-search i {
+  color: #fff;
+  font-size: 1.125em;
+  margin-right: 10px;
+}
+
+.mp-reactive .r-table .table-header .table-toolbar .r-search i.alias {
+  color: #f2994a;
+}
+
+.mp-reactive .r-table .table-header .table-toolbar .r-search input {
+  border: none;
+  font-size: 1em;
+  color: #fff;
+  background-color: transparent;
+  outline: none;
+  width: 100%;
+  font-family: "Ubuntu Condensed", sans-serif;
+}
+
+.mp-reactive .r-table .table-header .table-toolbar .r-search input::-moz-placeholder {
+  color: #fff;
+}
+
+.mp-reactive .r-table .table-header .table-toolbar .r-search input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.mp-reactive .r-table .table-header .table-toolbar .r-search input::placeholder {
+  color: #fff;
+}
+
+.mp-reactive .r-table .table-header .table-toolbar .pagination {
+  margin: 0px;
+  justify-content: center;
+  width: 33%;
+}
+
+.mp-reactive .r-table .table-header .table-toolbar .sort {
+  width: 33%;
+}
+
+.mp-reactive .r-table .table-header .table-toolbar .sort label {
+  margin-right: 8px;
+  color: #fff;
+}
+
+.mp-reactive .r-table .table-header .table-toolbar .sort .r-selector {
+  width: 110px;
+}
+
+.mp-reactive .r-table .table-header .table-toolbar .sort .r-selector .selector_title {
+  font-size: 1em;
+  align-items: center;
+}
+
+.mp-reactive .r-table .table-content {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.mp-reactive .r-table .table-content .col {
+  padding: 10px 15px;
+  color: #4f4f4f;
+  display: flex;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.mp-reactive .r-table .table-content .col.cl-s {
+  min-width: 80px;
+  max-width: 80px;
+}
+
+.mp-reactive .r-table .table-content .col.cl-m {
+  min-width: 140px;
+  max-width: 140px;
+}
+
+.mp-reactive .r-table .table-content .col.cl-l {
+  min-width: 220px;
+  max-width: 220px;
+}
+
+.mp-reactive .r-table .table-content .col.cl-xl {
+  min-width: 360px;
+  max-width: 360px;
+}
+
+.mp-reactive .r-table .table-content .col.cl-xxl {
+  min-width: 700px;
+  max-width: 700px;
+}
+
+.mp-reactive .r-table .table-content .col.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.mp-reactive .r-table .table-content .col.double {
+  flex-direction: column;
+}
+
+.mp-reactive .r-table .table-content .col.double span:first-child {
+  margin-bottom: 3px;
+}
+
+.mp-reactive .r-table .table-content .col.error {
+  color: #F05050;
+}
+
+.mp-reactive .r-table .table-content .col.success {
+  color: #2DB542;
+}
+
+.mp-reactive .r-table .table-content .col.error i,
+.mp-reactive .r-table .table-content .col.success i {
+  font-size: 1.125em;
+}
+
+.mp-reactive .r-table .table-content .col.manage {
+  align-items: center;
+}
+
+.mp-reactive .r-table .table-content .col.manage i {
+  font-size: 0.875em;
+  transition: 0.15s all ease;
+  cursor: pointer;
+}
+
+.mp-reactive .r-table .table-content .col.manage i:first-child {
+  margin-right: 10px;
+}
+
+.mp-reactive .r-table .table-content .col.manage i:first-child:hover {
+  color: #2d9cdb;
+}
+
+.mp-reactive .r-table .table-content .col.manage i:nth-child(2) {
+  margin-right: 10px;
+}
+
+.mp-reactive .r-table .table-content .col.manage i:nth-child(2):hover {
+  color: #F2994A;
+}
+
+.mp-reactive .r-table .table-content .col.manage i:last-child {
+  margin-right: 0;
+}
+
+.mp-reactive .r-table .table-content .col.manage i:last-child:hover {
+  color: #F05050;
+}
+
+.mp-reactive .r-table .table-content .thead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 1px 4px rgba(82, 81, 81, 0.6);
+  padding: 5px 0px 0px;
+}
+
+.mp-reactive .r-table .table-content .thead .col {
+  font-weight: bold;
+}
+
+.mp-reactive .r-table .table-content .tbody {
+  display: flex;
+  flex-direction: column;
+}
+
+.mp-reactive .r-table .table-content .tbody .tr-tbody {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 2px solid #EEEEEE;
+  position: relative;
+}
+
+.mp-reactive .r-table .table-content .tbody .tr-tbody:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  opacity: 0;
+  background-color: #EEEEEE;
+}
+
+.mp-reactive .r-table .table-content .tbody .tr-tbody .col {
+  font-weight: normal;
+}
+
+.mp-reactive .r-table .table-content .tbody .tr-tbody:hover:after {
+  opacity: 1;
+}
+
+.mp-reactive .r-table.red .tbody .tr-tbody:after {
+  background-color: #e04958;
+}
+
+.mp-reactive .r-table.blue .tbody .tr-tbody:after {
+  background-color: #3399FF;
+}
+
+.mp-reactive .r-table.orange .tbody .tr-tbody:after {
+  background-color: #F2994A;
+}
+
+.mp-reactive .r-selector {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.mp-reactive .r-selector .selector_title {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 6px;
+  background-color: #fff;
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-size: 1.125em;
+  color: #4f4f4f;
+  padding: 4px 8px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.mp-reactive .r-selector .selector_title i {
+  margin-left: 5px;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.mp-reactive .r-selector .selector_items {
+  position: absolute;
+  top: 35px;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  list-style: none;
+  background-color: #6F7E95;
+  border-radius: 6px;
+  padding: 4px 8px;
+  min-width: 40px;
+  z-index: 9;
+}
+
+.mp-reactive .r-selector .selector_items .selector-item {
+  color: #fff;
+  white-space: nowrap;
+  border-radius: 6px;
+  padding: 2px 5px !important;
+  margin-bottom: 7px !important;
+  position: relative !important;
+  cursor: pointer;
+  text-align: center;
+}
+
+.mp-reactive .r-selector .selector_items .selector-item:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px !important;
+  background-color: #fff !important;
+  left: 0;
+  bottom: -3px !important;
+}
+
+.mp-reactive .r-selector .selector_items .selector-item:last-child {
+  margin-bottom: 0 !important;
+}
+
+.mp-reactive .r-selector .selector_items .selector-item:last-child:after {
+  background-color: transparent !important;
+}
+
+.mp-reactive .r-selector .selector_items .selector-item:hover,
+.mp-reactive .r-selector .selector_items .selector-item.active {
+  background-color: #5b687b;
+}
+
+.mp-reactive .pagination {
+  display: flex;
+  align-items: center;
+}
+
+.mp-reactive .pagination .r-pg {
+  font-size: 0.9375em;
+  padding: 5px;
+  margin-right: 3px;
+  font-family: "Ubuntu Condensed", sans-serif;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.mp-reactive .pagination .r-pg.point {
+  color: #fff;
+  cursor: default !important;
+}
+
+.mp-reactive .pagination .r-pg.disabled {
+  opacity: 0;
+  cursor: default;
+}
+
+.mp-reactive .pagination.red .r-pg:hover,
+.mp-reactive .pagination.red .r-pg.current {
+  background-color: #e04958;
+  color: #fff;
+}
+
+.mp-reactive .pagination.red .r-pg.current {
+  text-decoration: underline;
+}
+
+.mp-reactive .pagination.blue .r-pg:hover,
+.mp-reactive .pagination.blue .r-pg.current {
+  background-color: #3399FF;
+  color: #fff;
+}
+
+.mp-reactive .pagination.blue .r-pg.current {
+  text-decoration: underline;
+}
+
+.mp-reactive .pagination.orange .r-pg:hover,
+.mp-reactive .pagination.orange .r-pg.current {
+  background-color: #F2994A;
+  color: #fff;
+}
+
+.mp-reactive .pagination.orange .r-pg.current {
+  text-decoration: underline;
+}
+
+.mp-reactive .pagination.g-files-pagination .r-pg {
+  color: rgba(73, 119, 235, 0.75);
+}
+
+.mp-reactive .pagination.g-files-pagination .r-pg:hover {
+  color: #4977EB;
+}
+
+.mp-reactive .pagination.g-files-pagination .r-pg.current {
+  color: #f2994a;
+}
+
+.mp-reactive .pagination.g-files-pagination.point {
+  color: rgba(73, 119, 235, 0.75);
+}
+
+.mp-reactive .btn-modal {
+  padding: 5px 9px;
+  border: none;
+  outline: none;
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-size: 0.9375em;
+  margin-right: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.mp-reactive .btn-modal:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 0.25s all ease-in-out;
+  background-color: rgba(0, 0, 0, 0.47);
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.mp-reactive .btn-modal:last-child {
+  margin-right: 0px;
+}
+
+.mp-reactive .btn-modal.m-error {
+  background-color: #F05050;
+  color: #fff;
+}
+
+.mp-reactive .btn-modal.m-success {
+  background-color: #2DB542;
+  color: #fff;
+}
+
+.mp-reactive .btn-modal.m-warning {
+  background-color: #F2994A;
+  color: #fff;
+}
+
+.mp-reactive .btn-modal:hover:after {
+  opacity: 0.5;
+}
+
+.mp-reactive .r-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.47);
+  z-index: 9999;
+}
+
+.mp-reactive .r-modal .modal-box {
+  min-width: 320px;
+  min-height: 500px;
+  width: 500px;
+  height: 70vh;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.mp-reactive .r-modal .modal-box .box-header {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6F7E95;
+  border-radius: 6px 6px 0px 0px;
+  position: relative;
+}
+
+.mp-reactive .r-modal .modal-box .box-header .header-title {
+  margin: 0;
+  color: #fff;
+  font-size: 1.375em;
+  cursor: default;
+}
+
+.mp-reactive .r-modal .modal-box .box-header .modal-cancel {
+  transform: rotate(45deg);
+  color: #fff;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.mp-reactive .r-modal .modal-box .box-header .modal-cancel:hover {
+  opacity: 0.7;
+}
+
+.mp-reactive .r-modal .modal-box .box-body {
+  height: calc(100% - 60px);
+  background-color: #fff;
+  border: 2px solid #6F7E95;
+  border-radius: 0px 0px 6px 6px;
+  padding: 20px 25px;
+}
+
+.mp-reactive .r-modal.r-modal-selector .box-body .search-row {
+  width: 100%;
+  position: relative;
+}
+
+.mp-reactive .r-modal.r-modal-selector .box-body .search-row i {
+  position: absolute;
+  font-size: 1.375em;
+  left: 15px;
+  top: 14px;
+  color: #6F7E95;
+}
+
+.mp-reactive .r-modal.r-modal-selector .box-body .search-row .r-input {
+  padding-left: 45px;
+  font-weight: normal;
+}
+
+.mp-reactive .r-modal.r-modal-selector .box-body .search-row .r-input:focus + i {
+  color: #4977EB;
+}
+
+.mp-reactive .r-modal.r-modal-selector .box-body .filter-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0 8px;
+}
+
+.mp-reactive .r-modal.r-modal-selector .box-body .filter-row .create-item {
+  color: rgba(73, 119, 235, 0.75);
+  transition: 0.15s all ease;
+  cursor: pointer;
+}
+
+.mp-reactive .r-modal.r-modal-selector .box-body .filter-row .create-item i {
+  font-size: 0.85em;
+  margin-right: 3px;
+  transition: 0.15s all ease;
+}
+
+.mp-reactive .r-modal.r-modal-selector .box-body .filter-row .create-item:hover {
+  color: #4977EB;
+}
+
+.mp-reactive .r-modal.r-modal-selector .box-body .filter-row .create-item:hover i {
+  transform: rotate(45deg);
+}
+
+.mp-reactive .r-modal.r-modal-selector .box-body .selector-items-bar {
+  height: calc(100% - 90px);
+}
+
+.mp-reactive .r-modal.r-modal-selector .box-body .selector-items-bar .selector-items .selector-item {
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin-bottom: 5px;
+  background-color: #6F7E95;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.mp-reactive .r-modal.r-modal-selector .box-body .selector-items-bar .selector-items .selector-item .lang-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3px;
+  color: #fff;
+  overflow: hidden;
+}
+
+.mp-reactive .r-modal.r-modal-selector .box-body .selector-items-bar .selector-items .selector-item .lang-row span {
+  min-width: 100px;
+  margin-right: 15px;
+}
+
+.mp-reactive .r-modal.r-modal-selector .box-body .selector-items-bar .selector-items .selector-item .lang-row b {
+  white-space: nowrap;
+}
+
+.mp-reactive .r-modal.r-modal-selector .box-body .selector-items-bar .selector-items .selector-item:hover,
+.mp-reactive .r-modal.r-modal-selector .box-body .selector-items-bar .selector-items .selector-item.active {
+  background-color: #5b687b;
+}
+
+.mp-reactive .r-modal.r-modal-selector .box-body .selector-items-bar .selector-items .selector-item.active {
+  border: 2px solid #525151;
+}
+
+.mp-reactive .r-modal.r-modal-selector .box-body .selector-items-bar .selector-items .selector-item:last-child {
+  margin-bottom: 0px;
+}
+
+.mp-reactive .r-modal.r-modal-selector .box-body .body-title {
+  height: calc(100% - 80px);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4977EB;
+}
+
+.mp-reactive .r-modal.r-modal-create,
+.mp-reactive .r-modal.r-modal-edit {
+  z-index: 999;
+}
+
+.mp-reactive .r-modal.r-modal-create.insert,
+.mp-reactive .r-modal.r-modal-edit.insert {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.mp-reactive .r-modal.r-modal-create .modal-box .box-body,
+.mp-reactive .r-modal.r-modal-edit .modal-box .box-body {
+  box-sizing: border-box;
+}
+
+.mp-reactive .r-modal.r-modal-create .modal-box.title,
+.mp-reactive .r-modal.r-modal-edit .modal-box.title {
+  height: 360px !important;
+}
+
+.mp-reactive .r-modal.r-modal-create .modal-box.titles,
+.mp-reactive .r-modal.r-modal-edit .modal-box.titles {
+  height: 560px !important;
+}
+
+.mp-reactive .r-modal.r-modal-create .modal-box.titles_four,
+.mp-reactive .r-modal.r-modal-edit .modal-box.titles_four {
+  height: 680px !important;
+}
+
+.mp-reactive .r-modal.r-modal-create .modal-box.classes,
+.mp-reactive .r-modal.r-modal-edit .modal-box.classes {
+  height: 590px !important;
+}
+
+.mp-reactive .r-modal.r-modal-create .modal-box.title,
+.mp-reactive .r-modal.r-modal-edit .modal-box.title {
+  height: 50vh;
+}
+
+.mp-reactive .r-modal.r-modal-create .box-header,
+.mp-reactive .r-modal.r-modal-edit .box-header {
+  background-color: #2DB542;
+}
+
+.mp-reactive .r-modal.r-modal-create .box-body,
+.mp-reactive .r-modal.r-modal-edit .box-body {
+  border: 2px solid #EEEEEE;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mp-reactive .r-modal.r-modal-create .box-body .box-preview,
+.mp-reactive .r-modal.r-modal-edit .box-body .box-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-bottom: 90px;
+  z-index: 1;
+}
+
+.mp-reactive .r-modal.r-modal-create .box-body .box-preview i:first-child,
+.mp-reactive .r-modal.r-modal-edit .box-body .box-preview i:first-child {
+  font-size: 6em;
+  color: #e8e8e8;
+}
+
+.mp-reactive .r-modal.r-modal-create .box-body .box-preview i:first-child.warning,
+.mp-reactive .r-modal.r-modal-edit .box-body .box-preview i:first-child.warning {
+  color: #F2994A;
+}
+
+.mp-reactive .r-modal.r-modal-create .box-body .box-preview i:first-child.success,
+.mp-reactive .r-modal.r-modal-edit .box-body .box-preview i:first-child.success {
+  color: #2DB542;
+}
+
+.mp-reactive .r-modal.r-modal-create .box-body .box-preview i:first-child.error,
+.mp-reactive .r-modal.r-modal-edit .box-body .box-preview i:first-child.error {
+  color: #F05050;
+}
+
+.mp-reactive .r-modal.r-modal-create .box-body .box-preview i:last-child,
+.mp-reactive .r-modal.r-modal-edit .box-body .box-preview i:last-child {
+  margin-top: 30px;
+  font-size: 15em;
+  position: absolute;
+  color: #e8e8e8;
+}
+
+.mp-reactive .r-modal.r-modal-create .box-body .box-form,
+.mp-reactive .r-modal.r-modal-edit .box-body .box-form {
+  position: relative;
+  z-index: 2;
+}
+
+.mp-reactive .r-modal.r-modal-create .box-body .box-form label,
+.mp-reactive .r-modal.r-modal-edit .box-body .box-form label {
+  color: rgba(73, 119, 235, 0.75);
+  font-size: 1.1em;
+  font-weight: normal;
+  margin-bottom: 0px;
+}
+
+.mp-reactive .r-modal.r-modal-create .box-body .box-form label.active,
+.mp-reactive .r-modal.r-modal-edit .box-body .box-form label.active {
+  color: #4977EB;
+}
+
+.mp-reactive .r-modal.r-modal-create .box-body .box-form .r-input-error,
+.mp-reactive .r-modal.r-modal-edit .box-body .box-form .r-input-error {
+  color: #F05050;
+  margin: -2px 0 2px;
+  transition: 0.5s all ease;
+}
+
+.mp-reactive .r-modal.r-modal-create .box-body .box-form .r-input,
+.mp-reactive .r-modal.r-modal-edit .box-body .box-form .r-input {
+  margin-bottom: 15px;
+}
+
+.mp-reactive .r-modal.r-modal-create .box-body .box-form .r-input:last-child,
+.mp-reactive .r-modal.r-modal-edit .box-body .box-form .r-input:last-child {
+  margin-bottom: 0px;
+}
+
+.mp-reactive .r-modal.r-modal-create .box-body .box-manager,
+.mp-reactive .r-modal.r-modal-edit .box-body .box-manager {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mp-reactive .r-modal .btn-modal {
+  padding: 5px 15px;
+  color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  font-size: 1.05em;
+}
+
+.mp-reactive .r-modal .btn-modal.success {
+  background-color: #2DB542;
+}
+
+.mp-reactive .r-modal .btn-modal.warning {
+  background-color: #F2994A;
+}
+
+.slide-fade-enter-active {
+  transition: all 0.3s ease;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.5s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter,
+.slide-fade-leave-to {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+@-webkit-keyframes ping {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes ping {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.zoom-fade-enter-active {
+  transition: all 0.3s ease;
+}
+
+.zoom-fade-leave-active {
+  transition: all 0.5s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+C .zoom-fade-enter,
+.zoom-fade-leave-to {
+  transform: scale(1);
+  opacity: 0;
+}
+
+.trext {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.trext .note-editor {
+  border-radius: 0px;
+}
+
+.trext .note-editor .panel-heading {
+  background-color: #EEEEEE;
+  border-radius: 0px;
+}
+
+.trext .note-editor .panel-heading .note-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 0.81875em;
+  color: #000;
+}
+
+.trext .btn-trext {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  right: 5px;
+  top: 6px;
+  font-size: 0.81875em;
+  color: #000;
+}
+
+.trext .btn-trext.btn-term {
+  right: 88px;
+}
+
+.trext .btn-trext.btn-img {
+  right: 53px;
+}
+
+.trext .btn-trext.btn-save {
+  top: 4px;
+  color: #2DB542;
+  border: none;
+  font-size: 1em;
+}
+
+.trext:after {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 650px;
+  background-color: #fff;
+  z-index: 999;
+  background-image: url(/images/preloader.svg?e88e16f513c05037d1e421ebb9588499);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.trext.preload:after {
+  display: flex;
+}
+

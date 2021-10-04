@@ -1,0 +1,21 @@
+.admin-content .left-image {
+  float: left;
+  width: 47%;
+  margin: 10px 15px 5px 0;
+  align-content: left;
+  height: auto;
+}
+.admin-content .right-image {
+  float: right;
+  width: 47%;
+  margin: 10px 0 5px 15px;
+  align-content: right;
+  height: auto;
+}
+
+.admin-content .two-image {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    height: auto;
+}

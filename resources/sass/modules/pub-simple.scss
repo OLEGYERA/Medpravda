@@ -1,0 +1,118 @@
+@import "../customization";
+
+.pub-simple{
+    .pub-content{
+        width: 75%;
+        .pub-date{
+            font-weight: 300;
+            color: $light-gray;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .pub-social{
+            @include init-flex(0, center, between);
+            a{
+                margin: 2px;
+            }
+            .watcher-counter{
+                color: $light-gray;
+                .counter{
+                    padding-left: 3px;
+                }
+            }
+
+        }
+        .pub-photo{
+            width: 100%;
+            overflow: hidden;
+            margin: 10px 0;
+            img{
+                width: 100%;
+                height: 390px;
+                object-fit: cover;
+            }
+        }
+        .pub-text{
+            font-weight: 300;
+            line-height: 1.5em;
+            font-size: 1.2em;
+            b{
+                font-weight: 500;
+            }
+            a{
+                font-weight: 400;
+                border-bottom: 2px solid $light-red;
+            }
+        }
+    }
+    .pub-side{
+        width: 25%;
+        padding-top: 10px;
+        padding-left: 12px;
+    }
+    .pub-author{
+        margin: 20px 0;
+        .author-box-title{
+            font-size: 24px;
+            color: $blue;
+            margin-bottom: 10px;
+        }
+        .author-body-box{
+            @include init-flex(0, center);
+            background-color: #EFEFEF;
+            padding: 10px 12px;
+            .author-logo{
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin-right: 30px;
+                @include init-flex(0, center, center);
+                img{
+                    width: 100%;
+                }
+            }
+            .content-box{
+                text-transform: uppercase;
+                font-size: 20px;
+                line-height: 1.3em;
+                padding: 0;
+                .author-links{
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1080px) {
+    .pub-simple{
+        .pub-content,
+        .pub-author{
+            padding: 0 12px;
+        }
+        .pub-side{
+            padding: 10px 12px 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 989px) {
+    .main-wrapper {
+        flex-direction: column;
+        .pub-simple {
+            .grid{
+                flex-direction: column;
+            }
+            .pub-content{
+                width: 100%;
+            }
+            .pub-side{
+                width: 100%;
+            }
+        }
+
+    }
+}
+

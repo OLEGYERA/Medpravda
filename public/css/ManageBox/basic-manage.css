@@ -1,0 +1,655 @@
+.flex {
+  display: -webkit-box;
+  display: flex;
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+}
+
+.flex-row-s-c {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.flex-row-s-e {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-align: end;
+          align-items: flex-end;
+}
+
+.flex-row-c-s {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+          align-items: flex-start;
+}
+
+.flex-row-c-c {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.flex-row-c-e {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+          align-items: flex-end;
+}
+
+.flex-row-e-s {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+          align-items: flex-start;
+}
+
+.flex-row-e-c {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.flex-row-e-e {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+          align-items: flex-end;
+}
+
+.flex-row-sb-s {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+          align-items: flex-start;
+}
+
+.flex-row-sb-c {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.flex-row-sb-e {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+          align-items: flex-end;
+}
+
+.flex-row-sa-s {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  justify-content: space-around;
+  -webkit-box-align: start;
+          align-items: flex-start;
+}
+
+.flex-row-sa-c {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  justify-content: space-around;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.flex-row-sa-e {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  justify-content: space-around;
+  -webkit-box-align: end;
+          align-items: flex-end;
+}
+
+.flex-col {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+.flex-col-s-c {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.flex-col-s-e {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: end;
+          align-items: flex-end;
+}
+
+.flex-col-c-s {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+          align-items: flex-start;
+}
+
+.flex-col-c-c {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.flex-col-c-e {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+          align-items: flex-end;
+}
+
+.flex-col-e-s {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+          align-items: flex-start;
+}
+
+.flex-col-e-c {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.flex-col-e-e {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+          align-items: flex-end;
+}
+
+.flex-col-sb-s {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+          align-items: flex-start;
+}
+
+.flex-col-sb-c {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.flex-col-sb-e {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+          align-items: flex-end;
+}
+
+.flex-col-sa-s {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  justify-content: space-around;
+  -webkit-box-align: start;
+          align-items: flex-start;
+}
+
+.flex-col-sa-c {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  justify-content: space-around;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.flex-col-sa-e {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  justify-content: space-around;
+  -webkit-box-align: end;
+          align-items: flex-end;
+}
+
+.vb > .vb-dragger {
+  z-index: 5;
+  width: 12px;
+  right: 0;
+  height: 100%;
+}
+
+.vb > .vb-dragger > .vb-dragger-styler {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: rotate3d(0, 0, 0, 0);
+  transform: rotate3d(0, 0, 0, 0);
+  -webkit-transition: background-color 100ms ease-out, margin 100ms ease-out, height 100ms ease-out;
+  transition: background-color 100ms ease-out, margin 100ms ease-out, height 100ms ease-out;
+  background-color: rgba(48, 121, 244, 0.1);
+  margin: 5px 5px 5px 0;
+  border-radius: 20px;
+  height: calc(100% - 10px);
+  display: block;
+}
+
+.vb.vb-scrolling-phantom > .vb-dragger > .vb-dragger-styler {
+  background-color: rgba(48, 121, 244, 0.3);
+}
+
+.vb > .vb-dragger:hover > .vb-dragger-styler {
+  background-color: rgba(48, 121, 244, 0.5);
+  margin: 0px;
+  height: 100%;
+}
+
+.vb.vb-dragging > .vb-dragger > .vb-dragger-styler {
+  background-color: rgba(48, 121, 244, 0.5);
+  margin: 0px;
+  height: 100%;
+}
+
+.vb.vb-dragging-phantom > .vb-dragger > .vb-dragger-styler {
+  background-color: rgba(48, 121, 244, 0.5);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 18px !important;
+  font-size: 16px !important;
+  font-family: "Ubuntu Condensed", sans-serif !important;
+}
+
+.mp-shell {
+  width: 100vw;
+  height: 100vh;
+}
+
+.mp-shell .aside-panel {
+  height: 100%;
+  width: 230px;
+  min-width: 230px;
+  background-color: #354052;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  -webkit-transition: 0.5s all ease-out;
+  transition: 0.5s all ease-out;
+}
+
+.mp-shell .aside-panel .manager-box {
+  padding: 15px;
+  border-bottom: 2px solid rgba(30, 37, 47, 0.3);
+  overflow: hidden;
+  box-sizing: border-box;
+  -webkit-transition: 0.5s all ease-out;
+  transition: 0.5s all ease-out;
+}
+
+.mp-shell .aside-panel .manager-box .manager-info .manager-avatar {
+  width: 120px;
+  height: 120px;
+  background-color: #E5E5E5;
+  border-radius: 50%;
+  font-size: 4em;
+  color: #293240;
+  -webkit-transition: 0.5s all ease-out;
+  transition: 0.5s all ease-out;
+}
+
+.mp-shell .aside-panel .manager-box .manager-info .manager-name {
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-size: 1em;
+  color: #fff;
+  margin: 0px;
+  margin-top: 10px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.mp-shell .aside-panel .manager-box .manager-info .manager-name i {
+  margin-left: 5px;
+  font-size: 0.75em;
+}
+
+.mp-shell .aside-panel .manager-box ul.manager-profile-menu {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.mp-shell .aside-panel .manager-box ul.manager-profile-menu li.mpm-link {
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.mp-shell .aside-panel .manager-box ul.manager-profile-menu li.mpm-link a {
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-size: 1em;
+  color: rgba(255, 254, 254, 0.6);
+  text-decoration: none;
+}
+
+.mp-shell .aside-panel .manager-box ul.manager-profile-menu li.mpm-link a:hover {
+  color: #fff;
+}
+
+.mp-shell .aside-panel .manager-box ul.manager-profile-menu.active {
+  display: block;
+}
+
+.mp-shell .aside-panel nav.manager-navigation .manager-menu {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mp-shell .aside-panel nav.manager-navigation .manager-menu .mm-item {
+  width: 100%;
+  border-bottom: 2px solid rgba(30, 37, 47, 0.3);
+}
+
+.mp-shell .aside-panel nav.manager-navigation .manager-menu .mm-item .mm-title {
+  display: inline-block;
+  margin: 10px 0px 10px 20px;
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-size: 0.875em;
+  color: rgba(255, 254, 254, 0.4);
+  cursor: pointer;
+}
+
+.mp-shell .aside-panel nav.manager-navigation .manager-menu .mm-item .mm-title i {
+  margin-left: 3px;
+  font-size: 0.625em;
+}
+
+.mp-shell .aside-panel nav.manager-navigation .manager-menu .mm-item .mm-title:hover {
+  color: #fff;
+}
+
+.mp-shell .aside-panel nav.manager-navigation .manager-menu .mm-item .mm-links {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+}
+
+.mp-shell .aside-panel nav.manager-navigation .manager-menu .mm-item .mm-links .mm-link a {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  padding: 7px 0px 8px 20px;
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-size: 1.125em;
+  color: rgba(255, 254, 254, 0.6);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.mp-shell .aside-panel nav.manager-navigation .manager-menu .mm-item .mm-links .mm-link a i {
+  width: 20px;
+  text-align: center;
+  margin-right: 12px;
+  font-size: 0.875em;
+}
+
+.mp-shell .aside-panel nav.manager-navigation .manager-menu .mm-item .mm-links .mm-link a:hover {
+  background-color: #293240;
+}
+
+.mp-shell .aside-panel nav.manager-navigation .manager-menu .mm-item .mm-links .mm-link.active {
+  border-left: 4px solid;
+}
+
+.mp-shell .aside-panel nav.manager-navigation .manager-menu .mm-item .mm-links .mm-link.active.red {
+  border-color: #DC3545;
+}
+
+.mp-shell .aside-panel nav.manager-navigation .manager-menu .mm-item .mm-links .mm-link.active.blue {
+  border-color: #2F80ED;
+}
+
+.mp-shell .aside-panel nav.manager-navigation .manager-menu .mm-item .mm-links .mm-link.active.orange {
+  border-color: #EF8F3A;
+}
+
+.mp-shell .aside-panel nav.manager-navigation .manager-menu .mm-item .mm-links .mm-link.active a {
+  color: #fff;
+  padding-left: 16px;
+  background-color: #293240;
+}
+
+.mp-shell .aside-panel nav.manager-navigation .manager-menu .mm-item.active .mm-title {
+  color: #fff;
+}
+
+.mp-shell .aside-panel nav.manager-navigation .manager-menu .mm-item.active .mm-links {
+  display: block;
+}
+
+.mp-shell .aside-panel.small {
+  width: 60px;
+  min-width: 60px;
+}
+
+.mp-shell .aside-panel.small .manager-box {
+  padding: 5px;
+}
+
+.mp-shell .aside-panel.small .manager-box .manager-info .manager-avatar {
+  width: 40px;
+  height: 40px;
+  font-size: 1.5em;
+}
+
+.mp-shell .aside-panel.small .manager-box .manager-info .manager-name {
+  display: none;
+}
+
+.mp-shell .aside-panel.small nav.manager-navigation .mm-item {
+  box-sizing: border-box;
+}
+
+.mp-shell .aside-panel.small nav.manager-navigation .mm-item .mm-title {
+  margin: 0px;
+  height: 35px;
+  width: 60px;
+  overflow: hidden;
+  color: #354052 !important;
+}
+
+.mp-shell .aside-panel.small nav.manager-navigation .mm-item .mm-title:first-letter {
+  font-size: 1.5em;
+  line-height: 37px;
+  width: 50px;
+  display: -webkit-box;
+  display: flex;
+  padding-left: 23px;
+  color: rgba(255, 254, 254, 0.4);
+}
+
+.mp-shell .aside-panel.small nav.manager-navigation .mm-item.active .mm-title:first-letter,
+.mp-shell .aside-panel.small nav.manager-navigation .mm-item:hover .mm-title:first-letter {
+  color: #fff;
+}
+
+.mp-shell .aside-panel.small nav.manager-navigation .mm-item.active .mm-links .mm-link a,
+.mp-shell .aside-panel.small nav.manager-navigation .mm-item:hover .mm-links .mm-link a {
+  padding-left: 21px;
+  color: #354052;
+}
+
+.mp-shell .aside-panel.small nav.manager-navigation .mm-item.active .mm-links .mm-link a i,
+.mp-shell .aside-panel.small nav.manager-navigation .mm-item:hover .mm-links .mm-link a i {
+  width: 24px;
+  color: rgba(255, 254, 254, 0.6);
+}
+
+.mp-shell .aside-panel.small nav.manager-navigation .mm-item.active .mm-links .mm-link.active a,
+.mp-shell .aside-panel.small nav.manager-navigation .mm-item:hover .mm-links .mm-link.active a {
+  color: #293240;
+  padding-left: 16px;
+}
+
+.mp-shell .aside-panel.small nav.manager-navigation .mm-item.active .mm-links .mm-link.active a i,
+.mp-shell .aside-panel.small nav.manager-navigation .mm-item:hover .mm-links .mm-link.active a i {
+  color: #fff;
+}
+
+.mp-shell .aside-panel.small nav.manager-navigation .mm-item.active .mm-links .mm-link:hover a,
+.mp-shell .aside-panel.small nav.manager-navigation .mm-item:hover .mm-links .mm-link:hover a {
+  color: #293240;
+}
+
+.mp-shell .mp-worksection {
+  height: 100%;
+  width: 100%;
+  min-width: 180px;
+  background-color: #EDF2F6;
+}
+

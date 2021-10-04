@@ -1,0 +1,1 @@
+style="color:#{{ $block->{'title'.$number}['color']??'' }};font-size:{{ $block->{'title'.$number}['size']??'' }}%;font-family: {{ config('settings.fonts.'.$block->{'title'.$number}['style']??1) }}"

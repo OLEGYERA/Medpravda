@@ -1,0 +1,88 @@
+@import "../customization";
+
+.box-news{
+    .left-grid{
+        width: 30%;
+        padding: 0 12px 15px 12px;
+        .article{
+            &:nth-child(2){
+                .article-body{
+                    border-top: none;
+                    padding-top: 0;
+                }
+            }
+            &:nth-child(n+8) {
+                display: none;
+            }
+        }
+    }
+    .right-grid{
+        width: 70%;
+        @include wrap-on;
+        h3.group-title{
+            width: calc(100% - 24px);
+            margin-left: 12px;
+        }
+        .article{
+            width: 33.33%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .box-news{
+        .left-grid{
+            .article{
+                &:nth-child(n+7){
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1080px){
+    .box-news{
+        .left-grid{
+            .article{
+                &:nth-child(n+8){
+                    display: block;
+                }
+                &:nth-child(n+12){
+                    display: none;
+                }
+            }
+        }
+        .right-grid{
+            .article{
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 989px){
+    .box-news{
+        .left-grid, .right-grid{
+            width: 100%;
+        }
+
+        .left-grid{
+            .article{
+                &:nth-child(n+12){
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .box-news{
+        .right-grid{
+            .article{
+                width: 100%;
+            }
+        }
+    }
+}

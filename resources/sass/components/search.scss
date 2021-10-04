@@ -1,0 +1,95 @@
+@import "../customization";
+
+.search{
+    width: 100%;
+    &-intro{
+        .search-input-box{
+            box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+            background-color: $white;
+            .search-input{
+                height: 50px;
+                padding: 15px 0 15px 30px;
+                width: calc(100% - 15px - 20px - 30px);
+            }
+            .search-start{
+                width: 20px;
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+.search-input-box{
+    border-radius: $radius;
+    overflow: hidden;
+    @include init-flex(0, 0, between);
+    .search-input{
+        font-size: 16px;
+        font-weight: 500;
+        &::placeholder{
+            color: $placeholder;
+            font-weight: 300;
+        }
+    }
+    .search-start{
+        cursor: pointer;
+        color: $light-gray;
+    }
+}
+
+@media only screen and (max-width: 989px){
+    .search {
+        &-intro {
+            .search-input-box {
+                .search-input{
+                    height: 45px;
+                    width: calc(100% - 22px - 30px);
+                    padding-left: 15px;
+                }
+                .search-start{
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+    .search-input-box {
+        .search-input{
+            font-size: 15px;
+            font-weight: 400;
+        }
+    }
+}
+
+@media only screen and (max-width: 680px){
+    .search {
+        &-intro {
+            .search-input-box {
+                .search-input{
+                    height: 40px;
+                    width: calc(100% - 18px - 30px);
+                    padding: 10px 0 10px 15px;
+                }
+                .search-start{
+                    width: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .search {
+        &-intro {
+            .search-input-box {
+                .search-input{
+                    width: calc(100% - 16px - 20px);
+                    padding-left: 10px;
+                }
+                .search-start{
+                    width: 16px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

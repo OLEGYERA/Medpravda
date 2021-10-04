@@ -1,0 +1,152 @@
+@import "../customization";
+
+.main-wrapper{
+    .box-mixed{
+
+    }
+    &.full {
+        .box-mixed{
+
+        }
+    }
+}
+
+.box-mixed{
+    .left-grid{
+        width: 45%;
+        @include wrap-on;
+        .article{
+            width: 50%;
+        }
+        .mini-fix {
+            width: 50%;
+            padding: 0 12px 15px 12px;
+            .article{
+                width: 100%;
+                padding: 0;
+                position: relative;
+                .img-wrapper,
+                .article-micro-author,
+                &:nth-child(n+4){
+                    display: none;
+                }
+
+                .article-header{
+                    font-size: 15.6px;
+                    border-top: 1px solid $thin-gray;
+                    padding: 8px 0;
+                }
+
+            }
+        }
+    }
+    .right-grid{
+        width: 55%;
+    }
+}
+
+
+@media only screen and (max-width: 1500px) {
+    .box-mixed{
+        .left-grid,
+        .right-grid {
+            width: 50%;
+        }
+
+        .left-grid{
+            .mini-fix{
+                .article {
+                    .article-header {
+                        font-size: 14.6px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 989px){
+    .box-mixed{
+        .left-grid, .right-grid{
+            width: 100%;
+        }
+        .left-grid{
+            padding: 12px;
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+            .article{
+                height: 250px;
+                min-width: 240px;
+                padding: 0;
+                margin-right: 12px;
+                .article-body{
+                    @include shadow;
+                }
+                .content-box{
+                    padding: 0 11px;
+                }
+            }
+            .mini-fix {
+                padding: 0;
+                width: fit-content;
+                @include init-flex(0);
+                .article{
+                    .article-header{
+                        font-size: 18px;
+                        line-height: 1.2em;
+                        border-top: none;
+                    }
+                    .img-wrapper,
+                    .article-micro-author,
+                    &:nth-child(n+4) {
+                        display: unset;
+                    }
+                }
+                .special-link{
+                    margin: 0;
+                    min-width: 240px;
+                    height: 250px;
+                    padding: 30px;
+                    box-shadow: 0 0 12px rgb(0 0 0 / 8%);
+                }
+            }
+        }
+        .right-grid{
+            .article{
+                padding-bottom: 0;
+            }
+        }
+    }
+
+
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .box-mixed {
+        .left-grid {
+            .article {
+                min-width: 220px;
+                height: 240px;
+
+                .content-box {
+                    padding: 0 8px;
+                }
+            }
+
+            .mini-fix {
+                .special-link {
+                    min-width: 220px;
+                    height: 240px;
+                    padding: 25px;
+                }
+            }
+        }
+    }
+}
+
+

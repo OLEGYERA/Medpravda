@@ -1,0 +1,337 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?h0qwh3');
+  src:  url('fonts/icomoon.eot?h0qwh3#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?h0qwh3') format('truetype'),
+    url('fonts/icomoon.woff?h0qwh3') format('woff'),
+    url('fonts/icomoon.svg?h0qwh3#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-empty-star:before {
+  content: "\e942";
+  color: #2d9cdb;
+}
+.icon-half-star:before {
+  content: "\e943";
+  color: #2d9cdb;
+}
+.icon-star:before {
+  content: "\e944";
+  color: #2d9cdb;
+}
+.icon-instagram:before {
+  content: "\e941";
+}
+.icon-analogi:before {
+  content: "\e900";
+  color: #1d6289;
+}
+.icon-arrow_down:before {
+  content: "\e901";
+  color: #1d6289;
+}
+.icon-arrow_left:before {
+  content: "\e902";
+  color: #1d6289;
+}
+.icon-arrow_right:before {
+  content: "\e903";
+  color: #1d6289;
+}
+.icon-arrow_up:before {
+  content: "\e904";
+  color: #1d6289;
+}
+.icon-book:before {
+  content: "\e905";
+  color: #014f7a;
+}
+.icon-burger:before {
+  content: "\e906";
+  color: #1d6289;
+}
+.icon-check:before {
+  content: "\e907";
+  color: #06cb78;
+}
+.icon-comments:before {
+  content: "\e908";
+  color: #1d6289;
+}
+.icon-drugs:before {
+  content: "\e909";
+  color: #1d6289;
+}
+.icon-edit:before {
+  content: "\e90a";
+  color: #1d6289;
+}
+.icon-email:before {
+  content: "\e90b";
+  color: #1d6289;
+}
+.icon-facebook:before {
+  content: "\e90c";
+  color: #0280c7;
+}
+.icon-fast_forward:before {
+  content: "\e90d";
+  color: #1d6289;
+}
+.icon-adapted_manual:before {
+  content: "\e90e";
+  color: #1d6289;
+}
+.icon-editor-fb:before {
+  content: "\e90f";
+  color: #c4c4c4;
+}
+.icon-home:before {
+  content: "\e910";
+  color: #1d6289;
+}
+.icon-indications:before {
+  content: "\e911";
+  color: #1d6289;
+}
+.icon-official_manual:before {
+  content: "\e912";
+  color: #1d6289;
+}
+.icon-glyph-other:before {
+  content: "\e913";
+  color: #1d6289;
+}
+.icon-like:before {
+  content: "\e914";
+  color: #1d6289;
+}
+.icon-odnoklassniki:before {
+  content: "\e915";
+  color: #ffa724;
+}
+.icon-open_more:before {
+  content: "\e916";
+  color: #1d6289;
+}
+.icon-phone:before {
+  content: "\e917";
+  color: #1d6289;
+}
+.icon-pinterest-logo:before {
+  content: "\e918";
+}
+.icon-quotes_down:before {
+  content: "\e919";
+  color: #1d6289;
+}
+.icon-quotes_up:before {
+  content: "\e91a";
+  color: #1d6289;
+}
+.icon-reading_time:before {
+  content: "\e91b";
+  color: #1d6289;
+}
+.icon-search:before {
+  content: "\e91c";
+  color: #1d6289;
+}
+.icon-share:before {
+  content: "\e91d";
+  color: #1d6289;
+}
+.icon-telegram:before {
+  content: "\e91e";
+  color: #2d9cdb;
+}
+.icon-twitter:before {
+  content: "\e91f";
+  color: #0494d4;
+}
+.icon-appointment_doctor:before {
+  content: "\e920";
+  color: #1d6289;
+}
+.icon-composition:before {
+  content: "\e921";
+  color: #1d6289;
+}
+.icon-contraindications:before {
+  content: "\e922";
+  color: #1d6289;
+}
+.icon-children:before {
+  content: "\e923";
+  color: #1d6289;
+}
+.icon-glyph-contraindications:before {
+  content: "\e924";
+  color: #1d6289;
+}
+.icon-dosage:before {
+  content: "\e925";
+  color: #1d6289;
+}
+.icon-dosage_form:before {
+  content: "\e926";
+  color: #1d6289;
+}
+.icon-driver:before {
+  content: "\e927";
+  color: #1d6289;
+}
+.icon-fabricator:before {
+  content: "\e928";
+  color: #1d6289;
+}
+.icon-fabricator_location:before {
+  content: "\e929";
+  color: #1d6289;
+}
+.icon-features:before {
+  content: "\e92a";
+  color: #1d6289;
+}
+.icon-indications1:before {
+  content: "\e92b";
+  color: #1d6289;
+}
+.icon-interaction:before {
+  content: "\e92c";
+  color: #1d6289;
+}
+.icon-overdose:before {
+  content: "\e92d";
+  color: #1d6289;
+}
+.icon-pharma_props:before {
+  content: "\e92e";
+  color: #1d6289;
+}
+.icon-physical_chemical:before {
+  content: "\e92f";
+  color: #1d6289;
+}
+.icon-pregnancy:before {
+  content: "\e930";
+  color: #1d6289;
+}
+.icon-recipe:before {
+  content: "\e931";
+  color: #1d6289;
+}
+.icon-special_instructions:before {
+  content: "\e932";
+  color: #1d6289;
+}
+.icon-release_form:before {
+  content: "\e933";
+  color: #1d6289;
+}
+.icon-side_effects:before {
+  content: "\e934";
+  color: #1d6289;
+}
+.icon-storage_conditions:before {
+  content: "\e935";
+  color: #1d6289;
+}
+.icon-time_life:before {
+  content: "\e936";
+  color: #1d6289;
+}
+.icon-usage_and_dose:before {
+  content: "\e937";
+  color: #1d6289;
+}
+.icon-other:before {
+  content: "\e938";
+  color: #1d6289;
+}
+.icon-pharma_group:before {
+  content: "\e939";
+  color: #1d6289;
+}
+.icon-doctor:before {
+  content: "\e940";
+  color: #014f7a;
+}
+.icon-causes:before {
+  content: "\e93a";
+  color: #014f7a;
+}
+.icon-clinical-symptoms:before {
+  content: "\e93b";
+  color: #014f7a;
+}
+.icon-complications:before {
+  content: "\e93c";
+  color: #014f7a;
+}
+.icon-definition:before {
+  content: "\e93d";
+  color: #014f7a;
+}
+.icon-diagnostics:before {
+  content: "\e93e";
+  color: #014f7a;
+}
+.icon-diet:before {
+  content: "\e93f";
+  color: #014f7a;
+}
+.icon-provisions:before {
+  content: "\e958";
+  color: #014f7a;
+}
+.icon-icon-remedies:before {
+  content: "\e959";
+  color: #014f7a;
+}
+.icon-prevention:before {
+  content: "\e95a";
+  color: #014f7a;
+}
+.icon-sources:before {
+  content: "\e95b";
+  color: #014f7a;
+}
+.icon-special_situations:before {
+  content: "\e95c";
+  color: #014f7a;
+}
+.icon-spread:before {
+  content: "\e95d";
+  color: #014f7a;
+}
+.icon-stages_development:before {
+  content: "\e95e";
+  color: #014f7a;
+}
+.icon-treatment:before {
+  content: "\e95f";
+  color: #014f7a;
+}
+.icon-vaccination:before {
+  content: "\e960";
+  color: #014f7a;
+}

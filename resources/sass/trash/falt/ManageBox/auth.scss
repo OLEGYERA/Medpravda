@@ -1,0 +1,145 @@
+@import "../colors";
+@import "../fonts";
+@import "../vars";
+@import "../functions";
+@import "../clear";
+
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+.mp-background{
+  font-family: $UC;
+  font-size: 16px;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  background-color: $bg-grey;
+  .mp-visual-box{
+    width: 65%;
+    height: 80%;
+    background-color: #fff;
+    .mp-preview{
+      width: 50%;
+      height: 100%;
+      background-size: cover;
+      background-position: center center;
+      position: relative;
+      background-color: $mp-brand-blue;
+      &::after{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $dark-patch;
+      }
+    }
+    .mp-auth-box{
+      width: 50%;
+      height: 100%;
+      h1.auth-title{
+        font-size: em(32);
+        font-weight: normal;
+        margin: 0 0 25px;
+        color: $text-grey;
+      }
+      .auth-error,
+      .auth-succes{
+        width: 300px;
+        position: relative;
+        strong{
+          position: absolute;
+          top: -24px;
+          font-size: em(14);
+          font-family: $UC;
+          font-weight: 500;
+          color: #F44336;
+        }
+      }
+      .auth-succes{
+        strong{
+          color: #2ab27b;
+        }
+      }
+      .inp-auth-row,
+      .inp-forgot-row{
+        input{
+          text-align: center;
+          font-family: $UC;
+          font-size: em(20);
+          width: 210px;
+          height: 45px;
+          padding-top: 4px;
+          padding-left: 15px;
+          padding-right: 15px;
+          border: 2px solid $border-grey;
+          border-radius: 4px 0px 0px 4px;
+          outline: none;
+          color: $text-grey;
+          box-sizing: border-box;
+          position: relative;
+          &::placeholder{
+            color: $text-grey;
+          }
+          &:focus{
+            border: 1px solid $mp-brand-blue;
+          }
+          &:last-child{
+            border-left: none;
+            border-radius: 0px 4px 4px 0px;
+            &:focus{
+              padding-left: 13px;
+              border: 1px solid $mp-brand-blue;
+            }
+          }
+
+        }
+        margin-bottom: 15px;
+      }
+      .inp-forgot-row{
+        input{
+          width: 420px;
+          border-radius: 4px!important;
+          border: 2px solid $border-grey!important;
+        }
+      }
+      .btn-auth {
+        width: 420px;
+        height: 40px;
+        box-sizing: border-box;
+        font-family: $U;
+        font-weight: 500;
+        font-size: em(16);
+        letter-spacing: -0.5px;
+        padding-top: 3px;
+        background-color: $mp-brand-blue;
+        border: none;
+        color: #fff;
+        margin-bottom: 20px;
+        cursor: pointer;
+        outline: none;
+        &:hover{
+          background-color: #2f87b2;
+        }
+      }
+      .forgot-row{
+        font-size: em(16);
+        cursor: default;
+        color: $text-grey;
+        .textmark{
+          color: $mp-brand-blue;
+          a{
+            color: $mp-brand-blue;
+            text-decoration: none;
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}

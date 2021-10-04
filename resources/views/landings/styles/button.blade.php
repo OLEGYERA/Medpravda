@@ -1,0 +1,1 @@
+style="color:#{{ $block->{'button'.$number}['color']??'' }};background:#{{ $block->{'button'.$number}['background']??'' }};border-radius:{{ $block->{'button'.$number}['style']??'' }}px"

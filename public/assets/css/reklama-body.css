@@ -1,0 +1,54 @@
+.adv-brand {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+}
+.body-promotion.tablet,
+.body-promotion.mobile {
+	display: none;
+}
+
+/* Планшеты */
+@media only screen and (min-width : 768px) and (max-width : 1080px) {
+	.body-promotion.desktop,
+	.body-promotion.mobile {
+		display: none;
+	}
+	.body-promotion.tablet {
+		display: block;
+		height: 115px;
+	}
+	.body-promotion.tablet img {
+		position: absolute;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 115px;
+	}
+}
+/* Смартфоны */
+@media only screen and (min-width : 320px) and (max-width : 767px) {
+	.body-promotion.tablet,
+	.body-promotion.desktop {
+		display: none;
+	}
+	.body-promotion.mobile {
+		display: block;
+		height: 80px;
+	}
+	.body-promotion.mobile img {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		width: 100%;
+		height: 80px;
+	}
+	.clone-to .body-promotion.mobile {
+		margin: 20px 0;
+	}
+	.clone-to .body-promotion.mobile img {
+		position: relative;
+	}
+}

@@ -1,0 +1,26 @@
+@import "customization";
+@import "skeleton";
+@import "components/search";
+@import "components/templates";
+@import "global_modules/header";
+@import "global_modules/footer";
+@import "modules/box-intro";
+@import "components/article";
+@import "modules/box-mixed";
+@import "modules/box-news";
+@import "modules/box-articles";
+@import "modules/box-directory";
+@import "modules/box-plates";
+@import "modules/box-medical";
+@import "modules/box-email";
+@import "modules/box-interview";
+@import "modules/pub-simple";
+
+@import "modules/sec-interview";
+
+
+#cookies-alert{
+    display: none;
+}
+
+

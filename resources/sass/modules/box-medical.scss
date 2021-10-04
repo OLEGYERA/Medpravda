@@ -1,0 +1,48 @@
+@import "../customization";
+
+.box-medical{
+    .column{
+        width: 25%;
+        padding: 0 12px 12px 12px;
+        .column-box{
+            margin-top: 15px;
+            a{
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 1.2em;
+                @include line-clamp(1);
+                margin-bottom: 20px;
+                text-decoration: underline;
+            }
+        }
+    }
+    h3.group-title{
+        text-transform: unset;
+        justify-content: flex-start;
+        a{
+            padding: 5px 15px 5px 0;
+            background-color: $white;
+            color: $blue;
+        }
+        &:after{
+            background-color: $blue;
+        }
+    }
+}
+
+@media only screen and (max-width: 989px) {
+    .box-medical{
+        .column {
+            width: 50%;
+        }
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .box-medical{
+        .column {
+            width: 100%;
+        }
+    }
+}
+

@@ -1,0 +1,114 @@
+@import "../customization";
+
+.main-wrapper{
+    .sec-interview{
+        .pres-row {
+            z-index: 1;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            padding: 45px 18px;
+            &:before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                mix-blend-mode: multiply;
+                @include background-opacity(#efefef, 1);
+            }
+        }
+    }
+    &.full {
+        .sec-interview{
+            .pres-row {
+                @include wrap-width(45, 1300, 12);
+            }
+        }
+    }
+}
+
+.sec-interview{
+    .pres-row{
+        @include init-flex(0, center, between);
+        flex-wrap: wrap;
+        width: 100%;
+        .title-shell{
+            width: 100%;
+        }
+        .article{
+            width: 33.3%;
+        }
+    }
+    .list-row{
+        width: 100%;
+        .left-grid{
+            @include wrap-on;
+            width: 75%;
+            .article{
+                width: 50%;
+            }
+        }
+        .right-grid{
+            width: 25%;
+        }
+
+    }
+}
+
+
+@media only screen and (max-width: 1500px) {
+    .main-wrapper{
+        &.full {
+            .sec-interview .pres-row{
+                @include wrap-width(45, 1080, 12);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1080px){
+    .main-wrapper{
+        .sec-interview .pres-row{
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 989px){
+    .sec-interview{
+        .list-row{
+            .left-grid, .right-grid{
+                width: 100%;
+            }
+        }
+
+        .right-grid{
+            @include wrap-on;
+            .article{
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .sec-interview{
+        .pres-row{
+            .article{
+                width: 100%;
+            }
+        }
+        .list-row{
+            .left-grid, .right-grid{
+                .article{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

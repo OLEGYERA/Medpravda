@@ -1,0 +1,133 @@
+//colors
+$white: #fff;
+$blue: #003EB8;
+$light-blue: #3c68bd;
+$red: #BA0631;
+$light-red: #FF154D;
+$light-gray: #4F5253;
+$placeholder: rgba(134, 152, 160, 0.84);
+$dark-gray: #1E282D;
+$thin-gray: rgba(79, 82, 83, 0.2);
+$border: rgba(255, 255, 255, 0.5);
+//////
+////
+///
+//
+
+//vars
+$radius: 4px;
+//////
+////
+///
+//
+
+//mixins
+@mixin eclipsed-bottom(){
+    background: linear-gradient(.33deg, #111111f5 .28%, #262a2b00 30.47%);
+}
+
+@mixin eclipsed-right(){
+    background: linear-gradient(270.05deg, #111111f5 29.7%, #181a1ad9 39.64%, #262a2b4d 54.65%);
+}
+
+@mixin eclipsed-horizontal(){
+    background: linear-gradient(270.05deg, #111111a8 29.7%, #181a1ad9 39.64%, #262a2b4d 54.65%),
+                linear-gradient(91deg, #111111a8 29.7%, #181a1ad9 39.64%, #262a2b4d 54.65%);
+}
+
+@mixin eclipsed-bottom-large(){
+    background: linear-gradient(.33deg, #111111f5 .28%, #262a2b00 50.47%);
+}
+
+@mixin eclipsed-hover(){
+    background-color: rgb(35 34 34 / 30%);
+}
+
+
+@mixin shadow(){
+    box-shadow: 0 16px 24px rgba(0, 0, 0, 0.06),
+    0 2px 6px rgba(0, 0, 0, 0.04),
+    0 0 1px rgba(0, 0, 0, 0.04);
+}
+
+
+@mixin shadow-square(){
+    box-shadow: 0 16px 24px rgba(0, 0, 0, 0.2),
+    0 2px 6px rgba(0, 0, 0, 0.2),
+    0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+
+//--flex bootstrap templates
+@mixin init-flex($type: 0, $align: 0, $content: 'flex-start'){
+    display: flex;
+    @if $type != 0 {
+        flex-direction: column;
+    }
+    @if $align != 0{
+        align-items: $align;
+    }
+
+    @if $content == 'between'{
+        justify-content: space-between;
+    }
+    @else if $content == 'around'{
+        justify-content: space-around;
+    }
+    @else if $content != 'flex-start' {
+        justify-content: $content;
+    }
+}
+//--
+
+@mixin background-opacity($color, $opacity: 0.3) {
+    background: rgba($color, $opacity);
+}
+
+@mixin wrap-on() {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@mixin wrap-off() {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+@mixin wrap-width($vertical, $width, $padding: 0){
+
+    @if $padding != 0 {
+        padding: #{$vertical}px calc(calc(100% - #{$width}px)/2 - #{$padding}px);
+    }
+    @else {
+        padding: #{$vertical}px calc(calc(100% - #{$width}px)/2);
+    }
+}
+
+@mixin line-clamp($count){
+    display: -webkit-box;
+    -webkit-line-clamp: $count;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+//////
+////
+///
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+

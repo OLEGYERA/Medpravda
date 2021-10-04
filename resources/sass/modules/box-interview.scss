@@ -1,0 +1,65 @@
+@import "../customization";
+
+.box-interview{
+    background-color: $dark-gray;
+    .grid{
+        .article{
+            width: 25%;
+            padding: 0;
+            .article-body{
+                padding: 12px;
+                border-radius: 3px;
+                .content-box{
+                    .article-header{
+                        h3{
+                            a{
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+                &:hover{
+                    background-color: $white;
+                    .content-box{
+                        .article-header{
+                            h3{
+                                a{
+                                    color: $dark-gray;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 989px) {
+    .box-interview{
+        .grid{
+            .article{
+                width: 50%;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .box-interview{
+        padding-bottom: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 680px){
+    .box-interview{
+        .grid{
+            .article{
+                width: 100%;
+            }
+
+        }
+    }
+}

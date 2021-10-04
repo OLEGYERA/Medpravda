@@ -1,0 +1,522 @@
+.flex {
+  display: -webkit-box;
+  display: flex;
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+}
+
+.flex-row-s-c {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.flex-row-s-e {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-align: end;
+          align-items: flex-end;
+}
+
+.flex-row-c-s {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+          align-items: flex-start;
+}
+
+.flex-row-c-c {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.flex-row-c-e {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+          align-items: flex-end;
+}
+
+.flex-row-e-s {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+          align-items: flex-start;
+}
+
+.flex-row-e-c {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.flex-row-e-e {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+          align-items: flex-end;
+}
+
+.flex-row-sb-s {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+          align-items: flex-start;
+}
+
+.flex-row-sb-c {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.flex-row-sb-e {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+          align-items: flex-end;
+}
+
+.flex-row-sa-s {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  justify-content: space-around;
+  -webkit-box-align: start;
+          align-items: flex-start;
+}
+
+.flex-row-sa-c {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  justify-content: space-around;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.flex-row-sa-e {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  justify-content: space-around;
+  -webkit-box-align: end;
+          align-items: flex-end;
+}
+
+.flex-col {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+.flex-col-s-c {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.flex-col-s-e {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: end;
+          align-items: flex-end;
+}
+
+.flex-col-c-s {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+          align-items: flex-start;
+}
+
+.flex-col-c-c {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.flex-col-c-e {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+          align-items: flex-end;
+}
+
+.flex-col-e-s {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+          align-items: flex-start;
+}
+
+.flex-col-e-c {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.flex-col-e-e {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+          align-items: flex-end;
+}
+
+.flex-col-sb-s {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+          align-items: flex-start;
+}
+
+.flex-col-sb-c {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.flex-col-sb-e {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+          align-items: flex-end;
+}
+
+.flex-col-sa-s {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  justify-content: space-around;
+  -webkit-box-align: start;
+          align-items: flex-start;
+}
+
+.flex-col-sa-c {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  justify-content: space-around;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.flex-col-sa-e {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  justify-content: space-around;
+  -webkit-box-align: end;
+          align-items: flex-end;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.mp-background {
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  background-color: #E5E5E5;
+}
+
+.mp-background .mp-visual-box {
+  width: 65%;
+  height: 80%;
+  background-color: #fff;
+}
+
+.mp-background .mp-visual-box .mp-preview {
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  background-color: #3091C1;
+}
+
+.mp-background .mp-visual-box .mp-preview::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.47);
+}
+
+.mp-background .mp-visual-box .mp-auth-box {
+  width: 50%;
+  height: 100%;
+}
+
+.mp-background .mp-visual-box .mp-auth-box h1.auth-title {
+  font-size: 2em;
+  font-weight: normal;
+  margin: 0 0 25px;
+  color: #555555;
+}
+
+.mp-background .mp-visual-box .mp-auth-box .auth-error,
+.mp-background .mp-visual-box .mp-auth-box .auth-succes {
+  width: 300px;
+  position: relative;
+}
+
+.mp-background .mp-visual-box .mp-auth-box .auth-error strong,
+.mp-background .mp-visual-box .mp-auth-box .auth-succes strong {
+  position: absolute;
+  top: -24px;
+  font-size: 0.875em;
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-weight: 500;
+  color: #F44336;
+}
+
+.mp-background .mp-visual-box .mp-auth-box .auth-succes strong {
+  color: #2ab27b;
+}
+
+.mp-background .mp-visual-box .mp-auth-box .inp-auth-row,
+.mp-background .mp-visual-box .mp-auth-box .inp-forgot-row {
+  margin-bottom: 15px;
+}
+
+.mp-background .mp-visual-box .mp-auth-box .inp-auth-row input,
+.mp-background .mp-visual-box .mp-auth-box .inp-forgot-row input {
+  text-align: center;
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-size: 1.25em;
+  width: 210px;
+  height: 45px;
+  padding-top: 4px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 2px solid #EEEEEE;
+  border-radius: 4px 0px 0px 4px;
+  outline: none;
+  color: #555555;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.mp-background .mp-visual-box .mp-auth-box .inp-auth-row input::-webkit-input-placeholder, .mp-background .mp-visual-box .mp-auth-box .inp-forgot-row input::-webkit-input-placeholder {
+  color: #555555;
+}
+
+.mp-background .mp-visual-box .mp-auth-box .inp-auth-row input::-moz-placeholder, .mp-background .mp-visual-box .mp-auth-box .inp-forgot-row input::-moz-placeholder {
+  color: #555555;
+}
+
+.mp-background .mp-visual-box .mp-auth-box .inp-auth-row input:-ms-input-placeholder, .mp-background .mp-visual-box .mp-auth-box .inp-forgot-row input:-ms-input-placeholder {
+  color: #555555;
+}
+
+.mp-background .mp-visual-box .mp-auth-box .inp-auth-row input::-ms-input-placeholder, .mp-background .mp-visual-box .mp-auth-box .inp-forgot-row input::-ms-input-placeholder {
+  color: #555555;
+}
+
+.mp-background .mp-visual-box .mp-auth-box .inp-auth-row input::placeholder,
+.mp-background .mp-visual-box .mp-auth-box .inp-forgot-row input::placeholder {
+  color: #555555;
+}
+
+.mp-background .mp-visual-box .mp-auth-box .inp-auth-row input:focus,
+.mp-background .mp-visual-box .mp-auth-box .inp-forgot-row input:focus {
+  border: 1px solid #3091C1;
+}
+
+.mp-background .mp-visual-box .mp-auth-box .inp-auth-row input:last-child,
+.mp-background .mp-visual-box .mp-auth-box .inp-forgot-row input:last-child {
+  border-left: none;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.mp-background .mp-visual-box .mp-auth-box .inp-auth-row input:last-child:focus,
+.mp-background .mp-visual-box .mp-auth-box .inp-forgot-row input:last-child:focus {
+  padding-left: 13px;
+  border: 1px solid #3091C1;
+}
+
+.mp-background .mp-visual-box .mp-auth-box .inp-forgot-row input {
+  width: 420px;
+  border-radius: 4px !important;
+  border: 2px solid #EEEEEE !important;
+}
+
+.mp-background .mp-visual-box .mp-auth-box .btn-auth {
+  width: 420px;
+  height: 40px;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  letter-spacing: -0.5px;
+  padding-top: 3px;
+  background-color: #3091C1;
+  border: none;
+  color: #fff;
+  margin-bottom: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.mp-background .mp-visual-box .mp-auth-box .btn-auth:hover {
+  background-color: #2f87b2;
+}
+
+.mp-background .mp-visual-box .mp-auth-box .forgot-row {
+  font-size: 1em;
+  cursor: default;
+  color: #555555;
+}
+
+.mp-background .mp-visual-box .mp-auth-box .forgot-row .textmark {
+  color: #3091C1;
+}
+
+.mp-background .mp-visual-box .mp-auth-box .forgot-row .textmark a {
+  color: #3091C1;
+  text-decoration: none;
+}
+
+.mp-background .mp-visual-box .mp-auth-box .forgot-row .textmark a:hover {
+  text-decoration: underline;
+}
+

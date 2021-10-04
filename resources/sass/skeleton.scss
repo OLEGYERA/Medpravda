@@ -1,0 +1,121 @@
+@import "customization";
+
+//---- Clear ----//
+*, *:before, *:after {
+    box-sizing: border-box;
+    outline: none;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, strike, strong, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+input{
+    border: none;
+    font-family: "Roboto", sans-serif;
+}
+a{
+    text-decoration: none;
+    color: $dark-gray;
+    &:hover{
+        color: $blue;
+    }
+}
+
+.wrap{
+    height: inherit;
+    width: inherit;
+    max-width: inherit;
+    max-height: inherit;
+}
+
+//!--- Clear ---!//
+
+//---- Skeleton ----//
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: $white;
+    @include init-flex(0);
+    width: 100%;
+    min-width: 320px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: unset;
+}
+
+.main-wrapper{
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    @include shadow;
+    .fixed-wrap{
+        top: 0;
+        position: fixed;
+        z-index: 99;
+    }
+    .full-content{
+        @include init-flex(1);
+        width: 100%;
+        margin-top: 65px;
+    }
+    .mp-box{                    //.full-content .mp-box
+        width: 100%;
+        padding: 20px 18px;
+        .grid{
+            width: 100%;
+            @include wrap-on;
+            align-items: flex-start;
+        }
+    }
+
+
+    &.full {
+        max-width: 100%;
+        box-shadow: none;
+        .fixed-wrap {}
+        .mp-box{
+            @include wrap-width(20, 1300, 12);
+        }
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .main-wrapper{
+        max-width: 1080px;
+        &.full{
+            .mp-box{
+                @include wrap-width(20, 1080, 12);
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1080px){
+    .main-wrapper{
+        box-shadow: none;
+        max-width: 100%;
+        .mp-box{
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+@media only screen and (max-width: 989px){}
+
+@media only screen and (max-width: 680px){
+    .main-wrapper{
+        .full-content{
+            margin-top: 55px
+        }
+    }
+}
+
+@media only screen and (max-width: 480px){
+}
+
+
+//!--- Skeleton ---!//

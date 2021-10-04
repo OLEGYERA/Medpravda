@@ -1,0 +1,1638 @@
+@import './crear';
+@import './vars';
+
+
+.citramone_content{
+   .citramone_head{
+      width: 100%;
+      height: 100vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../img/first_bg.png);
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      .head-top_bg{
+         position: absolute;
+         top: 0;
+         background-image: url(../img/plashka1.png);
+         background-position: top;
+         background-size: cover;
+         background-repeat: no-repeat;
+         width: 100%;
+         height: 45%;
+         .head_logo{
+            padding: 16px 0 0 190px;
+            a{
+               width: 125px;
+               height: 160px;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               img{
+                  width: 100%;
+                  height: 100%;
+               }
+            }
+         }
+      }
+      .head_content{
+         width: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         flex-direction: column;
+         height: 75%;
+         .content_row-end{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            .content_title{
+               width: 32%;
+               font-family: $calibri;
+               font-weight: bold;
+               font-size: 60px;
+               line-height: 73px;
+               text-align: center;
+               color: #FF0000;
+               span{
+                  color: #00A849;
+               }
+            }
+            .citramon_logo{
+               width: 27%;
+               margin: 0 85px 0 35px;
+               img{
+                  width: 100%;
+               }
+            }
+         }
+         .link_content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 35px 0 0 0;
+            a{
+                   padding: 40px 90px;
+               border: 6px solid #FFFFFF;
+               box-sizing: border-box;
+               border-radius: 63px;
+               font-family:$rcodensed;
+               font-weight: bold;
+               font-size: 48px;
+               line-height: 56px;
+               text-align: center;
+               color: #00A849;
+            }
+         }
+      }
+   }
+   .citramon_content-view{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &.top-bg{
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-image: url(../img/all_bg.png);
+         width: 100%;
+         height: 100vh;
+         position: relative;
+         background-position: center;
+      }
+      .content_view{
+         width: 100%;
+         .title{
+            margin: 0 0 27px 0;
+            font-family: $calibri;
+            font-weight: normal;
+            font-size: 38px;
+            line-height: 46px;
+            text-align: center;
+            color: #232323;
+         }
+         .content_clider{
+            position: relative;
+            .swiper-container{
+               position: initial;
+               width: 78vw;
+               .sw-next,.sw-prev{
+                  display: block;
+                  top: 45%;
+                  width: 30px;
+                  height: 30px;
+                  border-top: 3px solid #073e89;
+                  border-left: 3px solid #073e89;
+                  position: absolute;
+                  z-index: 2;
+                  cursor: pointer;
+                  &.swiper-button-disabled{
+                     border-top: 3px solid  #93424c;
+                     border-left: 3px solid  #93424c;
+                  }
+                }
+                .sw-prev{
+                  transform: rotate(-45deg);
+                  left: 8%;
+                }
+                .sw-next{
+                  transform: rotate(135deg);
+                  right: 8%;
+                }
+               .swiper-wrapper{
+                  
+                  .swiper-slide{
+                     height: 285px;
+                     border-radius: 30px;
+                     overflow: hidden;
+                     box-sizing: border-box;
+                     // position: relative;
+                     // display: flex;
+                     // align-items: center
+                     img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                     }
+                     .slide_content{
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        padding: 30px 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        p{
+                           font-family:$rcodensed;
+                           font-weight: normal;
+                           font-size: 36px;
+                           line-height: 42px;
+                           display: flex;
+                           align-items: center;
+                           text-align: center;
+                           color: #000000;
+                           background: #FFFFFF;
+                           opacity: 0.8;
+                           height: 100%;
+                           width: 100%;
+                           justify-content: center;
+                        }
+                     }
+                  }
+                
+               }
+            }
+            .citramon_slider{
+               display: flex;
+               .slider-slide{
+              
+                  img{
+                  
+                  }
+               }
+            }
+         }
+      }
+      .view_bottom{
+         background: #FFFFFF;
+         position: absolute;
+         width: 100%;
+         left: 0;
+         bottom: 0;
+         z-index: 20;
+         .bottom_img{
+            &.self-medication{
+               padding: 10px 10px 0 10px;
+            }
+            .desktop_img{
+               width: 100%;
+               height: 100%;
+            }
+            .mobile_img{
+               display: none;
+               width: 100%;
+               height: 100%;
+            }
+         }
+      }
+      .substances_view{
+         .title{
+            margin: 0 0 49px 0;
+            font-family: $calibri;
+            font-weight: normal;
+            font-size: 26px;
+            line-height: 32px;
+            text-align: center;
+            color: #232323;
+         }
+         .slider_view{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            width: 550px;
+            height: 440px;
+            margin: 0 auto;
+            &::before{
+               position: absolute;
+               content: '';
+               width: 100%;
+               height: 100%;
+               border-radius: 50%;
+               border: 4px solid #FFFFFF;
+            }
+            .text_view{
+               position: absolute;
+               // opacity: 0;
+               transform: scale(0);
+               display: flex;
+               flex-direction: column;
+               padding: 50px;
+               background: #00A849;
+               border-radius: 30px;
+               font-family: $calibri;
+               font-weight: bold;
+               font-size: 24px;
+               line-height: 29px;
+               color: #FFFFFF;
+               transition: all 0.5s linear;
+               span{
+                  text-align: center;
+                  margin: 0  0 5px 0;
+                  &:last-child{
+                     margin: 0;
+                  }
+               }
+               &.text_view_active{
+                  // opacity: 1;
+                  transform: scale(1);
+               }
+            }
+            .tabletka_row{
+               position: absolute;
+               display: flex;
+               align-items: center;
+               z-index: 9;
+               .tabletka_icon{
+                  background: #00A849;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 63px;
+                  height: 60px;
+                  transition: all 0.5s linear;
+                  position: relative;
+                  text-align: end;
+                  img{
+                     width: 70%;
+                  }
+                  &.tabletka_icon_active{
+                     width: 68px;
+                     height: 68px;
+                     .text_icon{
+                        display: flex;
+                     }
+                  }
+                
+                  .text_icon{
+                     display: none;
+                     position: absolute;
+                     font-family: $roboto;
+                     font-weight: 900;
+                     font-size: 38px;
+                     line-height: 51px;
+                     color: #FF0000;
+                     transition: all 0.5s linear;
+                  }
+               }
+               &.center{
+                  top: -20px;
+                  justify-content: center;
+                  .tabletka_icon{
+                     .text_icon{
+                        right: 115px;
+                     }
+                  }
+               }
+               &.spaceBetween{
+                  bottom: 10%;
+                  width: 85%;
+                  justify-content: space-between;
+                  .tabletka_icon{
+                     background: #00A849;
+                     .text_icon{
+                        right: 100px;
+                        top: 0;
+                     }
+                     &:last-child{
+                        .text_icon{
+                           left: 100px;
+                           top: 0;
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+      .reception_view{
+         width: 100%;
+         .reception_title{
+            font-family: $calibri;
+            font-weight: normal;
+            font-size: 48px;
+            line-height: 59px;
+            text-align: center;
+            color: #232323;
+            margin: 0 0 30px 0;
+         }
+            .reception_content{
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+               width: 55%;
+               margin: 0 auto;
+               .row_item{
+                  width: 40%;
+                  .item_image{
+                     width: 100%;
+                     img{
+                        width: 100%;
+                     }
+                  }
+                  .sickness_title{
+                     font-family: $calibri;
+                     font-weight: bold;
+                     font-size: 36px;
+                     line-height: 44px;
+                     color: #FF0000;
+                     text-align: center;
+                     margin: 0 0 10px 0;
+                     opacity: 0;
+                     transition: opacity 1s linear;
+                     &.show{
+                        opacity: 1;
+                     }
+                  }
+                  .item_descriprion{
+                     width: 100%;
+                     background: #E5E5E5;
+                     border: 1px solid rgba(0, 0, 0, 0.76);
+                     box-sizing: border-box;
+                     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                     border-radius: 30px;
+                     padding: 20px 20px 24px 30px;
+                     margin: 0;
+                     li{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin: 0 0 25px 0;
+                        &:last-child{
+                           margin: 0;
+                        }
+                        img{
+                        }
+                        span{
+                           width: 65%;
+                           font-family: $calibri;
+                           font-weight: normal;
+                           font-size: 18px;
+                           line-height: 22px;
+                           color: #232323;
+                           text-align: end;
+                        }
+                     }
+                  }
+               }
+            }
+      }
+      .sitramon_list-desc{
+         width: 60%;
+         margin: 0 auto;
+         .list_view{
+            width: 100%;
+            li{
+               font-family: $roboto;
+               font-weight: normal;
+               font-size: 36px;
+               line-height: 42px;
+               display: flex;
+               align-items: center;
+               color: #232323;
+               margin: 0 0 25px 0;
+               &:last-child{
+                  margin: 0;
+               }
+               img{
+                  width: 5%;
+                  margin: 0 35px 0 0;
+               }
+            }
+         }
+      }
+      .citramon_offer{
+         display: flex;
+    align-items: center;
+    justify-content: center;
+         h2{
+            width: 35%;
+            font-family: $calibri;
+            font-weight: bold;
+            font-size: 72px;
+            line-height: 88px;
+            text-align: center;
+            color: #FF0000;
+            span{
+               color: #00A849;
+            }
+         }
+         .find_to{
+            margin: 0 0 0 40px;
+            width: 30%;
+            flex-direction: column;
+            padding: 20px;
+            // background-color: rgb(196,196,196, 0.4);
+            // background: #C4C4C4;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            filter: drop-shadow(0px 6px 40px rgba(0, 0, 0, 0.3));
+            .citramon_title{
+               font-family: $rcodensed;
+               font-weight: bold;
+               font-size: 48px;
+               line-height: 56px;
+               text-align: center;
+               letter-spacing: -0.03em;
+               color: #FFFFFF;
+               display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: fit-content;
+               div{
+                  margin: 0 0 0 20px;
+                  color: #00A849;
+               }
+               span{
+                  position: absolute;
+                  right: -20px;
+                  top: -10px;
+                  font-size: 25px;
+                  color: #00A849;
+               }
+            }
+            figure{
+               margin: 35px 0 0 0;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               width: 100%;
+               img{
+                  width: 70%;
+               }
+            }
+            .link_to{
+               width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 35px 0 0 0;
+               a{
+                  background: #ff0000;
+                  color: #FFFFFF;
+                  font-family: $roboto;
+                  font-size: 18px;
+                  line-height: 29px;
+                  padding: 18px 30px;
+                  border-radius: 30px;
+               }
+            }
+         }
+      }
+   }
+}
+
+
+@media only screen and (max-width: 1600px){
+   body{
+      .citramone_content{
+         .citramone_head{
+            .head-top_bg{
+               .head_logo{
+                  padding: 16px 0 0 85px;
+                  a{
+                     width: 105px;
+                     height: 120px;
+                  }
+               }
+            }
+            .head_content{
+               .content_row-end{
+                  .content_title{
+                     font-size: 56px;
+                     line-height: 65px;
+                  }
+                  .citramon_logo{
+
+                  }
+               }
+               .link_content{
+                  a{
+                     padding: 30px 68px;
+                     font-size: 42px;
+                     line-height: 51px;
+                  }
+               }
+            }
+         }
+         .citramon_content-view{
+            .content_view{
+               .content_clider{
+                  .swiper-container{
+                     .swiper-wrapper{
+                        .swiper-slide{
+                           height: 235px;
+                           .slide_content{
+                              p{
+                                 font-size: 32px;
+                                 line-height: 39px;
+                              }  
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+            .view_bottom{
+               .bottom_img{
+                  &.self-medication{
+                     height: 80px;
+                  }
+               }
+            }
+            .substances_view{
+               margin: 50px 0 0 0;
+               .slider_view{
+                  width: 420px;
+                  height: 345px;
+                  .text_view{
+                     padding: 25px;
+                     font-size: 20px;
+                     line-height: 25px;
+                  }
+                  .tabletka_row{
+                     .tabletka_icon{
+                        width: 45px;
+                        height: 45px;
+                        &.active{
+                           width: 60px;
+                           height: 60px;
+                        }
+                        .text_icon{
+                           font-size: 28px;
+                           line-height: 39px;
+                        }
+                     }
+                  }
+               }
+            }
+            .reception_view{
+               .reception_content{
+                  .row_item{
+                     .item_image{
+                        height: 210px;
+                        img{
+                           height: 100%;
+                        }
+                     }
+                     .sickness_title{
+                        font-size: 28px;
+                        line-height: 40px;
+                     }
+                     .item_descriprion{
+                        padding: 15px 20px 20px 20px;
+                        li{
+                           span{
+                              width: 80%;
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+            .sitramon_list-desc{
+               .list_view{
+                  li{
+                     font-size: 28px;
+                     line-height: 39px;
+                     margin: 0 0 20px 0;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+@media only screen and (max-width: 1520px){
+   body{
+      .citramone_content{
+         .citramon_content-view{
+            .substances_view{
+               margin: 80px 0 0 0;
+            }
+            .reception_view{
+               margin: 55px 0 0 0;
+               .reception_title{
+                  font-size: 46px;
+                  line-height: 51px;
+               }  
+               .reception_content{
+                  .row_item{
+                     .item_descriprion{
+                        li{
+                           margin: 0 0 20px 0; 
+                        }
+                     }
+                  }
+               }
+            }
+            .sitramon_list-desc{
+               padding: 80px 0 0 0;
+            }
+         }
+      }
+   }
+}
+@media only screen and (max-width: 1440px){
+   body{
+      .citramone_content{
+         .citramone_head{
+            .head-top_bg{
+               .head_logo{
+                  padding: 16px 0 0 45px;
+                  a{
+                     width: 125px;
+                     height: 150px;
+                  }
+               }
+            }
+            .head_content{
+               .content_row-end{
+
+               }
+               .link_content{
+                  a{
+                     padding: 20px 68px;
+                     font-size: 38px;
+                     line-height: 49px;
+                  }
+               }
+            }
+         }
+         .citramon_content-view{
+            .content_view{
+               .title{
+                  font-size: 32px;
+                  line-height: 39px;
+               }
+               .content_clider{
+                  .swiper-container{
+                     .swiper-wrapper{
+                        .swiper-slide{
+                           height: 210px;
+                           .slide_content{
+                              p{
+                                 font-size: 28px;
+                                 line-height: 31px;
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+            .substances_view{
+               margin: 80px 0 0 0px;
+               .title{
+                  font-size: 22px;
+                  line-height: 29px;
+               }
+               .slider_view{
+                  width: 400px;
+                  height: 330px;
+                  .tabletka_row{
+                     .tabletka_icon{
+                        .text_icon{
+                           font-size: 24px;
+                           line-height: 31px;
+                        }
+                     }
+                  }
+               }
+            }
+            .reception_view{
+               margin: 40px 0 0 0;
+               .reception_title{
+                  font-size: 38px;
+                  line-height: 49px;
+               }
+               .reception_content{
+                  .row_item{
+                     .item_image{
+
+                     }
+                     .item_descriprion{
+                        li{
+                           margin: 0 0 15px 0;
+                           span{
+                              width: 80%;
+                              font-size: 16px;
+                              line-height: 21px;
+                           }
+                        }
+                     }
+                  }  
+               }
+            }
+            .sitramon_list-desc{
+               .list_view{
+                  li{
+                     font-size: 24px;
+                     line-height: 31px;
+                     margin: 0 0 18px 0;
+                  }
+               }
+            }
+            .citramon_offer{
+               h2{
+                  font-size: 64px;
+                  line-height: 79px;
+               }
+               .find_to{
+                  .link_to{
+                     a{
+                        font-size: 16px;
+                        line-height: 21px;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+@media only screen and (max-width: 1280px){
+   body{
+      .citramone_content{
+         .citramon_content-view{
+            .citramon_offer{
+               h2{
+                  font-size: 62px;
+    line-height: 75px;
+               }
+            }  
+         }
+      }
+   }
+}
+@media only screen and (max-width: 1024px){
+   body{
+      .citramone_content{
+         .citramone_head{
+            .head-top_bg{
+               .head_logo{
+                  a{
+                     width: 130px;
+                     height: 125px;
+                  }
+               }
+            }
+            .head_content{
+               .content_row-end{
+                  .content_title{
+                     font-size: 42px;
+                     line-height: 56px;
+                  }
+                  .citramon_logo{
+                     margin: 0 40px 0 35px;
+                  }
+               }
+               .link_content{
+                  a{
+                     padding: 18px 55px;
+                     font-size: 28px;
+                     line-height: 41px;
+                  }
+               }
+            }
+         }
+         .citramon_content-view{
+            .content_view{
+               .content_clider{
+                  .swiper-container{
+                     width: 85vw;
+                     .sw-next{
+                        right: 3%;
+                     }
+                     .sw-prev{
+                        left: 3%;
+                     }
+                     .swiper-wrapper{
+                        .swiper-slide{
+                           height: 190px;
+                           .slide_content{
+                              p{
+
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+            .reception_view{
+               .reception_content{
+                  width: 70%;
+               }
+            }
+            .sitramon_list-desc{
+               .list_view{
+                  li{
+                     font-size: 22px;
+                  }
+               }
+            }
+            .citramon_offer{
+               h2{
+                  font-size: 46px;
+                  line-height: 65px;
+               }
+               .find_to{
+                  .citramon_title{
+                     font-size: 32px;
+                     line-height: 49px;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+@media only screen and (max-width: 945px){
+   body{
+      .citramone_content{
+         .citramone_head{
+            .head-top_bg{
+               .head_logo{
+
+               }
+            }
+            .head_content{
+               .content_row-end{
+                  .content_title{
+                     font-size: 38px;
+                     line-height: 49px;
+                  }
+                  .citramon_logo{
+                     margin: 0 30px 0 35px;
+                  }
+               }
+            }
+         }
+         .citramon_content-view{
+            .content_view{
+               .content_clider{
+                  .swiper-container{
+                     .swiper-wrapper{
+                        .swiper-slide{
+                           .slide_content{
+                              p{
+                                 font-size: 24px;
+                                 line-height: 29px;
+                                 padding: 0 10px;
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+            .reception_view{
+               .reception_content{
+                  width: 80%;
+               }
+            }
+            .sitramon_list-desc{
+               width: 70%;
+            }
+         }
+      }
+   }
+}
+
+@media only screen and (max-width: 768px){
+   body{
+      .citramone_content{
+         .citramone_head{
+            .head-top_bg{
+               .head_logo{
+                  a{
+
+                  }
+               }
+            }
+            .head_content{
+               .content_row-end{
+                  .content_title{
+                     font-size: 32px;
+                     line-height: 41px;
+                  }
+                  .citramon_logo{
+                     width: 26%;
+                  }
+               }  
+               .link_content{
+                  a{
+                     padding: 10px 40px;
+                     font-size: 22px;
+                     line-height: 31px;
+                  }
+               }
+            }
+         }
+         .citramon_content-view{
+            .content_view{
+               .title{
+                  font-size: 28px;
+                  line-height: 35px;
+                  margin: 0 0 60px 0;
+               }
+               .content_clider{
+
+               }
+            }
+            .substances_view{
+               .title{
+                  width: 90%;
+                  margin: 0 auto 50px auto;
+               }  
+            }
+            .reception_view{
+               .reception_title{
+
+               }
+               .reception_content{
+                  width: 95%;
+                  justify-content: space-around;
+                  .row_item{
+                     width: 45%;
+                  }
+               }
+            }
+            .sitramon_list-desc{
+               width: 90%;
+               .list_view{
+                  li{
+                     img{
+                        margin: 0 20px 0 0;
+                     }
+                  }
+               }
+            }
+            .citramon_offer{
+               h2{
+                  font-size: 36px;
+                  line-height: 49px;
+               }
+               .find_to{
+                  width: 40%;
+                  figure{
+                     margin: 20px 0 0 0;
+                  }
+                  .link_to{
+                     a{
+                        font-size: 15px;
+                        line-height: 19px;
+                        padding: 12px 25px;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+@media only screen and (max-width: 600px){
+   body{
+      .citramone_content{
+         .citramone_head{
+            background-position: right;
+            .head-top_bg{
+               .head_logo{
+                  padding: 16px 0 0 20px;
+                  a{
+                     width: 78px;
+                     height: 85px;
+                  }
+               }
+            }
+            .head_content{
+               justify-content: space-between;
+               height: 100%;
+               .content_row-end{
+                  flex-direction: initial;
+                  margin: 120px 0 0 0;
+                  .content_title{
+                     font-size: 38px;
+                     width: 70%;
+                     line-height: 38px;
+                  }
+                  .citramon_logo{
+                     margin: 0;
+                     width: 50%;
+                     img{
+                        width: 100%;
+                     }
+                  }
+               }
+               .link_content{
+                  margin: 0 0 60px 0;
+               }
+            }
+         }
+         .citramon_content-view{
+            &.top-bg{
+               height: fit-content;
+            }
+            .content_view{
+               padding: 0 0 125px 0;
+               .title{
+                  font-size: 24px;
+                  margin: 100px 0 50px 0;
+               }
+               .content_clider{
+                  .swiper-container{
+                     width: 65vw;
+                     .sw-next{
+                        right: 8%;
+                     }
+                     .sw-prev{
+                        left: 8%;
+                     }
+                  }
+               }
+            }  
+            .reception_view{
+               margin: 80px 0 35px 0px;
+               .reception_title{
+                  font-size: 28px;
+                  line-height: 31px;
+               }
+               .reception_content{
+                  .row_item{
+                     .item_image{
+                        height: 165px;
+                     }
+                     .sickness_title{
+                        font-size: 20px;
+                        opacity: 1;
+                        margin: 0;
+                     }
+                     .item_descriprion{
+                        padding: 15px 15px 15px 15px;
+                        li{
+                           margin: 0 0 10px 0;
+                           span{
+                              font-size: 14px;
+                              line-height: 19px;
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+            .sitramon_list-desc{
+               padding: 100px 0 45px 0px;
+               .list_view{
+                  li{
+                     font-size: 18px;
+                     img{
+                        margin: 0 15px 0 0;
+                     }
+                  }
+               }
+            }
+            .substances_view{
+               .slider_view{
+                  height: 290px;
+                  .text_view{
+                     bottom: 12%;
+                     top: auto;
+                     height: 135px;
+                     text-align: center;
+                     align-items: center;
+                     justify-content: center;
+                  }
+                  &::before{
+                     display: none;
+                  }
+                  .tabletka_row{
+                     .tabletka_icon{
+                        position: initial;
+                        img{
+                           opacity: 0.8;
+                        }
+                        &.tabletka_icon_active{
+                           width: 45px;
+                           height: 45px;
+                           img{
+                              opacity: 1;
+                           }
+                        }
+                        .text_icon{
+                           font-size: 20px;
+                           line-height: 29px;
+                        }
+                     }
+                     &.spaceBetween{
+                        top: 0;
+                        bottom: auto;
+                        .tabletka_icon{
+                           .text_icon{
+                              right: auto;
+                              top: auto;
+                              bottom: -40px;
+                           }
+                           &:last-child{
+                              .text_icon{
+                                 top: auto;
+                                 bottom: -40px;
+                                 right: -5px;
+                                 left: auto;
+                              }
+                           }
+                        }
+                     }
+                     &.center{
+                        top: 0;
+                        z-index: 10;
+                        .tabletka_icon{
+                          .text_icon{
+                           bottom: -40px;
+                           width: max-content;
+                           right: auto;
+                          } 
+                        }
+                     }
+                  }
+               }
+            }
+            .citramon_offer{
+               flex-direction: column;
+               padding: 100px 0 120px 0;
+               h2{
+                  width: 60%;
+                  font-size: 32px;
+                  line-height: 31px;
+               }
+               .find_to{
+                  width: 50%;
+                  margin: 30px 0 0 0;
+               }
+            }
+         }
+      }
+   }
+}
+
+@media only screen and (max-width: 480px){
+   body{
+      .citramone_content{
+         .citramone_head{
+            background-position: left;
+            .head-top_bg{
+               .head_logo{
+                  a{
+                     height: 110px;
+                  }
+               }
+            }
+            .head_content{
+               .content_row-end{
+                  flex-direction: column-reverse;
+                  margin: 60px 0 0 0;
+                  .content_title{
+                     font-size: 32px;
+                     line-height: 32px;
+                     margin: 40px 0 0 0;
+                  }
+                  .citramon_logo{
+                     width: 45%;
+                     margin: 0 auto;
+                  }
+               }
+               .link_content{
+
+               }
+            }
+         }
+         .citramon_content-view{
+            .reception_view{
+               .reception_title{
+                  margin: 0 0 20px 0;
+               }
+               .reception_content{
+                  .row_item{
+                     .item_descriprion{
+                        li{
+                           flex-direction: column;
+                           img{
+                              width: 10%;
+                              margin: 0 0 10px 0;
+                           }
+                           span{
+                              text-align: center;
+                              width: 100%;
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+            .sitramon_list-desc{
+               .list_view{
+                  li{
+                     line-height: 29px;
+                     margin: 0 0 10px 0;
+                  }
+               }
+            }
+            .citramon_offer{
+               h2{
+                  width: 50%;
+               }
+               .find_to{
+                  .citramon_title{
+                     font-size: 26px;
+                     line-height: 39px;
+                     div{
+                        margin: 0 0 0 10px;
+                     }
+                  }
+                  .link_to{
+                     a{
+                        font-size: 14px;
+                        line-height: 17px;
+                        padding: 14px 22px;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+@media only screen and (max-width: 430px){
+   body{
+      .citramone_content{
+         .citramone_head{
+            .head_content{
+               .content_row-end{
+                  .content_title{
+                     font-size: 46px;
+                     line-height: 55px;
+                     margin: 40px 0 0 0;
+                     width: 80%;
+                  }
+                  .citramon_logo{
+
+                  }
+               }
+               .link_content{
+                  margin: 0 0 70px 0;
+               }
+            }
+         }
+         .citramon_content-view{
+            .content_view{
+               padding: 0 0 160px 0;
+               .title{
+                  padding: 0 15px;
+                  margin: 90px 0 40px 0;
+               }
+               .content_clider{
+                  .swiper-container{
+                     width: 70vw;
+                     .sw-next{
+                        right: 6%;
+                     }
+                     .sw-prev {
+                        left: 6%;
+                     }
+                     .swiper-wrapper{
+                        .swiper-slide{
+                           height: 175px;
+                        }
+                     }
+                  }
+               }
+            }
+            .view_bottom{
+               .bottom_img{
+                  .desktop_img{
+                     display: none;
+                  }
+                  .mobile_img{
+                     display: block;
+                  }
+                  &.self-medication{
+                     height: 80px;
+                     // height: fit-content;
+                  }
+               }
+            }
+            .substances_view{
+               .slider_view{
+                  .title{
+                     line-height: 24px;
+                  }
+                  .text_view{
+                     bottom: 15%;
+                  }
+                  .tabletka_row{
+                     &.spaceBetween{
+                        .tabletka_icon{
+                           .text_icon{
+                              right: 30%; 
+                           }
+                           &:last-child{
+                              .text_icon{
+                                 right: 40%;
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+            .reception_view{
+               .reception_content{
+                  justify-content: space-between;
+                  .row_item{
+                     width: 48%;
+                     .item_image{
+                        display: none;
+                     }
+                  }
+               }
+            }
+            .sitramon_list-desc{
+               width: 100%;
+               padding: 100px 15px 45px 15px;
+               .list_view{
+                  li{
+                     font-size: 16px;
+                  }
+               }
+            }
+            .citramon_offer{
+               padding: 80px 0 150px 0;
+               h2{
+                  display: none;
+               }
+               .find_to{
+                  width: 60%;
+                  margin: 0;
+               }
+            }
+         }  
+      }
+   }
+}
+
+@media only screen and (max-width: 375px){
+   body{
+      .citramone_content{
+         .citramone_head{
+            .head_content{
+               .content_row-end{
+                  margin: 115px 0 0 0;
+                  .content_title{
+                     font-size: 42px;
+                     width: 90%;
+                  }
+               }
+            }
+         }
+         .citramon_content-view{
+            .content_view{
+               padding: 0 0 130px 0;
+               .content_clider{
+                  .swiper-container{
+                     width: 100vw;
+                     .sw-next, .sw-prev{
+                        top: 40%;
+                     }
+                     .swiper-wrapper{
+                        .swiper-slide{
+                           .slide_content{
+                              p{
+                                 font-size: 22px;
+                                 line-height: 25px;
+                                 padding: 0 45px;
+                              }
+                           }
+                        }
+                     }
+                  }
+               } 
+            }
+            .view_bottom{
+               .bottom_img{
+                  &.self-medication{
+                     height: 70px;
+                     padding: 5px 5px 0 5px;
+                  }
+               }
+            }
+            .substances_view{
+               .slider_view{
+                  width: 320px;
+               }
+            }
+            .reception_view{
+               .reception_title{
+                  margin: 0 0 10px 0;
+               }
+               .reception_content{
+                  flex-direction: column;
+                  .row_item{
+                     width: 100%;
+                     .item_descriprion{
+                        li{
+                           flex-direction: initial;
+                           img{
+                              margin: 0;
+                              width: 5%;
+                           }
+                           span{
+                              font-size: 12px;
+                           }
+                        }
+                     }
+                  }
+               }
+             
+            }
+            .sitramon_list-desc{
+               .list_view{
+                  li{
+                     font-size: 14px;
+                     line-height: 25px;
+                  }
+               }  
+            }
+            .citramon_offer{
+               .find_to{
+                  .citramon_title{
+                     font-size: 22px;
+                     line-height: 29px;  
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+@media only screen and (max-width: 390px){
+   body{
+      .citramone_content{
+         .citramone_head{
+            .head_content{
+               .content_row-end{
+                  margin: 130px 0 0 0;
+                  .content_title{
+                     font-size: 42px;
+                     line-height: 49px;
+                  }
+               }
+            }
+         }
+         .citramon_content-view{
+            .reception_view{
+               .reception_content{
+                  .row_item{
+                     .sickness_title{
+                        font-size: 18px;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+@media only screen and (max-width: 320px){
+   body{
+      .citramone_content{
+         .citramone_head{
+            .head-top_bg{
+               .head_logo{
+                  a{
+                     height: 90px;
+                  }
+               }
+            }
+            .head_content{
+               .content_row-end{
+                  .content_title{
+                     font-size: 38px;
+                  }
+               }
+            }
+         }  
+         .citramon_content-view{
+            .content_view{
+               .title{
+                  line-height: 21px;
+                  font-size: 18px;
+                  margin: 75px 0 25px 0;
+               }
+               .content_clider{
+                  .swiper-container{
+                     .swiper-wrapper{
+                        .swiper-slide{
+                           height: 160px;
+                           .slide_content{
+                              p{
+                                 font-size: 18px;
+                                 line-height: 23px;
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+            .substances_view{
+               .title{
+                  font-size: 18px;
+                  line-height: 19px;
+                  margin: 0 auto 30px auto;
+               }
+               .slider_view{
+                  width: 290px;
+                  height: 265px;
+               }
+            }
+            .reception_view{
+               .reception_title{
+                  font-size: 22px;
+                  line-height: 21px;
+               }
+               .reception_content{
+                  .row_item{
+                     .sickness_title{
+                        font-size: 16px;
+                        line-height: 31px;
+                     }
+                     .item_descriprion{
+                        padding: 10px;
+                        li{
+                           margin: 0 0 5px 0;
+                           span{
+                              width: 90%;
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+            .sitramon_list-desc{
+               .list_view{
+                  li{
+                     line-height: 19px;
+                  }
+               }
+            }
+            .citramon_offer{
+               padding: 80px 0 130px 0;
+            }
+         }
+      }
+   }
+}

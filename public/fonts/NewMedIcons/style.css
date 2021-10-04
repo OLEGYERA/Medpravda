@@ -1,0 +1,3014 @@
+@font-face {
+  font-family: 'newico';
+  src:  url('fonts/icomoon.eot?lloya6');
+  src:  url('fonts/icomoon.eot?lloya6#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?lloya6') format('truetype'),
+    url('fonts/icomoon.woff?lloya6') format('woff'),
+    url('fonts/icomoon.svg?lloya6#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon"], [class*=" icon"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'newico' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon:before{
+    color: #fff!important;
+}
+
+.icon-quotes1:before {
+  content: "\eb5a";
+  color: #0494d4;
+}
+.icon-quotes:before {
+  content: "\eb5b";
+  color: #0494d4;
+}
+.icon-first-aid-kit-2-3:before {
+  content: "\e900";
+  color: #fff;
+}
+.icon-literature:before {
+  content: "\e901";
+  color: #fff;
+}
+.icon-no-drugs1:before {
+  content: "\e902";
+  color: #fff;
+}
+.icon-pharma_group1:before {
+  content: "\e903";
+  color: #fff;
+}
+.icon-pills-11:before {
+  content: "\e904";
+  color: #fff;
+}
+.icon-platelet-3:before {
+  content: "\e905";
+  color: #fff;
+}
+.icon-thermometer-3:before {
+  content: "\e906";
+  color: #fff;
+}
+.icon-view1:before {
+  content: "\e907";
+  color: #fff;
+}
+.icon-warning-3-3:before {
+  content: "\e908";
+  color: #fff;
+}
+.icon-fabricator:before {
+  content: "\e909";
+  color: #fff;
+}
+.icon-no-drugs:before {
+  content: "\e90a";
+  color: #1d6289;
+}
+.icon-pharma_group:before {
+  content: "\e90b";
+  color: #1d6289;
+}
+.icon-pills-1:before {
+  content: "\e90c";
+  color: #1d6289;
+}
+.icon-platelet-1:before {
+  content: "\e90d";
+  color: #1d6289;
+}
+.icon-thermometer-1:before {
+  content: "\e90e";
+  color: #1d6289;
+}
+.icon-view:before {
+  content: "\e90f";
+  color: #1d6289;
+}
+.icon-warning-3-1:before {
+  content: "\e910";
+  color: #1d6289;
+}
+.icon-fabricator1 .path1:before {
+  content: "\e911";
+  color: rgb(29, 98, 137);
+}
+.icon-fabricator1 .path2:before {
+  content: "\e912";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-fabricator1 .path3:before {
+  content: "\e913";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-fabricator1 .path4:before {
+  content: "\e914";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-fabricator1 .path5:before {
+  content: "\e915";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-fabricator1 .path6:before {
+  content: "\e916";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-fabricator1 .path7:before {
+  content: "\e917";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-fabricator1 .path8:before {
+  content: "\e918";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-fabricator1 .path9:before {
+  content: "\e919";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-first-aid-kit-2-1:before {
+  content: "\e91a";
+  color: #1d6289;
+}
+.icon-literature1:before {
+  content: "\e91b";
+  color: #1d6289;
+}
+.icon-browser-2:before {
+  content: "\e91c";
+  color: #fff;
+}
+.icon-instructions-1-2:before {
+  content: "\e91d";
+  color: #fff;
+}
+.icon-instructions-2:before {
+  content: "\e91e";
+  color: #fff;
+}
+.icon-home:before {
+  content: "\e91f";
+  color: #fff;
+}
+.icon-add-2:before {
+  content: "\e920";
+  color: #fff;
+}
+.icon-browser-1:before {
+  content: "\e921";
+  color: #0494d4;
+}
+.icon-instructions-1-1:before {
+  content: "\e922";
+  color: #0494d4;
+}
+.icon-instructions-1:before {
+  content: "\e923";
+  color: #0494d4;
+}
+.icon-Vector1:before {
+  content: "\e924";
+  color: #0494d4;
+}
+.icon-add-1:before {
+  content: "\e925";
+  color: #0494d4;
+}
+.icon-classification_cosmetics1 .path1:before {
+  content: "\e926";
+  color: rgb(255, 255, 255);
+}
+.icon-classification_cosmetics1 .path2:before {
+  content: "\e927";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-classification_cosmetics1 .path3:before {
+  content: "\e928";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-classification_cosmetics1 .path4:before {
+  content: "\e929";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-classification_cosmetics1 .path5:before {
+  content: "\e92a";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_cosmetics1 .path6:before {
+  content: "\e92b";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+}
+.icon-classification_cosmetics1 .path7:before {
+  content: "\e92c";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+}
+.icon-classification_cosmetics1 .path8:before {
+  content: "\e92d";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_cosmetics1 .path9:before {
+  content: "\e92e";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_cosmetics1 .path10:before {
+  content: "\e92f";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_cosmetics1 .path11:before {
+  content: "\e930";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_cosmetics1 .path12:before {
+  content: "\e931";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_cosmetics1 .path13:before {
+  content: "\e932";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_cosmetics1 .path14:before {
+  content: "\e933";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_cosmetics1 .path15:before {
+  content: "\e934";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_cosmetics1 .path16:before {
+  content: "\e935";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-classification_medical_devices .path1:before {
+  content: "\e936";
+  color: rgb(255, 255, 255);
+}
+.icon-classification_medical_devices .path2:before {
+  content: "\e937";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-classification_medical_devices .path3:before {
+  content: "\e938";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-classification_medical_devices .path4:before {
+  content: "\e939";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-classification_medical_devices .path5:before {
+  content: "\e93a";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_medical_devices .path6:before {
+  content: "\e93b";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+  opacity: 0.65;
+}
+.icon-classification_medical_devices .path7:before {
+  content: "\e93c";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_medical_devices .path8:before {
+  content: "\e93d";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+  opacity: 0.65;
+}
+.icon-classification_medical_devices .path9:before {
+  content: "\e93e";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_medical_devices .path10:before {
+  content: "\e93f";
+  margin-left: -1em;
+  color: rgb(224, 235, 252);
+}
+.icon-classification_medical_devices .path11:before {
+  content: "\e940";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+  opacity: 0.65;
+}
+.icon-classification_medical_devices .path12:before {
+  content: "\e941";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_medical_devices .path13:before {
+  content: "\e942";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_medical_devices .path14:before {
+  content: "\e943";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_medical_devices .path15:before {
+  content: "\e944";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_medical_devices .path16:before {
+  content: "\e945";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_medical_devices .path17:before {
+  content: "\e946";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_medical_devices .path18:before {
+  content: "\e947";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_medical_devices .path19:before {
+  content: "\e948";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_medical_devices .path20:before {
+  content: "\e949";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_medical_devices .path21:before {
+  content: "\e94a";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_medical_devices .path22:before {
+  content: "\e94b";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_medical_devices .path23:before {
+  content: "\e94c";
+  margin-left: -1em;
+  color: rgb(118, 190, 231);
+}
+.icon-classification_medical_devices .path24:before {
+  content: "\e94d";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_medical_devices .path25:before {
+  content: "\e94e";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_medical_devices .path26:before {
+  content: "\e94f";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_medical_devices .path27:before {
+  content: "\e950";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+  opacity: 0.65;
+}
+.icon-classification_medical_devices .path28:before {
+  content: "\e951";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-cosmetic_facilities1 .path1:before {
+  content: "\e952";
+  color: rgb(255, 255, 255);
+}
+.icon-cosmetic_facilities1 .path2:before {
+  content: "\e953";
+  margin-left: -0.6396484375em;
+  color: rgb(195, 218, 253);
+}
+.icon-cosmetic_facilities1 .path3:before {
+  content: "\e954";
+  margin-left: -0.6396484375em;
+  color: rgb(195, 218, 253);
+}
+.icon-cosmetic_facilities1 .path4:before {
+  content: "\e955";
+  margin-left: -0.6396484375em;
+  color: rgb(255, 255, 255);
+}
+.icon-cosmetic_facilities1 .path5:before {
+  content: "\e956";
+  margin-left: -0.6396484375em;
+  color: rgb(45, 156, 219);
+}
+.icon-cosmetic_facilities1 .path6:before {
+  content: "\e957";
+  margin-left: -0.6396484375em;
+  color: rgb(45, 156, 219);
+}
+.icon-cosmetic_facilities1 .path7:before {
+  content: "\e958";
+  margin-left: -0.6396484375em;
+  color: rgb(45, 156, 219);
+}
+.icon-cosmetic_facilities1 .path8:before {
+  content: "\e959";
+  margin-left: -0.6396484375em;
+  color: rgb(45, 156, 219);
+}
+.icon-cosmetic_facilities1 .path9:before {
+  content: "\e95a";
+  margin-left: -0.6396484375em;
+  color: rgb(45, 156, 219);
+}
+.icon-cosmetic_facilities1 .path10:before {
+  content: "\e95b";
+  margin-left: -0.6396484375em;
+  color: rgb(45, 156, 219);
+}
+.icon-cosmetic_facilities1 .path11:before {
+  content: "\e95c";
+  margin-left: -0.6396484375em;
+  color: rgb(45, 156, 219);
+}
+.icon-cosmetic_facilities1 .path12:before {
+  content: "\e95d";
+  margin-left: -0.6396484375em;
+  color: rgb(45, 156, 219);
+}
+.icon-dietary_supplements .path1:before {
+  content: "\e95e";
+  color: rgb(255, 255, 255);
+}
+.icon-dietary_supplements .path2:before {
+  content: "\e95f";
+  margin-left: -0.7998046875em;
+  color: rgb(255, 255, 255);
+}
+.icon-dietary_supplements .path3:before {
+  content: "\e960";
+  margin-left: -0.7998046875em;
+  color: rgb(255, 255, 255);
+}
+.icon-dietary_supplements .path4:before {
+  content: "\e961";
+  margin-left: -0.7998046875em;
+  color: rgb(255, 255, 255);
+}
+.icon-dietary_supplements .path5:before {
+  content: "\e962";
+  margin-left: -0.7998046875em;
+  color: rgb(195, 218, 253);
+}
+.icon-dietary_supplements .path6:before {
+  content: "\e963";
+  margin-left: -0.7998046875em;
+  color: rgb(195, 218, 253);
+}
+.icon-dietary_supplements .path7:before {
+  content: "\e964";
+  margin-left: -0.7998046875em;
+  color: rgb(255, 255, 255);
+}
+.icon-dietary_supplements .path8:before {
+  content: "\e965";
+  margin-left: -0.7998046875em;
+  color: rgb(255, 255, 255);
+}
+.icon-dietary_supplements .path9:before {
+  content: "\e966";
+  margin-left: -0.7998046875em;
+  color: rgb(255, 255, 255);
+}
+.icon-dietary_supplements .path10:before {
+  content: "\e967";
+  margin-left: -0.7998046875em;
+  color: rgb(255, 255, 255);
+}
+.icon-dietary_supplements .path11:before {
+  content: "\e968";
+  margin-left: -0.7998046875em;
+  color: rgb(195, 218, 253);
+}
+.icon-dietary_supplements .path12:before {
+  content: "\e969";
+  margin-left: -0.7998046875em;
+  color: rgb(255, 255, 255);
+}
+.icon-drug_classification .path1:before {
+  content: "\e96a";
+  color: rgb(255, 255, 255);
+}
+.icon-drug_classification .path2:before {
+  content: "\e96b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-drug_classification .path3:before {
+  content: "\e96c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-drug_classification .path4:before {
+  content: "\e96d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-drug_classification .path5:before {
+  content: "\e96e";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+  opacity: 0.57;
+}
+.icon-drug_classification .path6:before {
+  content: "\e96f";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+}
+.icon-drug_classification .path7:before {
+  content: "\e970";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+}
+.icon-drug_classification .path8:before {
+  content: "\e971";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+}
+.icon-drug_classification .path9:before {
+  content: "\e972";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-drug_classification .path10:before {
+  content: "\e973";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-drug_classification .path11:before {
+  content: "\e974";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-drug_classification .path12:before {
+  content: "\e975";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-drug_classification .path13:before {
+  content: "\e976";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-drug_classification .path14:before {
+  content: "\e977";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-drug_classification .path15:before {
+  content: "\e978";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-drug_classification .path16:before {
+  content: "\e979";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-drug_classification .path17:before {
+  content: "\e97a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-drug_classification .path18:before {
+  content: "\e97b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-drug_classification .path19:before {
+  content: "\e97c";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-drug_classification .path20:before {
+  content: "\e97d";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-drug_classification .path21:before {
+  content: "\e97e";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-drug_classification .path22:before {
+  content: "\e97f";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-drug_classification .path23:before {
+  content: "\e980";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-drug_classification .path24:before {
+  content: "\e981";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-drug_classification .path25:before {
+  content: "\e982";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-drug_classification .path26:before {
+  content: "\e983";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-drug_classification .path27:before {
+  content: "\e984";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-drug_classification .path28:before {
+  content: "\e985";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-drugs .path1:before {
+  content: "\e986";
+  color: rgb(195, 218, 253);
+  opacity: 0.57;
+}
+.icon-drugs .path2:before {
+  content: "\e987";
+  margin-left: -0.615234375em;
+  color: rgb(195, 218, 253);
+}
+.icon-drugs .path3:before {
+  content: "\e988";
+  margin-left: -0.615234375em;
+  color: rgb(195, 218, 253);
+}
+.icon-drugs .path4:before {
+  content: "\e989";
+  margin-left: -0.615234375em;
+  color: rgb(195, 218, 253);
+}
+.icon-drugs .path5:before {
+  content: "\e98a";
+  margin-left: -0.615234375em;
+  color: rgb(45, 156, 219);
+}
+.icon-drugs .path6:before {
+  content: "\e98b";
+  margin-left: -0.615234375em;
+  color: rgb(255, 255, 255);
+}
+.icon-drugs .path7:before {
+  content: "\e98c";
+  margin-left: -0.615234375em;
+  color: rgb(255, 255, 255);
+}
+.icon-drugs .path8:before {
+  content: "\e98d";
+  margin-left: -0.615234375em;
+  color: rgb(45, 156, 219);
+}
+.icon-drugs .path9:before {
+  content: "\e98e";
+  margin-left: -0.615234375em;
+  color: rgb(45, 156, 219);
+}
+.icon-drugs .path10:before {
+  content: "\e98f";
+  margin-left: -0.615234375em;
+  color: rgb(45, 156, 219);
+}
+.icon-drugs .path11:before {
+  content: "\e990";
+  margin-left: -0.615234375em;
+  color: rgb(45, 156, 219);
+}
+.icon-drugs .path12:before {
+  content: "\e991";
+  margin-left: -0.615234375em;
+  color: rgb(255, 255, 255);
+}
+.icon-drugs .path13:before {
+  content: "\e992";
+  margin-left: -0.615234375em;
+  color: rgb(255, 255, 255);
+}
+.icon-drugs .path14:before {
+  content: "\e993";
+  margin-left: -0.615234375em;
+  color: rgb(255, 255, 255);
+}
+.icon-drugs .path15:before {
+  content: "\e994";
+  margin-left: -0.615234375em;
+  color: rgb(45, 156, 219);
+}
+.icon-drugs .path16:before {
+  content: "\e995";
+  margin-left: -0.615234375em;
+  color: rgb(45, 156, 219);
+}
+.icon-drugs .path17:before {
+  content: "\e996";
+  margin-left: -0.615234375em;
+  color: rgb(45, 156, 219);
+}
+.icon-drugs .path18:before {
+  content: "\e997";
+  margin-left: -0.615234375em;
+  color: rgb(45, 156, 219);
+}
+.icon-drugs .path19:before {
+  content: "\e998";
+  margin-left: -0.615234375em;
+  color: rgb(255, 255, 255);
+}
+.icon-drugs .path20:before {
+  content: "\e999";
+  margin-left: -0.615234375em;
+  color: rgb(45, 156, 219);
+}
+.icon-drugs .path21:before {
+  content: "\e99a";
+  margin-left: -0.615234375em;
+  color: rgb(255, 255, 255);
+}
+.icon-drugs .path22:before {
+  content: "\e99b";
+  margin-left: -0.615234375em;
+  color: rgb(255, 255, 255);
+}
+.icon-farm_drug_groups .path1:before {
+  content: "\e99c";
+  color: rgb(195, 218, 253);
+  opacity: 0.57;
+}
+.icon-farm_drug_groups .path2:before {
+  content: "\e99d";
+  margin-left: -1.3330078125em;
+  color: rgb(195, 218, 253);
+}
+.icon-farm_drug_groups .path3:before {
+  content: "\e99e";
+  margin-left: -1.3330078125em;
+  color: rgb(195, 218, 253);
+}
+.icon-farm_drug_groups .path4:before {
+  content: "\e99f";
+  margin-left: -1.3330078125em;
+  color: rgb(195, 218, 253);
+}
+.icon-farm_drug_groups .path5:before {
+  content: "\e9a0";
+  margin-left: -1.3330078125em;
+  color: rgb(45, 156, 219);
+}
+.icon-farm_drug_groups .path6:before {
+  content: "\e9a1";
+  margin-left: -1.3330078125em;
+  color: rgb(255, 255, 255);
+}
+.icon-farm_drug_groups .path7:before {
+  content: "\e9a2";
+  margin-left: -1.3330078125em;
+  color: rgb(255, 255, 255);
+}
+.icon-farm_drug_groups .path8:before {
+  content: "\e9a3";
+  margin-left: -1.3330078125em;
+  color: rgb(45, 156, 219);
+}
+.icon-farm_drug_groups .path9:before {
+  content: "\e9a4";
+  margin-left: -1.3330078125em;
+  color: rgb(45, 156, 219);
+}
+.icon-farm_drug_groups .path10:before {
+  content: "\e9a5";
+  margin-left: -1.3330078125em;
+  color: rgb(45, 156, 219);
+}
+.icon-farm_drug_groups .path11:before {
+  content: "\e9a6";
+  margin-left: -1.3330078125em;
+  color: rgb(255, 255, 255);
+}
+.icon-farm_drug_groups .path12:before {
+  content: "\e9a7";
+  margin-left: -1.3330078125em;
+  color: rgb(45, 156, 219);
+}
+.icon-farm_drug_groups .path13:before {
+  content: "\e9a8";
+  margin-left: -1.3330078125em;
+  color: rgb(45, 156, 219);
+}
+.icon-farm_drug_groups .path14:before {
+  content: "\e9a9";
+  margin-left: -1.3330078125em;
+  color: rgb(45, 156, 219);
+}
+.icon-farm_drug_groups .path15:before {
+  content: "\e9aa";
+  margin-left: -1.3330078125em;
+  color: rgb(255, 255, 255);
+}
+.icon-farm_drug_groups .path16:before {
+  content: "\e9ab";
+  margin-left: -1.3330078125em;
+  color: rgb(255, 255, 255);
+}
+.icon-farm_drug_groups .path17:before {
+  content: "\e9ac";
+  margin-left: -1.3330078125em;
+  color: rgb(45, 156, 219);
+}
+.icon-farm_drug_groups .path18:before {
+  content: "\e9ad";
+  margin-left: -1.3330078125em;
+  color: rgb(45, 156, 219);
+}
+.icon-farm_drug_groups .path19:before {
+  content: "\e9ae";
+  margin-left: -1.3330078125em;
+  color: rgb(255, 255, 255);
+}
+.icon-farm_drug_groups .path20:before {
+  content: "\e9af";
+  margin-left: -1.3330078125em;
+  color: rgb(255, 255, 255);
+}
+.icon-farm_drug_groups .path21:before {
+  content: "\e9b0";
+  margin-left: -1.3330078125em;
+  color: rgb(45, 156, 219);
+}
+.icon-farm_drug_groups .path22:before {
+  content: "\e9b1";
+  margin-left: -1.3330078125em;
+  color: rgb(255, 255, 255);
+}
+.icon-groups_dietary_supplements .path1:before {
+  content: "\e9b2";
+  color: rgb(255, 255, 255);
+}
+.icon-groups_dietary_supplements .path2:before {
+  content: "\e9b3";
+  margin-left: -1.599609375em;
+  color: rgb(255, 255, 255);
+}
+.icon-groups_dietary_supplements .path3:before {
+  content: "\e9b4";
+  margin-left: -1.599609375em;
+  color: rgb(255, 255, 255);
+}
+.icon-groups_dietary_supplements .path4:before {
+  content: "\e9b5";
+  margin-left: -1.599609375em;
+  color: rgb(255, 255, 255);
+}
+.icon-groups_dietary_supplements .path5:before {
+  content: "\e9b6";
+  margin-left: -1.599609375em;
+  color: rgb(195, 218, 253);
+}
+.icon-groups_dietary_supplements .path6:before {
+  content: "\e9b7";
+  margin-left: -1.599609375em;
+  color: rgb(195, 218, 253);
+}
+.icon-groups_dietary_supplements .path7:before {
+  content: "\e9b8";
+  margin-left: -1.599609375em;
+  color: rgb(255, 255, 255);
+}
+.icon-groups_dietary_supplements .path8:before {
+  content: "\e9b9";
+  margin-left: -1.599609375em;
+  color: rgb(255, 255, 255);
+}
+.icon-groups_dietary_supplements .path9:before {
+  content: "\e9ba";
+  margin-left: -1.599609375em;
+  color: rgb(255, 255, 255);
+}
+.icon-groups_dietary_supplements .path10:before {
+  content: "\e9bb";
+  margin-left: -1.599609375em;
+  color: rgb(255, 255, 255);
+}
+.icon-groups_dietary_supplements .path11:before {
+  content: "\e9bc";
+  margin-left: -1.599609375em;
+  color: rgb(195, 218, 253);
+}
+.icon-groups_dietary_supplements .path12:before {
+  content: "\e9bd";
+  margin-left: -1.599609375em;
+  color: rgb(255, 255, 255);
+}
+.icon-groups_dietary_supplements .path13:before {
+  content: "\e9be";
+  margin-left: -1.599609375em;
+  color: rgb(255, 255, 255);
+}
+.icon-international-_drug_names .path1:before {
+  content: "\e9bf";
+  color: rgb(195, 218, 253);
+}
+.icon-international-_drug_names .path2:before {
+  content: "\e9c0";
+  margin-left: -1.23046875em;
+  color: rgb(45, 156, 219);
+}
+.icon-international-_drug_names .path3:before {
+  content: "\e9c1";
+  margin-left: -1.23046875em;
+  color: rgb(255, 255, 255);
+}
+.icon-international-_drug_names .path4:before {
+  content: "\e9c2";
+  margin-left: -1.23046875em;
+  color: rgb(195, 218, 253);
+}
+.icon-international-_drug_names .path5:before {
+  content: "\e9c3";
+  margin-left: -1.23046875em;
+  color: rgb(195, 218, 253);
+}
+.icon-international-_drug_names .path6:before {
+  content: "\e9c4";
+  margin-left: -1.23046875em;
+  color: rgb(255, 255, 255);
+}
+.icon-international-_drug_names .path7:before {
+  content: "\e9c5";
+  margin-left: -1.23046875em;
+  color: rgb(255, 255, 255);
+}
+.icon-international-_drug_names .path8:before {
+  content: "\e9c6";
+  margin-left: -1.23046875em;
+  color: rgb(45, 156, 219);
+}
+.icon-international-_drug_names .path9:before {
+  content: "\e9c7";
+  margin-left: -1.23046875em;
+  color: rgb(255, 255, 255);
+}
+.icon-international-_drug_names .path10:before {
+  content: "\e9c8";
+  margin-left: -1.23046875em;
+  color: rgb(255, 255, 255);
+}
+.icon-manufacturers .path1:before {
+  content: "\e9c9";
+  color: rgb(195, 218, 253);
+  opacity: 0.48;
+}
+.icon-manufacturers .path2:before {
+  content: "\e9ca";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+  opacity: 0.48;
+}
+.icon-manufacturers .path3:before {
+  content: "\e9cb";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+  opacity: 0.48;
+}
+.icon-manufacturers .path4:before {
+  content: "\e9cc";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+  opacity: 0.48;
+}
+.icon-manufacturers .path5:before {
+  content: "\e9cd";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+}
+.icon-manufacturers .path6:before {
+  content: "\e9ce";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+  opacity: 0.48;
+}
+.icon-manufacturers .path7:before {
+  content: "\e9cf";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+  opacity: 0.61;
+}
+.icon-manufacturers .path8:before {
+  content: "\e9d0";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+}
+.icon-manufacturers .path9:before {
+  content: "\e9d1";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+  opacity: 0.72;
+}
+.icon-manufacturers .path10:before {
+  content: "\e9d2";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+  opacity: 0.88;
+}
+.icon-manufacturers .path11:before {
+  content: "\e9d3";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+}
+.icon-manufacturers .path12:before {
+  content: "\e9d4";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-manufacturers .path13:before {
+  content: "\e9d5";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-manufacturers .path14:before {
+  content: "\e9d6";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-manufacturers .path15:before {
+  content: "\e9d7";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-manufacturers .path16:before {
+  content: "\e9d8";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-manufacturers .path17:before {
+  content: "\e9d9";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-manufacturers .path18:before {
+  content: "\e9da";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+}
+.icon-manufacturers .path19:before {
+  content: "\e9db";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+}
+.icon-manufacturers .path20:before {
+  content: "\e9dc";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-manufacturers .path21:before {
+  content: "\e9dd";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+}
+.icon-manufacturers .path22:before {
+  content: "\e9de";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-manufacturers .path23:before {
+  content: "\e9df";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-medical_products .path1:before {
+  content: "\e9e0";
+  color: rgb(255, 255, 255);
+}
+.icon-medical_products .path2:before {
+  content: "\e9e1";
+  margin-left: -1em;
+  color: rgb(228, 243, 255);
+}
+.icon-medical_products .path3:before {
+  content: "\e9e2";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-medical_products .path4:before {
+  content: "\e9e3";
+  margin-left: -1em;
+  color: rgb(228, 243, 255);
+}
+.icon-medical_products .path5:before {
+  content: "\e9e4";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-medical_products .path6:before {
+  content: "\e9e5";
+  margin-left: -1em;
+  color: rgb(224, 235, 252);
+}
+.icon-medical_products .path7:before {
+  content: "\e9e6";
+  margin-left: -1em;
+  color: rgb(228, 243, 255);
+}
+.icon-medical_products .path8:before {
+  content: "\e9e7";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-medical_products .path9:before {
+  content: "\e9e8";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-medical_products .path10:before {
+  content: "\e9e9";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-medical_products .path11:before {
+  content: "\e9ea";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-medical_products .path12:before {
+  content: "\e9eb";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-medical_products .path13:before {
+  content: "\e9ec";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-medical_products .path14:before {
+  content: "\e9ed";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-medical_products .path15:before {
+  content: "\e9ee";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-medical_products .path16:before {
+  content: "\e9ef";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-medical_products .path17:before {
+  content: "\e9f0";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-medical_products .path18:before {
+  content: "\e9f1";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-medical_products .path19:before {
+  content: "\e9f2";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-medical_products .path20:before {
+  content: "\e9f3";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-medical_products .path21:before {
+  content: "\e9f4";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-medical_products .path22:before {
+  content: "\e9f5";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-medical_products .path23:before {
+  content: "\e9f6";
+  margin-left: -1em;
+  color: rgb(228, 243, 255);
+}
+.icon-medical_products .path24:before {
+  content: "\e9f7";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-book .path1:before {
+  content: "\e9f8";
+  color: rgb(45, 156, 219);
+}
+.icon-book .path2:before {
+  content: "\e9f9";
+  margin-left: -0.875em;
+  color: rgb(45, 156, 219);
+}
+.icon-book .path3:before {
+  content: "\e9fa";
+  margin-left: -0.875em;
+  color: rgb(45, 156, 219);
+}
+.icon-book .path4:before {
+  content: "\e9fb";
+  margin-left: -0.875em;
+  color: rgb(45, 156, 219);
+}
+.icon-book .path5:before {
+  content: "\e9fc";
+  margin-left: -0.875em;
+  color: rgb(255, 255, 255);
+}
+.icon-book .path6:before {
+  content: "\e9fd";
+  margin-left: -0.875em;
+  color: rgb(255, 255, 255);
+}
+.icon-book .path7:before {
+  content: "\e9fe";
+  margin-left: -0.875em;
+  color: rgb(255, 255, 255);
+}
+.icon-classification_dietary_supplements .path1:before {
+  content: "\e9ff";
+  color: rgb(255, 255, 255);
+}
+.icon-classification_dietary_supplements .path2:before {
+  content: "\ea00";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-classification_dietary_supplements .path3:before {
+  content: "\ea01";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-classification_dietary_supplements .path4:before {
+  content: "\ea02";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-classification_dietary_supplements .path5:before {
+  content: "\ea03";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_dietary_supplements .path6:before {
+  content: "\ea04";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_dietary_supplements .path7:before {
+  content: "\ea05";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_dietary_supplements .path8:before {
+  content: "\ea06";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_dietary_supplements .path9:before {
+  content: "\ea07";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_dietary_supplements .path10:before {
+  content: "\ea08";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_dietary_supplements .path11:before {
+  content: "\ea09";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_dietary_supplements .path12:before {
+  content: "\ea0a";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_dietary_supplements .path13:before {
+  content: "\ea0b";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_dietary_supplements .path14:before {
+  content: "\ea0c";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+}
+.icon-classification_dietary_supplements .path15:before {
+  content: "\ea0d";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+}
+.icon-classification_dietary_supplements .path16:before {
+  content: "\ea0e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-drug_classification1 .path1:before {
+  content: "\ea0f";
+  color: rgb(255, 255, 255);
+}
+.icon-drug_classification1 .path2:before {
+  content: "\ea10";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+}
+.icon-drug_classification1 .path3:before {
+  content: "\ea11";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+}
+.icon-drug_classification1 .path4:before {
+  content: "\ea12";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+}
+.icon-drug_classification1 .path5:before {
+  content: "\ea13";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+  opacity: 0.57;
+}
+.icon-drug_classification1 .path6:before {
+  content: "\ea14";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+}
+.icon-drug_classification1 .path7:before {
+  content: "\ea15";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+}
+.icon-drug_classification1 .path8:before {
+  content: "\ea16";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+}
+.icon-drug_classification1 .path9:before {
+  content: "\ea17";
+  margin-left: -1em;
+  color: rgb(50, 60, 107);
+}
+.icon-drug_classification1 .path10:before {
+  content: "\ea18";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-drug_classification1 .path11:before {
+  content: "\ea19";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-drug_classification1 .path12:before {
+  content: "\ea1a";
+  margin-left: -1em;
+  color: rgb(50, 60, 107);
+}
+.icon-drug_classification1 .path13:before {
+  content: "\ea1b";
+  margin-left: -1em;
+  color: rgb(50, 60, 107);
+}
+.icon-drug_classification1 .path14:before {
+  content: "\ea1c";
+  margin-left: -1em;
+  color: rgb(50, 60, 107);
+}
+.icon-drug_classification1 .path15:before {
+  content: "\ea1d";
+  margin-left: -1em;
+  color: rgb(50, 60, 107);
+}
+.icon-drug_classification1 .path16:before {
+  content: "\ea1e";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+}
+.icon-drug_classification1 .path17:before {
+  content: "\ea1f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-drug_classification1 .path18:before {
+  content: "\ea20";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-drug_classification1 .path19:before {
+  content: "\ea21";
+  margin-left: -1em;
+  color: rgb(50, 60, 107);
+}
+.icon-drug_classification1 .path20:before {
+  content: "\ea22";
+  margin-left: -1em;
+  color: rgb(50, 60, 107);
+}
+.icon-drug_classification1 .path21:before {
+  content: "\ea23";
+  margin-left: -1em;
+  color: rgb(50, 60, 107);
+}
+.icon-drug_classification1 .path22:before {
+  content: "\ea24";
+  margin-left: -1em;
+  color: rgb(50, 60, 107);
+}
+.icon-drug_classification1 .path23:before {
+  content: "\ea25";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+}
+.icon-drug_classification1 .path24:before {
+  content: "\ea26";
+  margin-left: -1em;
+  color: rgb(50, 60, 107);
+}
+.icon-drug_classification1 .path25:before {
+  content: "\ea27";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-drug_classification1 .path26:before {
+  content: "\ea28";
+  margin-left: -1em;
+  color: rgb(50, 60, 107);
+}
+.icon-drug_classification1 .path27:before {
+  content: "\ea29";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-drug_classification1 .path28:before {
+  content: "\ea2a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-classification_dietary_supplements1 .path1:before {
+  content: "\ea2b";
+  color: rgb(255, 255, 255);
+}
+.icon-classification_dietary_supplements1 .path2:before {
+  content: "\ea2c";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+}
+.icon-classification_dietary_supplements1 .path3:before {
+  content: "\ea2d";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+}
+.icon-classification_dietary_supplements1 .path4:before {
+  content: "\ea2e";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+}
+.icon-classification_dietary_supplements1 .path5:before {
+  content: "\ea2f";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+  opacity: 0.89;
+}
+.icon-classification_dietary_supplements1 .path6:before {
+  content: "\ea30";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+  opacity: 0.89;
+}
+.icon-classification_dietary_supplements1 .path7:before {
+  content: "\ea31";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+  opacity: 0.89;
+}
+.icon-classification_dietary_supplements1 .path8:before {
+  content: "\ea32";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+  opacity: 0.89;
+}
+.icon-classification_dietary_supplements1 .path9:before {
+  content: "\ea33";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+  opacity: 0.89;
+}
+.icon-classification_dietary_supplements1 .path10:before {
+  content: "\ea34";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+  opacity: 0.89;
+}
+.icon-classification_dietary_supplements1 .path11:before {
+  content: "\ea35";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+  opacity: 0.89;
+}
+.icon-classification_dietary_supplements1 .path12:before {
+  content: "\ea36";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+  opacity: 0.89;
+}
+.icon-classification_dietary_supplements1 .path13:before {
+  content: "\ea37";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+  opacity: 0.89;
+}
+.icon-classification_dietary_supplements1 .path14:before {
+  content: "\ea38";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+  opacity: 0.89;
+}
+.icon-classification_dietary_supplements1 .path15:before {
+  content: "\ea39";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+}
+.icon-classification_dietary_supplements1 .path16:before {
+  content: "\ea3a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-classification_medical_devices1 .path1:before {
+  content: "\ea3b";
+  color: rgb(255, 255, 255);
+}
+.icon-classification_medical_devices1 .path2:before {
+  content: "\ea3c";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+}
+.icon-classification_medical_devices1 .path3:before {
+  content: "\ea3d";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+}
+.icon-classification_medical_devices1 .path4:before {
+  content: "\ea3e";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+}
+.icon-classification_medical_devices1 .path5:before {
+  content: "\ea3f";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-classification_medical_devices1 .path6:before {
+  content: "\ea40";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+  opacity: 0.65;
+}
+.icon-classification_medical_devices1 .path7:before {
+  content: "\ea41";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-classification_medical_devices1 .path8:before {
+  content: "\ea42";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+  opacity: 0.65;
+}
+.icon-classification_medical_devices1 .path9:before {
+  content: "\ea43";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-classification_medical_devices1 .path10:before {
+  content: "\ea44";
+  margin-left: -1em;
+  color: rgb(224, 235, 252);
+}
+.icon-classification_medical_devices1 .path11:before {
+  content: "\ea45";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+  opacity: 0.65;
+}
+.icon-classification_medical_devices1 .path12:before {
+  content: "\ea46";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-classification_medical_devices1 .path13:before {
+  content: "\ea47";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-classification_medical_devices1 .path14:before {
+  content: "\ea48";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-classification_medical_devices1 .path15:before {
+  content: "\ea49";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-classification_medical_devices1 .path16:before {
+  content: "\ea4a";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-classification_medical_devices1 .path17:before {
+  content: "\ea4b";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-classification_medical_devices1 .path18:before {
+  content: "\ea4c";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-classification_medical_devices1 .path19:before {
+  content: "\ea4d";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-classification_medical_devices1 .path20:before {
+  content: "\ea4e";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-classification_medical_devices1 .path21:before {
+  content: "\ea4f";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-classification_medical_devices1 .path22:before {
+  content: "\ea50";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-classification_medical_devices1 .path23:before {
+  content: "\ea51";
+  margin-left: -1em;
+  color: rgb(118, 190, 231);
+}
+.icon-classification_medical_devices1 .path24:before {
+  content: "\ea52";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-classification_medical_devices1 .path25:before {
+  content: "\ea53";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-classification_medical_devices1 .path26:before {
+  content: "\ea54";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-classification_medical_devices1 .path27:before {
+  content: "\ea55";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+  opacity: 0.65;
+}
+.icon-classification_medical_devices1 .path28:before {
+  content: "\ea56";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-classification_cosmetics .path1:before {
+  content: "\ea57";
+  color: rgb(255, 255, 255);
+}
+.icon-classification_cosmetics .path2:before {
+  content: "\ea58";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+}
+.icon-classification_cosmetics .path3:before {
+  content: "\ea59";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+}
+.icon-classification_cosmetics .path4:before {
+  content: "\ea5a";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+}
+.icon-classification_cosmetics .path5:before {
+  content: "\ea5b";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-classification_cosmetics .path6:before {
+  content: "\ea5c";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+}
+.icon-classification_cosmetics .path7:before {
+  content: "\ea5d";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+}
+.icon-classification_cosmetics .path8:before {
+  content: "\ea5e";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-classification_cosmetics .path9:before {
+  content: "\ea5f";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-classification_cosmetics .path10:before {
+  content: "\ea60";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-classification_cosmetics .path11:before {
+  content: "\ea61";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-classification_cosmetics .path12:before {
+  content: "\ea62";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-classification_cosmetics .path13:before {
+  content: "\ea63";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-classification_cosmetics .path14:before {
+  content: "\ea64";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-classification_cosmetics .path15:before {
+  content: "\ea65";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-classification_cosmetics .path16:before {
+  content: "\ea66";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-cosmetic_facilities .path1:before {
+  content: "\ea67";
+  color: rgb(29, 98, 137);
+}
+.icon-cosmetic_facilities .path2:before {
+  content: "\ea68";
+  margin-left: -0.6396484375em;
+  color: rgb(195, 218, 253);
+}
+.icon-cosmetic_facilities .path3:before {
+  content: "\ea69";
+  margin-left: -0.6396484375em;
+  color: rgb(195, 218, 253);
+}
+.icon-cosmetic_facilities .path4:before {
+  content: "\ea6a";
+  margin-left: -0.6396484375em;
+  color: rgb(29, 98, 137);
+}
+.icon-cosmetic_facilities .path5:before {
+  content: "\ea6b";
+  margin-left: -0.6396484375em;
+  color: rgb(29, 98, 137);
+}
+.icon-cosmetic_facilities .path6:before {
+  content: "\ea6c";
+  margin-left: -0.6396484375em;
+  color: rgb(29, 98, 137);
+}
+.icon-cosmetic_facilities .path7:before {
+  content: "\ea6d";
+  margin-left: -0.6396484375em;
+  color: rgb(29, 98, 137);
+}
+.icon-cosmetic_facilities .path8:before {
+  content: "\ea6e";
+  margin-left: -0.6396484375em;
+  color: rgb(29, 98, 137);
+}
+.icon-cosmetic_facilities .path9:before {
+  content: "\ea6f";
+  margin-left: -0.6396484375em;
+  color: rgb(29, 98, 137);
+}
+.icon-cosmetic_facilities .path10:before {
+  content: "\ea70";
+  margin-left: -0.6396484375em;
+  color: rgb(29, 98, 137);
+}
+.icon-cosmetic_facilities .path11:before {
+  content: "\ea71";
+  margin-left: -0.6396484375em;
+  color: rgb(29, 98, 137);
+}
+.icon-cosmetic_facilities .path12:before {
+  content: "\ea72";
+  margin-left: -0.6396484375em;
+  color: rgb(255, 255, 255);
+}
+.icon-dietary_supplements1 .path1:before {
+  content: "\ea73";
+  color: rgb(1, 79, 122);
+  opacity: 0.89;
+}
+.icon-dietary_supplements1 .path2:before {
+  content: "\ea74";
+  margin-left: -0.7998046875em;
+  color: rgb(1, 79, 122);
+  opacity: 0.89;
+}
+.icon-dietary_supplements1 .path3:before {
+  content: "\ea75";
+  margin-left: -0.7998046875em;
+  color: rgb(1, 79, 122);
+  opacity: 0.89;
+}
+.icon-dietary_supplements1 .path4:before {
+  content: "\ea76";
+  margin-left: -0.7998046875em;
+  color: rgb(1, 79, 122);
+  opacity: 0.89;
+}
+.icon-dietary_supplements1 .path5:before {
+  content: "\ea77";
+  margin-left: -0.7998046875em;
+  color: rgb(1, 79, 122);
+  opacity: 0.89;
+}
+.icon-dietary_supplements1 .path6:before {
+  content: "\ea78";
+  margin-left: -0.7998046875em;
+  color: rgb(1, 79, 122);
+  opacity: 0.89;
+}
+.icon-dietary_supplements1 .path7:before {
+  content: "\ea79";
+  margin-left: -0.7998046875em;
+  color: rgb(1, 79, 122);
+  opacity: 0.89;
+}
+.icon-dietary_supplements1 .path8:before {
+  content: "\ea7a";
+  margin-left: -0.7998046875em;
+  color: rgb(1, 79, 122);
+  opacity: 0.89;
+}
+.icon-dietary_supplements1 .path9:before {
+  content: "\ea7b";
+  margin-left: -0.7998046875em;
+  color: rgb(1, 79, 122);
+  opacity: 0.89;
+}
+.icon-dietary_supplements1 .path10:before {
+  content: "\ea7c";
+  margin-left: -0.7998046875em;
+  color: rgb(1, 79, 122);
+  opacity: 0.89;
+}
+.icon-dietary_supplements1 .path11:before {
+  content: "\ea7d";
+  margin-left: -0.7998046875em;
+  color: rgb(195, 218, 253);
+}
+.icon-dietary_supplements1 .path12:before {
+  content: "\ea7e";
+  margin-left: -0.7998046875em;
+  color: rgb(255, 255, 255);
+}
+.icon-drugs1 .path1:before {
+  content: "\ea7f";
+  color: rgb(195, 218, 253);
+  opacity: 0.57;
+}
+.icon-drugs1 .path2:before {
+  content: "\ea80";
+  margin-left: -0.615234375em;
+  color: rgb(195, 218, 253);
+}
+.icon-drugs1 .path3:before {
+  content: "\ea81";
+  margin-left: -0.615234375em;
+  color: rgb(195, 218, 253);
+}
+.icon-drugs1 .path4:before {
+  content: "\ea82";
+  margin-left: -0.615234375em;
+  color: rgb(195, 218, 253);
+}
+.icon-drugs1 .path5:before {
+  content: "\ea83";
+  margin-left: -0.615234375em;
+  color: rgb(50, 60, 107);
+}
+.icon-drugs1 .path6:before {
+  content: "\ea84";
+  margin-left: -0.615234375em;
+  color: rgb(29, 98, 137);
+}
+.icon-drugs1 .path7:before {
+  content: "\ea85";
+  margin-left: -0.615234375em;
+  color: rgb(29, 98, 137);
+}
+.icon-drugs1 .path8:before {
+  content: "\ea86";
+  margin-left: -0.615234375em;
+  color: rgb(50, 60, 107);
+}
+.icon-drugs1 .path9:before {
+  content: "\ea87";
+  margin-left: -0.615234375em;
+  color: rgb(50, 60, 107);
+}
+.icon-drugs1 .path10:before {
+  content: "\ea88";
+  margin-left: -0.615234375em;
+  color: rgb(50, 60, 107);
+}
+.icon-drugs1 .path11:before {
+  content: "\ea89";
+  margin-left: -0.615234375em;
+  color: rgb(50, 60, 107);
+}
+.icon-drugs1 .path12:before {
+  content: "\ea8a";
+  margin-left: -0.615234375em;
+  color: rgb(1, 79, 122);
+}
+.icon-drugs1 .path13:before {
+  content: "\ea8b";
+  margin-left: -0.615234375em;
+  color: rgb(255, 255, 255);
+}
+.icon-drugs1 .path14:before {
+  content: "\ea8c";
+  margin-left: -0.615234375em;
+  color: rgb(255, 255, 255);
+}
+.icon-drugs1 .path15:before {
+  content: "\ea8d";
+  margin-left: -0.615234375em;
+  color: rgb(50, 60, 107);
+}
+.icon-drugs1 .path16:before {
+  content: "\ea8e";
+  margin-left: -0.615234375em;
+  color: rgb(50, 60, 107);
+}
+.icon-drugs1 .path17:before {
+  content: "\ea8f";
+  margin-left: -0.615234375em;
+  color: rgb(50, 60, 107);
+}
+.icon-drugs1 .path18:before {
+  content: "\ea90";
+  margin-left: -0.615234375em;
+  color: rgb(50, 60, 107);
+}
+.icon-drugs1 .path19:before {
+  content: "\ea91";
+  margin-left: -0.615234375em;
+  color: rgb(1, 79, 122);
+}
+.icon-drugs1 .path20:before {
+  content: "\ea92";
+  margin-left: -0.615234375em;
+  color: rgb(50, 60, 107);
+}
+.icon-drugs1 .path21:before {
+  content: "\ea93";
+  margin-left: -0.615234375em;
+  color: rgb(29, 98, 137);
+}
+.icon-drugs1 .path22:before {
+  content: "\ea94";
+  margin-left: -0.615234375em;
+  color: rgb(50, 60, 107);
+}
+.icon-drugs1 .path23:before {
+  content: "\ea95";
+  margin-left: -0.615234375em;
+  color: rgb(255, 255, 255);
+}
+.icon-drugs1 .path24:before {
+  content: "\ea96";
+  margin-left: -0.615234375em;
+  color: rgb(255, 255, 255);
+}
+.icon-farm_drug_groups1 .path1:before {
+  content: "\ea97";
+  color: rgb(195, 218, 253);
+  opacity: 0.57;
+}
+.icon-farm_drug_groups1 .path2:before {
+  content: "\ea98";
+  margin-left: -1.3330078125em;
+  color: rgb(195, 218, 253);
+}
+.icon-farm_drug_groups1 .path3:before {
+  content: "\ea99";
+  margin-left: -1.3330078125em;
+  color: rgb(195, 218, 253);
+}
+.icon-farm_drug_groups1 .path4:before {
+  content: "\ea9a";
+  margin-left: -1.3330078125em;
+  color: rgb(195, 218, 253);
+}
+.icon-farm_drug_groups1 .path5:before {
+  content: "\ea9b";
+  margin-left: -1.3330078125em;
+  color: rgb(50, 60, 107);
+}
+.icon-farm_drug_groups1 .path6:before {
+  content: "\ea9c";
+  margin-left: -1.3330078125em;
+  color: rgb(29, 98, 137);
+}
+.icon-farm_drug_groups1 .path7:before {
+  content: "\ea9d";
+  margin-left: -1.3330078125em;
+  color: rgb(29, 98, 137);
+}
+.icon-farm_drug_groups1 .path8:before {
+  content: "\ea9e";
+  margin-left: -1.3330078125em;
+  color: rgb(50, 60, 107);
+}
+.icon-farm_drug_groups1 .path9:before {
+  content: "\ea9f";
+  margin-left: -1.3330078125em;
+  color: rgb(1, 79, 122);
+}
+.icon-farm_drug_groups1 .path10:before {
+  content: "\eaa0";
+  margin-left: -1.3330078125em;
+  color: rgb(255, 255, 255);
+}
+.icon-farm_drug_groups1 .path11:before {
+  content: "\eaa1";
+  margin-left: -1.3330078125em;
+  color: rgb(255, 255, 255);
+}
+.icon-farm_drug_groups1 .path12:before {
+  content: "\eaa2";
+  margin-left: -1.3330078125em;
+  color: rgb(50, 60, 107);
+}
+.icon-farm_drug_groups1 .path13:before {
+  content: "\eaa3";
+  margin-left: -1.3330078125em;
+  color: rgb(50, 60, 107);
+}
+.icon-farm_drug_groups1 .path14:before {
+  content: "\eaa4";
+  margin-left: -1.3330078125em;
+  color: rgb(50, 60, 107);
+}
+.icon-farm_drug_groups1 .path15:before {
+  content: "\eaa5";
+  margin-left: -1.3330078125em;
+  color: rgb(50, 60, 107);
+}
+.icon-farm_drug_groups1 .path16:before {
+  content: "\eaa6";
+  margin-left: -1.3330078125em;
+  color: rgb(1, 79, 122);
+}
+.icon-farm_drug_groups1 .path17:before {
+  content: "\eaa7";
+  margin-left: -1.3330078125em;
+  color: rgb(50, 60, 107);
+}
+.icon-farm_drug_groups1 .path18:before {
+  content: "\eaa8";
+  margin-left: -1.3330078125em;
+  color: rgb(29, 98, 137);
+}
+.icon-farm_drug_groups1 .path19:before {
+  content: "\eaa9";
+  margin-left: -1.3330078125em;
+  color: rgb(50, 60, 107);
+}
+.icon-farm_drug_groups1 .path20:before {
+  content: "\eaaa";
+  margin-left: -1.3330078125em;
+  color: rgb(1, 79, 122);
+}
+.icon-groups_dietary_supplements1 .path1:before {
+  content: "\eaab";
+  color: rgb(1, 79, 122);
+  opacity: 0.89;
+}
+.icon-groups_dietary_supplements1 .path2:before {
+  content: "\eaac";
+  margin-left: -1.599609375em;
+  color: rgb(1, 79, 122);
+  opacity: 0.89;
+}
+.icon-groups_dietary_supplements1 .path3:before {
+  content: "\eaad";
+  margin-left: -1.599609375em;
+  color: rgb(1, 79, 122);
+  opacity: 0.89;
+}
+.icon-groups_dietary_supplements1 .path4:before {
+  content: "\eaae";
+  margin-left: -1.599609375em;
+  color: rgb(1, 79, 122);
+  opacity: 0.89;
+}
+.icon-groups_dietary_supplements1 .path5:before {
+  content: "\eaaf";
+  margin-left: -1.599609375em;
+  color: rgb(1, 79, 122);
+  opacity: 0.89;
+}
+.icon-groups_dietary_supplements1 .path6:before {
+  content: "\eab0";
+  margin-left: -1.599609375em;
+  color: rgb(1, 79, 122);
+  opacity: 0.89;
+}
+.icon-groups_dietary_supplements1 .path7:before {
+  content: "\eab1";
+  margin-left: -1.599609375em;
+  color: rgb(1, 79, 122);
+  opacity: 0.89;
+}
+.icon-groups_dietary_supplements1 .path8:before {
+  content: "\eab2";
+  margin-left: -1.599609375em;
+  color: rgb(1, 79, 122);
+  opacity: 0.89;
+}
+.icon-groups_dietary_supplements1 .path9:before {
+  content: "\eab3";
+  margin-left: -1.599609375em;
+  color: rgb(1, 79, 122);
+  opacity: 0.89;
+}
+.icon-groups_dietary_supplements1 .path10:before {
+  content: "\eab4";
+  margin-left: -1.599609375em;
+  color: rgb(1, 79, 122);
+  opacity: 0.89;
+}
+.icon-groups_dietary_supplements1 .path11:before {
+  content: "\eab5";
+  margin-left: -1.599609375em;
+  color: rgb(195, 218, 253);
+}
+.icon-groups_dietary_supplements1 .path12:before {
+  content: "\eab6";
+  margin-left: -1.599609375em;
+  color: rgb(255, 255, 255);
+}
+.icon-groups_dietary_supplements1 .path13:before {
+  content: "\eab7";
+  margin-left: -1.599609375em;
+  color: rgb(1, 79, 122);
+}
+.icon-international-_drug_names1 .path1:before {
+  content: "\eab8";
+  color: rgb(195, 218, 253);
+}
+.icon-international-_drug_names1 .path2:before {
+  content: "\eab9";
+  margin-left: -1.06640625em;
+  color: rgb(1, 79, 122);
+}
+.icon-international-_drug_names1 .path3:before {
+  content: "\eaba";
+  margin-left: -1.06640625em;
+  color: rgb(255, 255, 255);
+}
+.icon-international-_drug_names1 .path4:before {
+  content: "\eabb";
+  margin-left: -1.06640625em;
+  color: rgb(1, 79, 122);
+}
+.icon-international-_drug_names1 .path5:before {
+  content: "\eabc";
+  margin-left: -1.06640625em;
+  color: rgb(1, 79, 122);
+}
+.icon-international-_drug_names1 .path6:before {
+  content: "\eabd";
+  margin-left: -1.06640625em;
+  color: rgb(255, 255, 255);
+}
+.icon-international-_drug_names1 .path7:before {
+  content: "\eabe";
+  margin-left: -1.06640625em;
+  color: rgb(195, 218, 253);
+}
+.icon-international-_drug_names1 .path8:before {
+  content: "\eabf";
+  margin-left: -1.06640625em;
+  color: rgb(1, 79, 122);
+}
+.icon-international-_drug_names1 .path9:before {
+  content: "\eac0";
+  margin-left: -1.06640625em;
+  color: rgb(1, 79, 122);
+}
+.icon-international-_drug_names1 .path10:before {
+  content: "\eac1";
+  margin-left: -1.06640625em;
+  color: rgb(1, 79, 122);
+}
+.icon-manufacturers1 .path1:before {
+  content: "\eac2";
+  color: rgb(195, 218, 253);
+  opacity: 0.48;
+}
+.icon-manufacturers1 .path2:before {
+  content: "\eac3";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+  opacity: 0.48;
+}
+.icon-manufacturers1 .path3:before {
+  content: "\eac4";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+  opacity: 0.48;
+}
+.icon-manufacturers1 .path4:before {
+  content: "\eac5";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+  opacity: 0.48;
+}
+.icon-manufacturers1 .path5:before {
+  content: "\eac6";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+}
+.icon-manufacturers1 .path6:before {
+  content: "\eac7";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+}
+.icon-manufacturers1 .path7:before {
+  content: "\eac8";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-manufacturers1 .path8:before {
+  content: "\eac9";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-manufacturers1 .path9:before {
+  content: "\eaca";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-manufacturers1 .path10:before {
+  content: "\eacb";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-manufacturers1 .path11:before {
+  content: "\eacc";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+  opacity: 0.45;
+}
+.icon-manufacturers1 .path12:before {
+  content: "\eacd";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+  opacity: 0.44;
+}
+.icon-manufacturers1 .path13:before {
+  content: "\eace";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+  opacity: 0.48;
+}
+.icon-manufacturers1 .path14:before {
+  content: "\eacf";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+  opacity: 0.48;
+}
+.icon-manufacturers1 .path15:before {
+  content: "\ead0";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+  opacity: 0.61;
+}
+.icon-manufacturers1 .path16:before {
+  content: "\ead1";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+}
+.icon-manufacturers1 .path17:before {
+  content: "\ead2";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+}
+.icon-manufacturers1 .path18:before {
+  content: "\ead3";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-manufacturers1 .path19:before {
+  content: "\ead4";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+  opacity: 0.72;
+}
+.icon-manufacturers1 .path20:before {
+  content: "\ead5";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+  opacity: 0.88;
+}
+.icon-manufacturers1 .path21:before {
+  content: "\ead6";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+}
+.icon-manufacturers1 .path22:before {
+  content: "\ead7";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+  opacity: 0.93;
+}
+.icon-manufacturers1 .path23:before {
+  content: "\ead8";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-manufacturers1 .path24:before {
+  content: "\ead9";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-manufacturers1 .path25:before {
+  content: "\eada";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-manufacturers1 .path26:before {
+  content: "\eadb";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-manufacturers1 .path27:before {
+  content: "\eadc";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-manufacturers1 .path28:before {
+  content: "\eadd";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-manufacturers1 .path29:before {
+  content: "\eade";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-manufacturers1 .path30:before {
+  content: "\eadf";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-manufacturers1 .path31:before {
+  content: "\eae0";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+}
+.icon-manufacturers1 .path32:before {
+  content: "\eae1";
+  margin-left: -1em;
+  color: rgb(195, 218, 253);
+}
+.icon-manufacturers1 .path33:before {
+  content: "\eae2";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-manufacturers1 .path34:before {
+  content: "\eae3";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-manufacturers1 .path35:before {
+  content: "\eae4";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+}
+.icon-manufacturers1 .path36:before {
+  content: "\eae5";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-medical_products1 .path1:before {
+  content: "\eae6";
+  color: rgb(29, 98, 137);
+}
+.icon-medical_products1 .path2:before {
+  content: "\eae7";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+  opacity: 0.65;
+}
+.icon-medical_products1 .path3:before {
+  content: "\eae8";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-medical_products1 .path4:before {
+  content: "\eae9";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+  opacity: 0.65;
+}
+.icon-medical_products1 .path5:before {
+  content: "\eaea";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-medical_products1 .path6:before {
+  content: "\eaeb";
+  margin-left: -1em;
+  color: rgb(224, 235, 252);
+}
+.icon-medical_products1 .path7:before {
+  content: "\eaec";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+  opacity: 0.65;
+}
+.icon-medical_products1 .path8:before {
+  content: "\eaed";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-medical_products1 .path9:before {
+  content: "\eaee";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-medical_products1 .path10:before {
+  content: "\eaef";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-medical_products1 .path11:before {
+  content: "\eaf0";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-medical_products1 .path12:before {
+  content: "\eaf1";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-medical_products1 .path13:before {
+  content: "\eaf2";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-medical_products1 .path14:before {
+  content: "\eaf3";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-medical_products1 .path15:before {
+  content: "\eaf4";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-medical_products1 .path16:before {
+  content: "\eaf5";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-medical_products1 .path17:before {
+  content: "\eaf6";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-medical_products1 .path18:before {
+  content: "\eaf7";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-medical_products1 .path19:before {
+  content: "\eaf8";
+  margin-left: -1em;
+  color: rgb(118, 190, 231);
+}
+.icon-medical_products1 .path20:before {
+  content: "\eaf9";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-medical_products1 .path21:before {
+  content: "\eafa";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-medical_products1 .path22:before {
+  content: "\eafb";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-medical_products1 .path23:before {
+  content: "\eafc";
+  margin-left: -1em;
+  color: rgb(45, 156, 219);
+  opacity: 0.65;
+}
+.icon-medical_products1 .path24:before {
+  content: "\eafd";
+  margin-left: -1em;
+  color: rgb(29, 98, 137);
+}
+.icon-book1:before {
+  content: "\eafe";
+  color: #1d6289;
+}
+.icon-clinical-symptoms:before {
+  content: "\eaff";
+  color: #fff;
+}
+.icon-complications:before {
+  content: "\eb00";
+  color: #fff;
+}
+.icon-definition:before {
+  content: "\eb01";
+  color: #fff;
+}
+.icon-diagnostics:before {
+  content: "\eb02";
+  color: #fff;
+}
+.icon-diet-2:before {
+  content: "\eb03";
+  color: #fff;
+}
+.icon-doctor:before {
+  content: "\eb04";
+  color: #fff;
+}
+.icon-homemade-2:before {
+  content: "\eb05";
+  color: #fff;
+}
+.icon-prevention:before {
+  content: "\eb06";
+  color: #fff;
+}
+.icon-sources:before {
+  content: "\eb07";
+  color: #fff;
+}
+.icon-special_situations:before {
+  content: "\eb08";
+  color: #fff;
+}
+.icon-spread:before {
+  content: "\eb09";
+  color: #fff;
+}
+.icon-stages_development:before {
+  content: "\eb0a";
+  color: #fff;
+}
+.icon-terms:before {
+  content: "\eb0b";
+  color: #fff;
+}
+.icon-treatment:before {
+  content: "\eb0c";
+  color: #fff;
+}
+.icon-vaccination:before {
+  content: "\eb0d";
+  color: #fff;
+}
+.icon-causes:before {
+  content: "\eb0e";
+  color: #fff;
+}
+.symptoms:before {
+  content: "\eb0f";
+  color: #014f7a;
+}
+.complications:before {
+  content: "\eb10";
+  color: #014f7a;
+}
+.definition:before {
+  content: "\eb11";
+  color: #014f7a;
+}
+.diagnostics:before {
+  content: "\eb12";
+  color: #014f7a;
+}
+.diet:before {
+  content: "\eb13";
+  color: #014f7a;
+}
+.doctor .path1:before {
+  content: "\eb14"!important;
+  color: red;
+}
+.doctor .path2:before {
+  content: "\eb15";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.doctor .path3:before {
+  content: "\eb16";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+}
+.doctor .path4:before {
+  content: "\eb17";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.doctor .path5:before {
+  content: "\eb18";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.doctor .path6:before {
+  content: "\eb19";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.doctor .path7:before {
+  content: "\eb1a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.doctor .path8:before {
+  content: "\eb1b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.doctor .path9:before {
+  content: "\eb1c";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+}
+.doctor .path10:before {
+  content: "\eb1d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.doctor .path11:before {
+  content: "\eb1e";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+}
+.doctor .path12:before {
+  content: "\eb1f";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+}
+.doctor .path13:before {
+  content: "\eb20";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+}
+.doctor .path14:before {
+  content: "\eb21";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+}
+.doctor .path15:before {
+  content: "\eb22";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+}
+.doctor .path16:before {
+  content: "\eb23";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+}
+.doctor .path17:before {
+  content: "\eb24";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+}
+.doctor .path18:before {
+  content: "\eb25";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+}
+.doctor .path19:before {
+  content: "\eb26";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.doctor .path20:before {
+  content: "\eb27";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+}
+.doctor .path21:before {
+  content: "\eb28";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+}
+.doctor .path22:before {
+  content: "\eb29";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+}
+.doctor .path23:before {
+  content: "\eb2a";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+}
+.doctor .path24:before {
+  content: "\eb2b";
+  margin-left: -1em;
+  color: rgb(1, 79, 122);
+}
+.remedies:before {
+  content: "\eb2c";
+  color: #014f7a;
+}
+.prevention:before {
+  content: "\eb2d";
+  color: #014f7a;
+}
+.sources:before {
+  content: "\eb2e";
+  color: #014f7a;
+}
+.theard:before {
+  content: "\eb2f";
+  color: #014f7a;
+}
+.spread:before {
+  content: "\eb30";
+  color: #014f7a;
+}
+.development_stages:before {
+  content: "\eb31";
+  color: #014f7a;
+}
+.provisions:before {
+  content: "\eb32";
+  color: #014f7a;
+}
+.treat:before {
+  content: "\eb33";
+  color: #014f7a;
+}
+.vaccination:before {
+  content: "\eb34";
+  color: #014f7a;
+}
+.occurrence:before {
+  content: "\eb35";
+  color: #014f7a;
+}
+.icon-preparat:before {
+  content: "\eb36";
+  color: #1d6289;
+}
+.icon-Speech-Bubble-48:before {
+  content: "\eb37";
+  color: #0494d4;
+}
+.icon-analogue:before {
+  content: "\eb38";
+  color: #1d6289;
+}
+.icon-appointment:before {
+  content: "\eb39";
+  color: #1d6289;
+}
+.icon-arrow:before {
+  content: "\eb3a";
+  color: #0494d4;
+}
+.icon-check:before {
+  content: "\eb3b";
+  color: #06cb78;
+}
+.icon-like .path1:before {
+  content: "\eb3c";
+  color: rgb(14, 34, 57);
+}
+.icon-like .path2:before {
+  content: "\eb3d";
+  margin-left: -1em;
+  color: rgb(14, 34, 57);
+}
+.icon-like .path3:before {
+  content: "\eb3e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-message-1 .path1:before {
+  content: "\eb3f";
+  color: rgb(255, 214, 0);
+}
+.icon-message-1 .path2:before {
+  content: "\eb40";
+  margin-left: -1em;
+  color: rgb(242, 156, 31);
+}
+.icon-message-1 .path3:before {
+  content: "\eb41";
+  margin-left: -1em;
+  color: rgb(242, 156, 31);
+}
+.icon-message-1 .path4:before {
+  content: "\eb42";
+  margin-left: -1em;
+  color: rgb(4, 148, 212);
+}
+.icon-message-1 .path5:before {
+  content: "\eb43";
+  margin-left: -1em;
+  color: rgb(159, 201, 211);
+}
+.icon-message-1 .path6:before {
+  content: "\eb44";
+  margin-left: -1em;
+  color: rgb(84, 117, 128);
+}
+.icon-message-1 .path7:before {
+  content: "\eb45";
+  margin-left: -1em;
+  color: rgb(84, 117, 128);
+}
+.icon-message-1 .path8:before {
+  content: "\eb46";
+  margin-left: -1em;
+  color: rgb(84, 117, 128);
+}
+.icon-message-1 .path9:before {
+  content: "\eb47";
+  margin-left: -1em;
+  color: rgb(84, 117, 128);
+}
+.icon-message-1 .path10:before {
+  content: "\eb48";
+  margin-left: -1em;
+  color: rgb(84, 117, 128);
+}
+.icon-message-1 .path11:before {
+  content: "\eb49";
+  margin-left: -1em;
+  color: rgb(84, 117, 128);
+}
+.icon-message-1 .path12:before {
+  content: "\eb4a";
+  margin-left: -1em;
+  color: rgb(84, 117, 128);
+}
+.icon-message-1 .path13:before {
+  content: "\eb4b";
+  margin-left: -1em;
+  color: rgb(84, 117, 128);
+}
+.icon-message-1 .path14:before {
+  content: "\eb4c";
+  margin-left: -1em;
+  color: rgb(84, 117, 128);
+}
+.icon-message-1 .path15:before {
+  content: "\eb4d";
+  margin-left: -1em;
+  color: rgb(84, 117, 128);
+}
+.icon-message-1 .path16:before {
+  content: "\eb4e";
+  margin-left: -1em;
+  color: rgb(236, 240, 241);
+}
+.icon-message-1 .path17:before {
+  content: "\eb4f";
+  margin-left: -1em;
+  color: rgb(236, 240, 241);
+}
+.icon-message-1 .path18:before {
+  content: "\eb50";
+  margin-left: -1em;
+  color: rgb(159, 201, 211);
+}
+.icon-analogue1:before {
+  content: "\eb51";
+  color: #fff;
+}
+.icon-appointment1:before {
+  content: "\eb52";
+  color: #fff;
+}
+.icon-arrow1:before {
+  content: "\eb53";
+  color: #fff;
+}
+.icon-check1:before {
+  content: "\eb54";
+  color: #fff;
+}
+.icon-like1 .path1:before {
+  content: "\eb55";
+  color: rgb(255, 255, 255);
+}
+.icon-like1 .path2:before {
+  content: "\eb56";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-like1 .path3:before {
+  content: "\eb57";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-preparat1:before {
+  content: "\eb58";
+  color: #fff;
+}
+.icon-Speech-Bubble-481:before {
+  content: "\eb59";
+  color: #fff;
+}

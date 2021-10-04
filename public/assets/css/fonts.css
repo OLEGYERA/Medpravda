@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'ProximaNovaBold';
+    src: url('../font/ProximaNovaBold.eot');
+    src: url('../font/ProximaNovaBold.eot') format('embedded-opentype'),
+         url('../font/ProximaNovaBold.woff2') format('woff2'),
+         url('../font/ProximaNovaBold.woff') format('woff'),
+         url('../font/ProximaNovaBold.ttf') format('truetype'),
+         url('../font/ProximaNovaBold.svg#ProximaNovaBold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ProximaNovaCondensedLight';
+    src: url('../font/ProximaNovaCondensedLight.eot');
+    src: url('../font/ProximaNovaCondensedLight.eot') format('embedded-opentype'),
+         url('../font/ProximaNovaCondensedLight.woff2') format('woff2'),
+         url('../font/ProximaNovaCondensedLight.woff') format('woff'),
+         url('../font/ProximaNovaCondensedLight.ttf') format('truetype'),
+         url('../font/ProximaNovaCondensedLight.svg#ProximaNovaCondensedLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ProximaNovaLightItalic';
+    src: url('../font/ProximaNovaLightItalic.eot');
+    src: url('../font/ProximaNovaLightItalic.eot') format('embedded-opentype'),
+         url('../font/ProximaNovaLightItalic.woff2') format('woff2'),
+         url('../font/ProximaNovaLightItalic.woff') format('woff'),
+         url('../font/ProximaNovaLightItalic.ttf') format('truetype'),
+         url('../font/ProximaNovaLightItalic.svg#ProximaNovaLightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ProximaNovaBoldItalic';
+    src: url('../font/ProximaNovaBoldItalic.eot');
+    src: url('../font/ProximaNovaBoldItalic.eot') format('embedded-opentype'),
+         url('../font/ProximaNovaBoldItalic.woff2') format('woff2'),
+         url('../font/ProximaNovaBoldItalic.woff') format('woff'),
+         url('../font/ProximaNovaBoldItalic.ttf') format('truetype'),
+         url('../font/ProximaNovaBoldItalic.svg#ProximaNovaBoldItalic') format('svg');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ProximaNovaLight';
+    src: url('../font/ProximaNovaLight.eot');
+    src: url('../font/ProximaNovaLight.eot') format('embedded-opentype'),
+         url('../font/ProximaNovaLight.woff2') format('woff2'),
+         url('../font/ProximaNovaLight.woff') format('woff'),
+         url('../font/ProximaNovaLight.ttf') format('truetype'),
+         url('../font/ProximaNovaLight.svg#ProximaNovaLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ProximaNovaSemiboldItalic';
+    src: url('../font/ProximaNovaSemiboldItalic.eot');
+    src: url('../font/ProximaNovaSemiboldItalic.eot') format('embedded-opentype'),
+         url('../font/ProximaNovaSemiboldItalic.woff2') format('woff2'),
+         url('../font/ProximaNovaSemiboldItalic.woff') format('woff'),
+         url('../font/ProximaNovaSemiboldItalic.ttf') format('truetype'),
+         url('../font/ProximaNovaSemiboldItalic.svg#ProximaNovaSemiboldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ProximaNovaRegularItalic';
+    src: url('../font/ProximaNovaRegularItalic.eot');
+    src: url('../font/ProximaNovaRegularItalic.eot') format('embedded-opentype'),
+         url('../font/ProximaNovaRegularItalic.woff2') format('woff2'),
+         url('../font/ProximaNovaRegularItalic.woff') format('woff'),
+         url('../font/ProximaNovaRegularItalic.ttf') format('truetype'),
+         url('../font/ProximaNovaRegularItalic.svg#ProximaNovaRegularItalic') format('svg');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ProximaNovaThinItalic';
+    src: url('../font/ProximaNovaThinItalic.eot');
+    src: url('../font/ProximaNovaThinItalic.eot') format('embedded-opentype'),
+         url('../font/ProximaNovaThinItalic.woff2') format('woff2'),
+         url('../font/ProximaNovaThinItalic.woff') format('woff'),
+         url('../font/ProximaNovaThinItalic.ttf') format('truetype'),
+         url('../font/ProximaNovaThinItalic.svg#ProximaNovaThinItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ProximaNovaExtraCondensedThin';
+    src: url('../font/ProximaNovaExtraCondensedThin.eot');
+    src: url('../font/ProximaNovaExtraCondensedThin.eot') format('embedded-opentype'),
+         url('../font/ProximaNovaExtraCondensedThin.woff2') format('woff2'),
+         url('../font/ProximaNovaExtraCondensedThin.woff') format('woff'),
+         url('../font/ProximaNovaExtraCondensedThin.ttf') format('truetype'),
+         url('../font/ProximaNovaExtraCondensedThin.svg#ProximaNovaExtraCondensedThin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ProximaNovaRegular';
+    src: url('../font/ProximaNovaRegular.eot');
+    src: url('../font/ProximaNovaRegular.eot') format('embedded-opentype'),
+         url('../font/ProximaNovaRegular.woff2') format('woff2'),
+         url('../font/ProximaNovaRegular.woff') format('woff'),
+         url('../font/ProximaNovaRegular.ttf') format('truetype'),
+         url('../font/ProximaNovaRegular.svg#ProximaNovaRegular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ProximaNovaSemibold';
+    src: url('../font/ProximaNovaSemibold.eot');
+    src: url('../font/ProximaNovaSemibold.eot') format('embedded-opentype'),
+         url('../font/ProximaNovaSemibold.woff2') format('woff2'),
+         url('../font/ProximaNovaSemibold.woff') format('woff'),
+         url('../font/ProximaNovaSemibold.ttf') format('truetype'),
+         url('../font/ProximaNovaSemibold.svg#ProximaNovaSemibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ROOM'; /*Regular*/
+    src: url('../font/ROOM.eot');
+    src: url('../font/ROOM.eot') format('embedded-opentype'),
+         url('../font/ROOM.woff2') format('woff2'),
+         url('../font/ROOM.woff') format('woff'),
+         url('../font/ROOM.ttf') format('truetype'),
+         url('../font/ROOM.svg#ROOM') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ROOMLIGHT';
+    src: url('../font/ROOMLIGHT.eot');
+    src: url('../font/ROOMLIGHT.eot') format('embedded-opentype'),
+         url('../font/ROOMLIGHT.woff2') format('woff2'),
+         url('../font/ROOMLIGHT.woff') format('woff'),
+         url('../font/ROOMLIGHT.ttf') format('truetype'),
+         url('../font/ROOMLIGHT.svg#ROOMLIGHT') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ROOMTHIN';
+    src: url('../font/ROOMTHIN.eot');
+    src: url('../font/ROOMTHIN.eot') format('embedded-opentype'),
+         url('../font/ROOMTHIN.woff2') format('woff2'),
+         url('../font/ROOMTHIN.woff') format('woff'),
+         url('../font/ROOMTHIN.ttf') format('truetype'),
+         url('../font/ROOMTHIN.svg#ROOMTHIN') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ROOMMEDIUM';
+    src: url('../font/ROOMMEDIUM.eot');
+    src: url('../font/ROOMMEDIUM.eot') format('embedded-opentype'),
+         url('../font/ROOMMEDIUM.woff2') format('woff2'),
+         url('../font/ROOMMEDIUM.woff') format('woff'),
+         url('../font/ROOMMEDIUM.ttf') format('truetype'),
+         url('../font/ROOMMEDIUM.svg#ROOMMEDIUM') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../font/FontAwesome.eot');
+    src: url('../font/FontAwesome.eot') format('embedded-opentype'),
+    url('../font/FontAwesome.woff2') format('woff2'),
+    url('../font/FontAwesome.woff') format('woff'),
+    url('../font/FontAwesome.ttf') format('truetype'),
+    url('../font/FontAwesome.svg#FontAwesome') format('svg');
+    font-display: swap;
+}
+
