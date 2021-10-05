@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class MediaArticle extends Model
 {
-    public $fillable = ['title', 'utitle', 'alias'];
+    public $fillable = ['title', 'utitle', 'alias', 'view'];
 
     public function content(){
         return $this->hasOne('Fresh\Medpravda\MediaArticleContent', 'media_article_id', 'id');

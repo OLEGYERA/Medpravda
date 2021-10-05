@@ -26,7 +26,7 @@
                     </div>
                     @foreach($news['last'] as $latest_new)
                         @php $time_arr = daysOrMonth($latest_new->article->created_at, 'ru') @endphp
-                        @include('OLEGYERA.FrontBox.particles.article-list', [
+                        @include('OLEGYERA.Web.particles.article-list', [
                             'link' => route('ru.pub', ['id' => $latest_new->article->id]),
                             'time' => $time_arr,
                             'title' => $latest_new->article->title,
@@ -45,12 +45,12 @@
                     </div>
                     @foreach($news['popular'] as $popular_new)
                         @php $time_arr = daysOrMonth($popular_new->article->created_at, 'ru') @endphp
-                        @include('OLEGYERA.FrontBox.particles.article', [
+                        @include('OLEGYERA.Web.particles.article', [
                             'type' => 'base',
                             'eclipsed' => true,
                             'link' => route('ru.pub', ['id' => $popular_new->article->id]),
                             'time' => $time_arr,
-                            'counter' => 0,
+                            'counter' => $popular_new->article->view,
                             'title' => $popular_new->article->title,
                             'author' => $popular_new->editor->name . ' ' . $popular_new->editor->surname,
                             'img_url' => 'https://medpravda.ua/gallery/' . getCategoryName($popular_new->image->category_id) . '/large/' . $popular_new->image->path,
@@ -72,52 +72,21 @@
                 <div class="left-grid">
                     <div class="title-shell">
                         <h3 class="group-title">
-                            <a href="#">Набирают популярность</a>
+                            <a>Набирают популярность</a>
                         </h3>
                     </div>
-                    @php $popular_article = $articles['popular'][0] @endphp
-                    @include('OLEGYERA.FrontBox.particles.article', [
-                           'type' => 'large',
-                           'eclipsed' => true,
-                           'link' => route('ru.pub', ['id' => $popular_article->article->id]),
-                           'img_url' => 'https://medpravda.ua/gallery/' . getCategoryName($popular_article->image->category_id) . '/large/' . $popular_article->image->path,
-                           'time' => daysOrMonth($popular_article->article->created_at, 'ru'),
-                           'counter' => 0,
-                           'title' => $popular_article->article->title,
-                           'author' => $popular_article->editor->name . ' ' . $popular_article->editor->surname,
-                       ])
-
-                    @php $popular_article = $articles['popular'][1] @endphp
-                    @include('OLEGYERA.FrontBox.particles.article', [
-                        'type' => 'base',
-                        'eclipsed' => true,
-                        'link' => route('ru.pub', ['id' => $popular_article->article->id]),
-                        'img_url' => 'https://medpravda.ua/gallery/' . getCategoryName($popular_article->image->category_id) . '/large/' . $popular_article->image->path,
-                        'time' => daysOrMonth($popular_article->article->created_at, 'ru'),
-                        'counter' => 0,
-                        'title' => $popular_article->article->title,
-                        'author' => $popular_article->editor->name . ' ' . $popular_article->editor->surname,
-                    ])
-                    @php $popular_article = $articles['popular'][2] @endphp
-                    @include('OLEGYERA.FrontBox.particles.article', [
-                        'type' => 'base',
-                        'eclipsed' => true,
-                        'link' => route('ru.pub', ['id' => $popular_article->article->id]),
-                        'img_url' => 'https://medpravda.ua/gallery/' . getCategoryName($popular_article->image->category_id) . '/large/' . $popular_article->image->path,
-                        'time' => daysOrMonth($popular_article->article->created_at, 'ru'),
-                        'counter' => 0,
-                        'title' => $popular_article->article->title,
-                        'author' => $popular_article->editor->name . ' ' . $popular_article->editor->surname,
-                    ])
-                    @php $popular_article = $articles['popular'][3] @endphp
-                    @include('OLEGYERA.FrontBox.particles.article-banner', [
-                        'link' => route('ru.pub', ['id' => $popular_article->article->id]),
-                        'img_url' => 'https://medpravda.ua/gallery/' . getCategoryName($popular_article->image->category_id) . '/large/' . $popular_article->image->path,
-                        'time' => daysOrMonth($popular_article->article->created_at, 'ru'),
-                        'counter' => 0,
-                        'title' => $popular_article->article->title,
-                        'author' => $popular_article->editor->name . ' ' . $popular_article->editor->surname,
-                    ])
+                    @foreach($articles['popular'] as $key=>$popular_article)
+                            @include('OLEGYERA.Web.particles.article', [
+                               'type' => 'large',
+                               'eclipsed' => true,
+                               'link' => route('ru.pub', ['id' => $popular_article->article->id]),
+                               'img_url' => 'https://medpravda.ua/gallery/' . getCategoryName($popular_article->image->category_id) . '/large/' . $popular_article->image->path,
+                               'time' => daysOrMonth($popular_article->article->created_at, 'ru'),
+                               'counter' => $popular_article->article->view,
+                               'title' => $popular_article->article->title,
+                               'author' => $popular_article->editor->name . ' ' . $popular_article->editor->surname,
+                           ])
+                    @endforeach
                 </div>
 
                 <div class="right-grid">
@@ -126,14 +95,14 @@
                             <a>Последние</a>
                         </h3>
                     </div>
+
                     @foreach($articles['last'] as $popular_article)
-                        @php $time_arr = daysOrMonth($popular_article->article->created_at, 'ru') @endphp
-                        @include('OLEGYERA.FrontBox.particles.article', [
+                        @include('OLEGYERA.Web.particles.article', [
                             'type' => 'mini',
                             'eclipsed' => true,
                             'link' => route('ru.pub', ['id' => $popular_article->article->id]),
-                            'time' => $time_arr,
-                            'counter' => 0,
+                            'time' => daysOrMonth($popular_article->article->created_at, 'ru'),
+                            'counter' => $popular_article->article->view,
                             'title' => $popular_article->article->title,
                             'author' => $popular_article->editor->name . ' ' . $popular_article->editor->surname,
                             'img_url' => 'https://medpravda.ua/gallery/' . getCategoryName($popular_article->image->category_id) . '/large/' . $popular_article->image->path,
@@ -156,13 +125,12 @@
         </div>
         <div class="grid">
             @foreach($interviews['items'] as $item)
-                @php $time_arr = daysOrMonth($item->article->created_at, 'ru') @endphp
-                @include('OLEGYERA.FrontBox.particles.article', [
+                @include('OLEGYERA.Web.particles.article', [
                     'type' => 'base',
                     'eclipsed' => true,
                     'link' => route('ru.pub', ['id' => $item->article->id]),
-                    'time' => $time_arr,
-                    'counter' => 0,
+                    'time' => daysOrMonth($item->article->created_at, 'ru'),
+                    'counter' => $item->article->view,
                     'title' => $item->article->title,
                     'author' => $item->editor->name . ' ' . $item->editor->surname,
                     'img_url' => 'https://medpravda.ua/gallery/' . getCategoryName($item->image->category_id) . '/large/' . $item->image->path,
@@ -180,126 +148,51 @@
             </div>
             <div class="grid">
                 <div class="left-grid">
-                    @php $popular_article = $popular['data'][0] @endphp
-                    @include('OLEGYERA.FrontBox.particles.article', [
-                       'type' => 'base',
-                       'eclipsed' => true,
-                       'link' => route('ru.pub', ['id' => $popular_article->article->id]),
-                       'img_url' => 'https://medpravda.ua/gallery/' . getCategoryName($popular_article->image->category_id) . '/large/' . $popular_article->image->path,
-                       'time' => daysOrMonth($popular_article->article->created_at, 'ru'),
-                       'counter' => 0,
-                       'title' => $popular_article->article->title,
-                       'author' => $popular_article->editor->name . ' ' . $popular_article->editor->surname,
-                   ])
-                    @php $popular_article = $popular['data'][1] @endphp
-                    @include('OLEGYERA.FrontBox.particles.article', [
-                       'type' => 'base',
-                       'eclipsed' => true,
-                       'link' => route('ru.pub', ['id' => $popular_article->article->id]),
-                       'img_url' => 'https://medpravda.ua/gallery/' . getCategoryName($popular_article->image->category_id) . '/large/' . $popular_article->image->path,
-                       'time' => daysOrMonth($popular_article->article->created_at, 'ru'),
-                       'counter' => 0,
-                       'title' => $popular_article->article->title,
-                       'author' => $popular_article->editor->name . ' ' . $popular_article->editor->surname,
-                   ])
-                    @php $popular_article = $popular['data'][2] @endphp
-                    @include('OLEGYERA.FrontBox.particles.article', [
-                       'type' => 'base',
-                       'eclipsed' => true,
-                       'link' => route('ru.pub', ['id' => $popular_article->article->id]),
-                       'img_url' => 'https://medpravda.ua/gallery/' . getCategoryName($popular_article->image->category_id) . '/large/' . $popular_article->image->path,
-                       'time' => daysOrMonth($popular_article->article->created_at, 'ru'),
-                       'counter' => 0,
-                       'title' => $popular_article->article->title,
-                       'author' => $popular_article->editor->name . ' ' . $popular_article->editor->surname,
-                   ])
+                    @foreach($popular['data'] as $key=>$popular_article)
+                        @if($key <= 2)
+                            @include('OLEGYERA.Web.particles.article', [
+                               'type' => 'base',
+                               'eclipsed' => true,
+                               'link' => route('ru.pub', ['id' => $popular_article->article->id]),
+                               'img_url' => 'https://medpravda.ua/gallery/' . getCategoryName($popular_article->image->category_id) . '/large/' . $popular_article->image->path,
+                               'time' => daysOrMonth($popular_article->article->created_at, 'ru'),
+                               'counter' => $popular_article->article->view,
+                               'title' => $popular_article->article->title,
+                               'author' => $popular_article->editor->name . ' ' . $popular_article->editor->surname,
+                           ])
+                        @endif
+                    @endforeach
 
                     <div class="mini-fix">
-                        @php $popular_article = $popular['data'][3] @endphp
-                        @include('OLEGYERA.FrontBox.particles.article', [
-                           'type' => 'base',
-                           'eclipsed' => true,
-                           'link' => route('ru.pub', ['id' => $popular_article->article->id]),
-                           'img_url' => 'https://medpravda.ua/gallery/' . getCategoryName($popular_article->image->category_id) . '/large/' . $popular_article->image->path,
-                           'time' => daysOrMonth($popular_article->article->created_at, 'ru'),
-                           'counter' => 0,
-                           'title' => $popular_article->article->title,
-                           'author' => $popular_article->editor->name . ' ' . $popular_article->editor->surname,
-                       ])
-
-                        @php $popular_article = $popular['data'][4] @endphp
-                        @include('OLEGYERA.FrontBox.particles.article', [
-                           'type' => 'base',
-                           'eclipsed' => true,
-                           'link' => route('ru.pub', ['id' => $popular_article->article->id]),
-                           'img_url' => 'https://medpravda.ua/gallery/' . getCategoryName($popular_article->image->category_id) . '/large/' . $popular_article->image->path,
-                           'time' => daysOrMonth($popular_article->article->created_at, 'ru'),
-                           'counter' => 0,
-                           'title' => $popular_article->article->title,
-                           'author' => $popular_article->editor->name . ' ' . $popular_article->editor->surname,
-                       ])
-
-                        @php $popular_article = $popular['data'][5] @endphp
-                        @include('OLEGYERA.FrontBox.particles.article', [
-                           'type' => 'base',
-                           'eclipsed' => true,
-                           'link' => route('ru.pub', ['id' => $popular_article->article->id]),
-                           'img_url' => 'https://medpravda.ua/gallery/' . getCategoryName($popular_article->image->category_id) . '/large/' . $popular_article->image->path,
-                           'time' => daysOrMonth($popular_article->article->created_at, 'ru'),
-                           'counter' => 0,
-                           'title' => $popular_article->article->title,
-                           'author' => $popular_article->editor->name . ' ' . $popular_article->editor->surname,
-                       ])
-                        @php $popular_article = $popular['data'][6] @endphp
-                        @include('OLEGYERA.FrontBox.particles.article', [
-                           'type' => 'base',
-                           'eclipsed' => true,
-                           'link' => route('ru.pub', ['id' => $popular_article->article->id]),
-                           'img_url' => 'https://medpravda.ua/gallery/' . getCategoryName($popular_article->image->category_id) . '/large/' . $popular_article->image->path,
-                           'time' => daysOrMonth($popular_article->article->created_at, 'ru'),
-                           'counter' => 0,
-                           'title' => $popular_article->article->title,
-                           'author' => $popular_article->editor->name . ' ' . $popular_article->editor->surname,
-                       ])
-                        @php $popular_article = $popular['data'][7] @endphp
-                        @include('OLEGYERA.FrontBox.particles.article', [
-                           'type' => 'base',
-                           'eclipsed' => true,
-                           'link' => route('ru.pub', ['id' => $popular_article->article->id]),
-                           'img_url' => 'https://medpravda.ua/gallery/' . getCategoryName($popular_article->image->category_id) . '/large/' . $popular_article->image->path,
-                           'time' => daysOrMonth($popular_article->article->created_at, 'ru'),
-                           'counter' => 0,
-                           'title' => $popular_article->article->title,
-                           'author' => $popular_article->editor->name . ' ' . $popular_article->editor->surname,
-                       ])
-                        @php $popular_article = $popular['data'][8] @endphp
-                        @include('OLEGYERA.FrontBox.particles.article', [
-                           'type' => 'base',
-                           'eclipsed' => true,
-                           'link' => route('ru.pub', ['id' => $popular_article->article->id]),
-                           'img_url' => 'https://medpravda.ua/gallery/' . getCategoryName($popular_article->image->category_id) . '/large/' . $popular_article->image->path,
-                           'time' => daysOrMonth($popular_article->article->created_at, 'ru'),
-                           'counter' => 0,
-                           'title' => $popular_article->article->title,
-                           'author' => $popular_article->editor->name . ' ' . $popular_article->editor->surname,
-                       ])
-                        <a class="special-link">
-                            <h4>Все топ темы</h4>
-                        </a>
+                        @foreach($popular['data'] as $key=>$popular_article)
+                            @if($key > 2 && $key < 9)  @continue @endif
+                            @include('OLEGYERA.Web.particles.article', [
+                               'type' => 'base',
+                               'eclipsed' => true,
+                               'link' => route('ru.pub', ['id' => $popular_article->article->id]),
+                               'img_url' => 'https://medpravda.ua/gallery/' . getCategoryName($popular_article->image->category_id) . '/large/' . $popular_article->image->path,
+                               'time' => daysOrMonth($popular_article->article->created_at, 'ru'),
+                               'counter' => $popular_article->article->view,
+                               'title' => $popular_article->article->title,
+                               'author' => $popular_article->editor->name . ' ' . $popular_article->editor->surname,
+                           ])
+                        @endforeach
                     </div>
                 </div>
                 <div class="right-grid">
-                    @php $popular_article = $popular['data'][9] @endphp
-                    @include('OLEGYERA.FrontBox.particles.article', [
-                        'type' => 'large',
-                       'eclipsed' => false,
-                       'link' => route('ru.pub', ['id' => $popular_article->article->id]),
-                       'img_url' => 'https://medpravda.ua/gallery/' . getCategoryName($popular_article->image->category_id) . '/large/' . $popular_article->image->path,
-                       'time' => daysOrMonth($popular_article->article->created_at, 'ru'),
-                       'counter' => 0,
-                       'title' => $popular_article->article->title,
-                       'author' => $popular_article->editor->name . ' ' . $popular_article->editor->surname,
-                   ])
+                    @if(isset($popular['data'][9]))
+                        @php $popular_article = $popular['data'][9] @endphp
+                        @include('OLEGYERA.Web.particles.article', [
+                            'type' => 'large',
+                           'eclipsed' => false,
+                           'link' => route('ru.pub', ['id' => $popular_article->article->id]),
+                           'img_url' => 'https://medpravda.ua/gallery/' . getCategoryName($popular_article->image->category_id) . '/large/' . $popular_article->image->path,
+                           'time' => daysOrMonth($popular_article->article->created_at, 'ru'),
+                           'counter' => $popular_article->article->view,
+                           'title' => $popular_article->article->title,
+                           'author' => $popular_article->editor->name . ' ' . $popular_article->editor->surname,
+                       ])
+                    @endif
                 </div>
             </div>
         </div>
@@ -314,17 +207,17 @@
             </h2>
         </div>
         <div class="grid">
-            @include('OLEGYERA.FrontBox.particles.article-plate', [
+            @include('OLEGYERA.Web.particles.article-plate', [
                        'img_url' => asset('img/FrontBox/home/directory/symptoms.png'),
                        'title' => 'Медицинский справочник симптомов',
                        'description' => 'В справочнике симптомов вы найдете полное описание каждого симптома и методы его снятия.'
                    ])
-            @include('OLEGYERA.FrontBox.particles.article-plate', [
+            @include('OLEGYERA.Web.particles.article-plate', [
                         'img_url' => asset('img/FrontBox/home/directory/disease.png'),
                         'title' => 'Медицинский справочник болезней',
                         'description' => 'В справочнике болезней вы найдете полное описание каждой болезни, их методы лечения и диагностирования.'
                     ])
-            @include('OLEGYERA.FrontBox.particles.article-plate', [
+            @include('OLEGYERA.Web.particles.article-plate', [
                         'img_url' => asset('img/FrontBox/home/directory/emergency.png'),
                         'title' => 'Медицинский справочник неотложных состояний',
                         'description' => 'В справочнике неотложных сотояний вы можете найти и ознакомится с различными острыми заболеваниями, обострениями, хроническими патологиями, травмами и тд.'

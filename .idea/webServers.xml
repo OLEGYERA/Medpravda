@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="e6883fc4-fea7-44c6-9945-1b2e7dd8364a" name="MP">
+        <fileTransfer rootFolder="/usr/home/nspuhf/public_html" accessType="SFTP" host="dedivirt680.your-server.de" port="222" sshConfigId="ac1d1249-ea56-4dac-a6a5-3c5484b14189" sshConfig="nspuhf@dedivirt680.your-server.de:222 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

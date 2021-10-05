@@ -18,6 +18,22 @@
         <div class="wrap menu-wrap">
             <nav class="menu-box-row">
                 <div class="mp-menu-title">
+                    Категории медиа
+                </div>
+                <ul class="mp-menu-item">
+                    <li>
+                        <a href="{{route('ru.tags.news')}}">Новости</a>
+                    </li>
+                    <li>
+                        <a href="{{route('ru.tags.articles')}}">Статьи</a>
+                    </li>
+                    <li>
+                        <a href="{{route('ru.tags.interviews')}}">Интервью</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="menu-box-row">
+                <div class="mp-menu-title">
                     Инструкции
                 </div>
                 <ul class="mp-menu-item">
@@ -70,25 +86,6 @@
                     </li>
                     <li>
                         <a href="{{route('ru.catalog.cosmetic.atx')}}">Классификации косметических средств</a>
-                    </li>
-                </ul>
-            </nav>
-            <nav class="menu-box-row">
-                <div class="mp-menu-title">
-                    Категории медиа
-                </div>
-                <ul class="mp-menu-item">
-                    <li>
-                        <a href="#">Топ темы</a>
-                    </li>
-                    <li>
-                        <a href="#">Новости</a>
-                    </li>
-                    <li>
-                        <a href="#">Статьи</a>
-                    </li>
-                    <li>
-                        <a href="#">Справочник</a>
                     </li>
                 </ul>
             </nav>

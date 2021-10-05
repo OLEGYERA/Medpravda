@@ -28,10 +28,16 @@ class MediaView extends Launch
             $this->fullWidth = false;
         }
 
+        $this->targeting_url = 'pub_' . $id;
+        $this->branding_url = 'pub_' . $id;
+
         $this->lang = 'ru';
         $this->title =  $publication->title;
 
 //        dd($structure_settings->float);
+
+        $publication->view = $publication->view + 1;
+        $publication->save();
 
         $this->Page = view('OLEGYERA.Web.pages.media.simple.pub.ru')->with([
             'publication' => $publication,
@@ -54,10 +60,16 @@ class MediaView extends Launch
             $this->fullWidth = false;
         }
 
+        $this->targeting_url = 'pub_' . $id;
+        $this->branding_url = 'pub_' . $id;
+
         $this->lang = 'ua';
         $this->title =  $publication->title;
 
 //        dd($structure_settings->float);
+
+        $publication->view = $publication->view + 1;
+        $publication->save();
 
         $this->Page = view('OLEGYERA.Web.pages.media.simple.pub.ua')->with([
             'publication' => $publication,
