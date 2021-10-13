@@ -1,4 +1,5 @@
 {
-    "/Web/js/launch.js": "/Web/js/launch.js",
-    "/css/FrontBox/update-style.css": "/css/FrontBox/update-style.css"
+    "/Web/js/manage-launcher.js": "/Web/js/manage-launcher.js",
+    "/css/FrontBox/update-style.css": "/css/FrontBox/update-style.css",
+    "/css/FrontBox/web-manager.css": "/css/FrontBox/web-manager.css"
 }

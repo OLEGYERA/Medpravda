@@ -1,0 +1,81 @@
+@import "../customization";
+
+.box-special{
+    .grid {
+        flex-wrap: wrap;
+    }
+    .article{
+        width: 33.33%;
+        .article-body{
+            height: 100%;
+            background-color: $white;
+            box-shadow: 0 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+            .content-box{
+                padding: 12px;
+                .article-header{
+                    font-size: 24px;
+                    padding: 0 0 12px;
+                    box-sizing: content-box;
+                }
+                .article-info{
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 24px;
+                    @include line-clamp(3)
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 989px) {
+    .box-special{
+        .grid{
+            padding: 0 12px;
+            justify-content: space-between;
+        }
+        .article{
+            width: 32.5%;
+            padding: 0;
+            .article-body{
+                .content-box{
+                    padding: 10px;
+                    .article-header{
+                        font-size: 18px;
+                        padding: 0 0 10px;
+                    }
+                    .article-info{
+                        font-weight: 300;
+                        font-size: 15px;
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .box-special{
+        .article{
+            width: 100%;
+            padding: 0 0 12px;
+            .article-body{
+                background-color: transparent;
+                box-shadow: none;
+                .content-box{
+                    padding: 7px 0 5px;
+                    .article-header{
+                        font-size: 24px;
+                        padding: 0 0 5px;
+                    }
+                }
+            }
+            &:last-child{
+                padding: 0;
+            }
+        }
+    }
+}

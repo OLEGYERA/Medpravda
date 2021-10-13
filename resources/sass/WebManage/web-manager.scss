@@ -1,0 +1,40 @@
+@import "customization";
+
+@import "components/header";
+@import "components/bell";
+@import "components/toolbar";
+@import "components/imager";
+
+@import "modules/left-navigation";
+
+
+.main-wrapper{
+    position: relative;
+    transition: all .31s linear;
+    .fixed-wrap, .full-content{
+        transition: inherit;
+    }
+    &.wr-comply{
+        transform: translateX(25px);
+        .fixed-wrap{
+            transition-duration: .27s;
+            transform: translateY(-100%);
+        }
+        .full-content{
+            transform: translateY(-15px);
+        }
+    }
+}
+
+.web-manager{
+    .nav-pub-edit{
+
+
+    }
+
+}
+
+
+
+
+

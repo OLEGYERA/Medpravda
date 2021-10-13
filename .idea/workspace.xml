@@ -11,20 +11,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91fe680e-4e75-4153-950f-54f067455128" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/OLEGYERA/Web/particles/article-banner.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/OLEGYERA/Web/particles/article-list.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/OLEGYERA/Web/particles/article-plate.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/OLEGYERA/Web/particles/article.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/WebManage/app.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/WebManage/components/bell.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/WebManage/components/header.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/WebManage/components/imager.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/WebManage/components/toolbar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/WebManage/manage-launcher.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/WebManage/navigation/publication/edit.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/WebManage/navigation/publication/modules/left-navigation.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/WebManage/components/bell.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/WebManage/components/header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/WebManage/components/imager.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/WebManage/components/toolbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/WebManage/customization.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/WebManage/modules/left-navigation.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/WebManage/web-manager.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/modules/box-columns.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/modules/box-podcasts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/modules/box-protocols.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/modules/box-special.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/OLEGYERA/Web/pages/media/modules/breadcrumbs.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OLEGYERA/Web/HomeView.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OLEGYERA/Web/HomeView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OLEGYERA/Web/Launch.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OLEGYERA/Web/Launch.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OLEGYERA/Web/MediaView.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OLEGYERA/Web/MediaView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MediaArticle.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MediaArticle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/FrontBox/reactive.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/FrontBox/reactive.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/OLEGYERA/Web/components/header/ru.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/OLEGYERA/Web/components/header/ru.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/OLEGYERA/Web/components/header/ua.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/OLEGYERA/Web/components/header/ua.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Web/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Web/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/FrontBox/update-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/FrontBox/update-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/components/templates.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/components/templates.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/customization.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/customization.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/modules/pub-simple.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/modules/pub-simple.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/skeleton.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/skeleton.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/trash/FrontBox/update-style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/trash/FrontBox/update-style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/trash/falt/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/trash/falt/_colors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/update-style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/update-style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/OLEGYERA/FrontBox/Media/pages/ru.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/OLEGYERA/FrontBox/Media/pages/ru.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/OLEGYERA/Web/Launch/BaseBuilder.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/OLEGYERA/Web/Launch/BaseBuilder.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/OLEGYERA/Web/Launch/PackBuilder.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/OLEGYERA/Web/Launch/PackBuilder.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/OLEGYERA/Web/pages/home/ru.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/OLEGYERA/Web/pages/home/ru.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/OLEGYERA/Web/pages/home/ua.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/OLEGYERA/Web/pages/home/ua.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/OLEGYERA/Web/pages/media/simple/pub/ru.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/OLEGYERA/Web/pages/media/simple/pub/ru.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/OLEGYERA/Web/pages/media/simple/pub/ua.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/OLEGYERA/Web/pages/media/simple/pub/ua.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web_ru.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web_ru.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web_ua.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web_ua.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +206,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/OLEGYERA/Web" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -187,11 +218,11 @@
       <recent name="$PROJECT_DIR$/resources/sass/modules/intro-box" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/js/WebManage" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers/OLEGYERA/Web" />
       <recent name="$PROJECT_DIR$/resources/sass/modules" />
       <recent name="$PROJECT_DIR$/resources/sass" />
       <recent name="$PROJECT_DIR$/resources/sass/trash" />
-      <recent name="$PROJECT_DIR$/public/img/FrontBox/home" />
     </key>
   </component>
   <component name="RunManager">
@@ -248,7 +279,12 @@
       <workItem from="1632996871914" duration="48000" />
       <workItem from="1633253162815" duration="14248000" />
       <workItem from="1633331165436" duration="4126000" />
-      <workItem from="1633346878974" duration="4963000" />
+      <workItem from="1633346878974" duration="5050000" />
+      <workItem from="1633599169596" duration="6563000" />
+      <workItem from="1633692221560" duration="115000" />
+      <workItem from="1633815597666" duration="10882000" />
+      <workItem from="1633897997883" duration="47671000" />
+      <workItem from="1633993917631" duration="43602000" />
     </task>
     <servers />
   </component>
@@ -287,13 +323,14 @@
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="0" y="25" width="1440" height="875" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1440.875/-326.-1080.1920.1080/1594.-1080.1920.1080@0.25.1440.875" timestamp="1628958360154" />
-    <state x="611" y="261" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1632917102942">
+    <state x="611" y="261" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1633982877216">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
     <state x="458" y="221" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1440.875/-267.-1080.1920.1080@0.25.1440.875" timestamp="1627916982970" />
     <state x="458" y="221" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1440.875/-326.-1080.1920.1080/1594.-1080.1920.1080@0.25.1440.875" timestamp="1628972333400" />
     <state x="458" y="221" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1440.875/1594.-1080.1920.1080/-326.-1080.1920.1080@0.25.1440.875" timestamp="1629131752237" />
     <state x="458" y="221" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1440.875@0.25.1440.875" timestamp="1629363808891" />
+    <state x="611" y="261" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1920.1055/1920.0.1920.1080@0.25.1920.1055" timestamp="1633982877216" />
     <state x="611" y="261" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1920.0.1920.1080/0.25.1920.1055@0.25.1920.1055" timestamp="1632917102942" />
     <state x="100" y="125" width="1240" height="675" key="DiffContextDialog" timestamp="1633341111678">
       <screen x="0" y="25" width="1440" height="875" />
@@ -304,10 +341,10 @@
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state width="228" height="457" key="HiddenNamespacesPopup/0.25.1440.875@0.25.1440.875" timestamp="1630183941909" />
-    <state x="469" y="188" key="SettingsEditor" timestamp="1630505513513">
+    <state x="469" y="188" key="SettingsEditor" timestamp="1634079591688">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state x="469" y="188" key="SettingsEditor/1920.0.1920.1080/0.25.1920.1055@0.25.1920.1055" timestamp="1630505513513" />
+    <state x="469" y="188" key="SettingsEditor/1920.0.1920.1080/0.25.1920.1055@0.25.1920.1055" timestamp="1634079591688" />
     <state x="558" y="365" key="WebDeployment.AddServerDialog.v.1" timestamp="1633346948106">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
@@ -317,9 +354,10 @@
     </state>
     <state x="0" y="25" width="1440" height="814" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.25.1440.875@0.25.1440.875" timestamp="1630585810779" />
     <state x="133" y="146" width="1654" height="814" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1920.0.1920.1080/0.25.1920.1055@0.25.1920.1055" timestamp="1630513774008" />
-    <state x="763" y="470" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1632932511839">
+    <state x="763" y="470" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1633868463146">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
+    <state x="763" y="470" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1920.1055/1920.0.1920.1080@0.25.1920.1055" timestamp="1633868463146" />
     <state x="763" y="470" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1080/0.25.1920.1055@0.25.1920.1055" timestamp="1632932511839" />
     <state x="1920" y="0" width="1920" height="1080" maximized="true" key="dock-window-1" timestamp="1629197077616">
       <screen x="0" y="25" width="1440" height="875" />
@@ -336,20 +374,24 @@
     <state x="1597" y="-1080" width="1892" height="1075" maximized="true" key="dock-window-2/0.25.1440.875/-326.-1080.1920.1080/1594.-1080.1920.1080@0.25.1440.875" timestamp="1628970379919" />
     <state x="670" y="25" width="770" height="875" key="dock-window-2/0.25.1440.875/1440.-382.1920.1080@0.25.1440.875" timestamp="1629275489822" />
     <state x="670" y="25" width="770" height="875" key="dock-window-2/0.25.1440.875@0.25.1440.875" timestamp="1629117260621" />
-    <state x="561" y="222" width="796" height="661" key="find.popup" timestamp="1632934983199">
+    <state x="561" y="222" width="796" height="661" key="find.popup" timestamp="1634060864467">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
     <state x="421" y="188" width="597" height="548" key="find.popup/0.25.1440.875/-326.-1080.1920.1080/1594.-1080.1920.1080@0.25.1440.875" timestamp="1628974360609" />
-    <state x="561" y="222" width="796" height="661" key="find.popup/0.25.1920.1055/1920.0.1920.1080@0.25.1920.1055" timestamp="1629936260000" />
-    <state x="561" y="222" width="796" height="661" key="find.popup/1920.0.1920.1080/0.25.1920.1055@0.25.1920.1055" timestamp="1632934983199" />
+    <state x="561" y="222" width="796" height="661" key="find.popup/0.25.1920.1055/1920.0.1920.1080@0.25.1920.1055" timestamp="1633965527517" />
+    <state x="561" y="222" width="796" height="661" key="find.popup/1920.0.1920.1080/0.25.1920.1055@0.25.1920.1055" timestamp="1634060864467" />
     <state x="611" y="209" key="ftp.server.browser" timestamp="1633347088087">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="611" y="209" key="ftp.server.browser/0.25.1440.875/-1920.-356.1920.1080@0.25.1440.875" timestamp="1633347088087" />
-    <state x="625" y="259" width="670" height="676" key="search.everywhere.popup" timestamp="1630557674561">
+    <state x="681" y="341" key="refactoring.ChangeSignatureDialog" timestamp="1633938131197">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state x="625" y="259" width="670" height="676" key="search.everywhere.popup/1920.0.1920.1080/0.25.1920.1055@0.25.1920.1055" timestamp="1630557674561" />
+    <state x="681" y="341" key="refactoring.ChangeSignatureDialog/0.25.1920.1055/1920.0.1920.1080@0.25.1920.1055" timestamp="1633938131197" />
+    <state x="625" y="259" width="670" height="676" key="search.everywhere.popup" timestamp="1634063479701">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state x="625" y="259" width="670" height="676" key="search.everywhere.popup/1920.0.1920.1080/0.25.1920.1055@0.25.1920.1055" timestamp="1634063479701" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -504,6 +546,11 @@
           <line>2</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/OLEGYERA/Web/pages/home/ru.blade.php</url>
+          <line>200</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/resources/js/ManageBox/Media/structure/components/edit-structure-main.vue</url>
           <line>34</line>
@@ -513,6 +560,17 @@
           <url>file://$PROJECT_DIR$/resources/js/ManageBox/Media/article/components/edit-article-main.vue</url>
           <line>32</line>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/resources/js/WebManage/app.vue</url>
+          <line>24</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/resources/js/WebManage/navigation/publication/modules/left-navigation.vue</url>
+          <line>14</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

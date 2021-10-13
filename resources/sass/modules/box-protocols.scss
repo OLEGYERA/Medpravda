@@ -1,0 +1,54 @@
+@import "../customization";
+
+.box-protocols{
+    .article{
+        width: 25%;
+        .article-body{
+            background-color: #EFEFEF;
+            padding: 15px;
+            height: 100%;
+
+            .content-box{
+                .article-header{
+                    text-transform: uppercase;
+                    font-size: em(18);
+                    line-height: 1.3em;
+                    padding: 0;
+                    min-height: 80px;
+                }
+
+                .article-author{
+                    min-height: 55px;
+                    margin-top: 15px;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 989px) {
+    .box-protocols{
+        .article{
+            width: 50%;
+            .article-body{
+                padding: 10px;
+                .content-box{
+                    .article-author{
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .box-protocols{
+        .article{
+            width: 100%;
+        }
+    }
+}

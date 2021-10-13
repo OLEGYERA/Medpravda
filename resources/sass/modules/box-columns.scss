@@ -1,0 +1,165 @@
+@import "../customization";
+
+.box-columns{
+    .article{
+        width: 25%;
+        .article-body{
+            background-color: #EFEFEF;
+            padding: 15px;
+            height: 100%;
+
+            .content-box{
+                .article-header{
+                    min-height: 100px;
+                    font-size: 24px;
+                    padding: 0;
+                }
+
+                .article-author{
+                    min-height: 80px;
+                    margin-top: 15px;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+        &:first-child{
+            width: 60%;
+            .article-body{
+                .content-box{
+                    .article-header{
+                        font-size: 28px;
+                    }
+                    .article-author{
+                        .author-img-box{
+                            margin-right: 15px;
+                            min-height: 80px;
+                            min-width: 80px;
+                        }
+                        .author-content-box{
+                            .author-name{
+                                font-size: 20px;
+                            }
+                            .author-position{
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+        }
+        &:nth-child(2){
+            width: 40%;
+            .content-box{
+                .article-author{
+                    .author-img-box{
+                        margin-right: 15px;
+                        min-width: 65px;
+                        min-height: 65px;
+                    }
+                    .author-content-box{
+                        .author-name{
+                            font-size: 18px;
+                        }
+                        .author-position{
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+
+        }
+        &:nth-child(n+3){
+            .article-body{
+                .content-box{
+                    .article-header{
+                        font-size: 20px;
+                        min-height: 80px;
+                    }
+                    .author-content-box{
+                        .author-name{
+                            font-size: 14px;
+                        }
+                        .author-position{
+                            font-size: 12px;
+                        }
+                    }
+                    .article-author{
+                        min-height: 55px;
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+
+@media only screen and (max-width: 989px) {
+    .box-columns{
+        .grid{
+            justify-content: space-between;
+        }
+        .article{
+            &:nth-child(n+1){
+                width: 33.33%;
+                .article-body{
+                    padding: 10px;
+                    .content-box{
+                        .article-header{
+                            font-size: 18px;
+                            min-height: 70px;
+                            padding: 0;
+                        }
+                        .article-author{
+                            font-weight: 300;
+                            line-height: 1.1em;
+                            margin: 5px 0;
+                            font-size: 12px;
+                            min-height: 55px;
+                            .author-img-box{
+                                margin-right: 10px;
+                                min-width: 55px;
+                                min-height: 55px;
+                            }
+                            .author-content-box{
+                                .author-name{
+                                    font-size: 14px;
+                                    line-height: 1.1em;
+                                    font-weight: 400;
+                                }
+                                .author-position{
+                                    font-size: 12px;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .box-columns{
+        .article{
+            &:nth-child(n+1){
+                width: 50%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 680px) {
+    .box-columns{
+        .article{
+            &:nth-child(n+1){
+                width: 100%;
+            }
+        }
+    }
+}
+
+

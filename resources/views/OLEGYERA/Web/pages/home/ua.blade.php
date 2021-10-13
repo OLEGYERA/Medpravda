@@ -153,12 +153,12 @@
                             @include('OLEGYERA.Web.particles.article', [
                                'type' => 'base',
                                'eclipsed' => true,
-                               'link' => route('ua.pub', ['id' => $popular_article->article->id]),
-                               'img_url' => 'https://medpravda.ua/gallery/' . getCategoryName($popular_article->image->category_id) . '/large/' . $popular_article->image->path,
-                               'time' => daysOrMonth($popular_article->article->created_at, 'ua'),
-                               'counter' => $popular_article->article->view,
-                               'title' => $popular_article->article->utitle,
-                               'author' => $popular_article->editor->name . ' ' . $popular_article->editor->surname,
+                               'link' => route('ua.pub', ['id' => $popular_article->id]),
+                               'img_url' => 'https://medpravda.ua/gallery/' . getCategoryName($popular_article->dependency->image->category_id) . '/large/' . $popular_article->dependency->image->path,
+                               'time' => daysOrMonth($popular_article->created_at, 'ua'),
+                               'counter' => $popular_article->view,
+                               'title' => $popular_article->utitle,
+                               'author' => $popular_article->dependency->editor->name . ' ' . $popular_article->dependency->editor->surname,
                            ])
                         @endif
                     @endforeach
@@ -167,15 +167,15 @@
                         @foreach($popular['data'] as $key=>$popular_article)
                             @if($key > 2 && $key < 9)  @continue @endif
                             @include('OLEGYERA.Web.particles.article', [
-                               'type' => 'base',
-                               'eclipsed' => true,
-                               'link' => route('ua.pub', ['id' => $popular_article->article->id]),
-                               'img_url' => 'https://medpravda.ua/gallery/' . getCategoryName($popular_article->image->category_id) . '/large/' . $popular_article->image->path,
-                               'time' => daysOrMonth($popular_article->article->created_at, 'ua'),
-                               'counter' => $popular_article->article->view,
-                               'title' => $popular_article->article->utitle,
-                               'author' => $popular_article->editor->name . ' ' . $popular_article->editor->surname,
-                           ])
+                                   'type' => 'base',
+                                   'eclipsed' => true,
+                                   'link' => route('ua.pub', ['id' => $popular_article->id]),
+                                   'img_url' => 'https://medpravda.ua/gallery/' . getCategoryName($popular_article->dependency->image->category_id) . '/large/' . $popular_article->dependency->image->path,
+                                   'time' => daysOrMonth($popular_article->created_at, 'ua'),
+                                   'counter' => $popular_article->view,
+                                   'title' => $popular_article->utitle,
+                                   'author' => $popular_article->dependency->editor->name . ' ' . $popular_article->dependency->editor->surname,
+                               ])
                         @endforeach
                     </div>
                 </div>
@@ -183,14 +183,14 @@
                     @if(isset($popular['data'][9]))
                         @php $popular_article = $popular['data'][9] @endphp
                         @include('OLEGYERA.Web.particles.article', [
-                            'type' => 'large',
+                           'type' => 'large',
                            'eclipsed' => false,
-                           'link' => route('ua.pub', ['id' => $popular_article->article->id]),
-                           'img_url' => 'https://medpravda.ua/gallery/' . getCategoryName($popular_article->image->category_id) . '/large/' . $popular_article->image->path,
-                           'time' => daysOrMonth($popular_article->article->created_at, 'ua'),
-                           'counter' => $popular_article->article->view,
-                           'title' => $popular_article->article->utitle,
-                           'author' => $popular_article->editor->name . ' ' . $popular_article->editor->surname,
+                           'link' => route('ua.pub', ['id' => $popular_article->id]),
+                           'img_url' => 'https://medpravda.ua/gallery/' . getCategoryName($popular_article->dependency->image->category_id) . '/large/' . $popular_article->dependency->image->path,
+                           'time' => daysOrMonth($popular_article->created_at, 'ua'),
+                           'counter' => $popular_article->view,
+                           'title' => $popular_article->utitle,
+                           'author' => $popular_article->dependency->editor->name . ' ' . $popular_article->dependency->editor->surname,
                        ])
                     @endif
                 </div>
@@ -198,8 +198,108 @@
         </div>
     @endif
     {{--special--}}
-    {{--columns--}}
-    {{--podcast--}}
+
+    @if($specials['count'] != 0)
+        <div class="mp-box box-special">
+            <div class="mp-box-title center-align">
+                <h2>
+                    <a>Спецпроекты</a>
+                </h2>
+            </div>
+            <div class="grid">
+                @if($specials['count'] != 0)
+                    @foreach($specials['items'] as $special)
+                        <div class="article">
+                            <div class="article-body">
+                                <div class="img-wrapper">
+                                    <picture>
+                                        <img width="705" height="400" src="{{'https://medpravda.ua/gallery/' . getCategoryName($special->image->category_id) . '/large/' . $special->image->path}}" alt="">
+                                    </picture>
+                                </div>
+                                <div class="content-box">
+                                    <div class="article-header">
+                                        <h3>
+                                            <a href="{{route('ua.pub', ['id' => $special->article->id])}}">{{$special->article->utitle}}</a>
+                                        </h3>
+                                    </div>
+                                    {{--                                <div class="article-author special-author">--}}
+                                    {{--                                    --}}
+                                    {{--                                </div>--}}
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                @endif
+            </div>
+        </div>
+    @endif
+
+    @if($podcasts['count'] != 0)
+        <div class="mp-box box-podcasts">
+            <div class="mp-box-title">
+                <h2>
+                    <a>Подкасти</a>
+                </h2>
+            </div>
+            <div class="grid">
+                @foreach($podcasts['items'] as $podcast)
+
+                    <div class="article">
+                        <div class="article-body">
+                            <div class="article-favicon">
+                                <img src="{{asset('img/FrontBox/home/podcast.svg')}}" alt="">
+                            </div>
+                            <div class="content-box">
+                                <div class="article-header">
+                                    <h3>
+                                        <a href="{{route('ua.pub', ['id' => $podcast->article->id])}}">{{$podcast->article->utitle}}</a>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="article-category">
+                                @Без категорії
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    @endif
+
+    @if($protocols['count'] != 0)
+        <div class="mp-box box-protocols">
+            <div class="mp-box-title">
+                <h2>
+                    <a>Протоколи лікування</a>
+                </h2>
+            </div>
+            <div class="grid">
+                @foreach($protocols['items'] as $protocol)
+                    <div class="article">
+                        <div class="article-body">
+                            <div class="content-box">
+                                <div class="article-header">
+                                    <h3>
+                                        <a href="{{route('ua.pub', ['id' => $protocol->article->id])}}">{{$protocol->article->utitle}}</a>
+                                    </h3>
+                                </div>
+                                <div class="article-author">
+                                    <div class="author-img-box">
+                                        <img width="160" height="160" src="{{asset('/gallery/' . getCategoryName($protocol->article->dependency->creator->avatar->category_id) . '/medium/' . $protocol->article->dependency->creator->avatar->path)}}" alt="">
+                                    </div>
+                                    <div class="author-content-box">
+                                        <span class="author-name">{{$protocol->editor->name}}</span>
+                                        <span class="author-position"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    @endif
+
     <div class="mp-box box-directory">
         <div class="mp-box-title center-align">
             <h2>

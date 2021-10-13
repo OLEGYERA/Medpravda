@@ -36,6 +36,9 @@
     <script src="{{asset('assets/js/adriver.core.2.js')}}"></script>
 
     <link rel="stylesheet" href="{{ asset('css/FrontBox/update-style.css') }}">
+    @if($isAdmin)
+        <link rel="stylesheet" href="{{ asset('css/FrontBox/web-manager.css') }}">
+    @endif
 
 
     <script>
@@ -74,6 +77,12 @@
     @yield('footer')
 </div>
 
+
+@if($isAdmin)
+    <section id="mp-web-managament">
+        <manage-launcher></manage-launcher>
+    </section>
+@endif
 {{--Cookie alert--}}
 {{--@if('ua' == $lang) @else @endif--}}
 
@@ -83,5 +92,8 @@
     ]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
 </script>
 <script src="{{ asset('Web/js/launch.js') }}"></script>
+@if($isAdmin)
+    <script src="{{ asset('Web/js/manage-launcher.js') }}"></script>
+@endif
 </body>
 </html>

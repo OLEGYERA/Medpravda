@@ -1,0 +1,62 @@
+$orange: #FFA724;
+$dark-blue: #1D6289;
+$light-gray: rgb(244 244 245);
+$hover-gray: rgb(112 117 121 / 8%);
+$shadow-gray: rgb(228 228 229);
+$gray: #354052;
+$red: #BA0631;
+
+
+
+
+@mixin slide($axis, $name, $time: .3s, $start: 0%, $end: -100%){
+    .slide#{$axis}-#{$name}-enter-active,
+    .slide#{$axis}-#{$name}-leave-enter {
+        transform: translate#{$axis}($start);
+    }
+    .slide#{$axis}-#{$name}-enter,
+    .slide#{$axis}-#{$name}-leave-to{
+        transform: translate#{$axis}($end);
+    }
+
+    .slide#{$axis}-#{$name}-leave-to,
+    .slide#{$axis}-#{$name}-enter-active{
+        transition: all #{$time} linear;
+    }
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@mixin line-clamp($count){
+    display: -webkit-box;
+    -webkit-line-clamp: $count;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+
+.wm-crl-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .1s all linear;
+    img{
+        height: 16px;
+    }
+    &:hover{
+        background-color: $hover-gray;
+    }
+}
+

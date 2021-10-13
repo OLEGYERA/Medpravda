@@ -1,0 +1,88 @@
+@import "../customization";
+
+.box-podcasts{
+    .article{
+        width: 25%;
+        .article-body{
+            background-color: $blue;
+            padding: 15px;
+            .article-favicon{
+                img{
+                    width: 40px;
+                }
+            }
+            .content-box{
+                .article-header{
+                    padding: 0;
+                    margin: 10px 0 15px;
+                    font-size: 20px;
+                    line-height: 1.3em;
+                    h3{
+                        @include line-clamp(4);
+                        color: $white;
+                        a{
+                            color: $white;
+                            &:hover{
+                                &::after {
+                                    transition: .5s all ease;
+                                    background: $red;
+                                    mix-blend-mode: hue;                                                    }
+                            }
+                        }
+                    }
+                }
+            }
+            .article-category{
+                font-weight: 300;
+                font-style: italic;
+                color: $white;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 989px) {
+    .box-podcasts{
+        .article{
+            width: 50%;
+            .article-body{
+                padding: 10px;
+                .article-favicon{
+                    img{
+                        width: 30px;
+                    }
+                }
+                .content-box{
+                    .article-header{
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .box-podcasts{
+        .article{
+            .article-body{
+                .content-box{
+                    .article-header{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .box-podcasts{
+        .article{
+            width: 100%;
+        }
+    }
+}
+

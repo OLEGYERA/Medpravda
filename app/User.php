@@ -15,17 +15,17 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'login', 'email', 'password', 'name', 'middle_name', 'surname', 'country', 'city', 'rule_id', 'avatar_id', 'aside',
+        'id', 'login', 'email', 'password', 'name', 'middle_name', 'surname', 'country', 'city', 'rule_id', 'avatar_id', 'aside',
     ];
 
-    /**
-     * The attributes that should be hidden for arrays.
-     *
-     * @var array
-     */
-    protected $hidden = [
-        'password', 'remember_token',
-    ];
+    protected $guarded = array('id', 'password');
+
+    protected $visible = ['id', 'name', 'middle_name', 'surname'];
+
+    protected $hidden = ['password', 'remember_token'];
+
+
+
 
     public function avatar()
     {
@@ -40,6 +40,10 @@ class User extends Authenticatable
     public function editor()
     {
         return $this->hasOne('Fresh\Medpravda\Editor');
+    }
+
+    public function getAdminData(){
+        return $this->toArray();
     }
 
 

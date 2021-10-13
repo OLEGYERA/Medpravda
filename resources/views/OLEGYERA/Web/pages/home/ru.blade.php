@@ -153,12 +153,12 @@
                             @include('OLEGYERA.Web.particles.article', [
                                'type' => 'base',
                                'eclipsed' => true,
-                               'link' => route('ru.pub', ['id' => $popular_article->article->id]),
-                               'img_url' => 'https://medpravda.ua/gallery/' . getCategoryName($popular_article->image->category_id) . '/large/' . $popular_article->image->path,
-                               'time' => daysOrMonth($popular_article->article->created_at, 'ru'),
-                               'counter' => $popular_article->article->view,
-                               'title' => $popular_article->article->title,
-                               'author' => $popular_article->editor->name . ' ' . $popular_article->editor->surname,
+                               'link' => route('ru.pub', ['id' => $popular_article->id]),
+                               'img_url' => 'https://medpravda.ua/gallery/' . getCategoryName($popular_article->dependency->image->category_id) . '/large/' . $popular_article->dependency->image->path,
+                               'time' => daysOrMonth($popular_article->created_at, 'ru'),
+                               'counter' => $popular_article->view,
+                               'title' => $popular_article->title,
+                               'author' => $popular_article->dependency->editor->name . ' ' . $popular_article->dependency->editor->surname,
                            ])
                         @endif
                     @endforeach
@@ -167,15 +167,15 @@
                         @foreach($popular['data'] as $key=>$popular_article)
                             @if($key > 2 && $key < 9)  @continue @endif
                             @include('OLEGYERA.Web.particles.article', [
-                               'type' => 'base',
-                               'eclipsed' => true,
-                               'link' => route('ru.pub', ['id' => $popular_article->article->id]),
-                               'img_url' => 'https://medpravda.ua/gallery/' . getCategoryName($popular_article->image->category_id) . '/large/' . $popular_article->image->path,
-                               'time' => daysOrMonth($popular_article->article->created_at, 'ru'),
-                               'counter' => $popular_article->article->view,
-                               'title' => $popular_article->article->title,
-                               'author' => $popular_article->editor->name . ' ' . $popular_article->editor->surname,
-                           ])
+                                   'type' => 'base',
+                                   'eclipsed' => true,
+                                   'link' => route('ru.pub', ['id' => $popular_article->id]),
+                                   'img_url' => 'https://medpravda.ua/gallery/' . getCategoryName($popular_article->dependency->image->category_id) . '/large/' . $popular_article->dependency->image->path,
+                                   'time' => daysOrMonth($popular_article->created_at, 'ru'),
+                                   'counter' => $popular_article->view,
+                                   'title' => $popular_article->title,
+                                   'author' => $popular_article->dependency->editor->name . ' ' . $popular_article->dependency->editor->surname,
+                               ])
                         @endforeach
                     </div>
                 </div>
@@ -183,23 +183,156 @@
                     @if(isset($popular['data'][9]))
                         @php $popular_article = $popular['data'][9] @endphp
                         @include('OLEGYERA.Web.particles.article', [
-                            'type' => 'large',
+                           'type' => 'large',
                            'eclipsed' => false,
-                           'link' => route('ru.pub', ['id' => $popular_article->article->id]),
-                           'img_url' => 'https://medpravda.ua/gallery/' . getCategoryName($popular_article->image->category_id) . '/large/' . $popular_article->image->path,
-                           'time' => daysOrMonth($popular_article->article->created_at, 'ru'),
-                           'counter' => $popular_article->article->view,
-                           'title' => $popular_article->article->title,
-                           'author' => $popular_article->editor->name . ' ' . $popular_article->editor->surname,
+                           'link' => route('ru.pub', ['id' => $popular_article->id]),
+                           'img_url' => 'https://medpravda.ua/gallery/' . getCategoryName($popular_article->dependency->image->category_id) . '/large/' . $popular_article->dependency->image->path,
+                           'time' => daysOrMonth($popular_article->created_at, 'ru'),
+                           'counter' => $popular_article->view,
+                           'title' => $popular_article->title,
+                           'author' => $popular_article->dependency->editor->name . ' ' . $popular_article->dependency->editor->surname,
                        ])
                     @endif
                 </div>
             </div>
         </div>
     @endif
-    {{--special--}}
-    {{--columns--}}
-    {{--podcast--}}
+
+    @if($specials['count'] != 0)
+        <div class="mp-box box-special">
+        <div class="mp-box-title center-align">
+            <h2>
+                <a>Спецпроекты</a>
+            </h2>
+        </div>
+        <div class="grid">
+            @if($specials['count'] != 0)
+                @foreach($specials['items'] as $special)
+                    <div class="article">
+                        <div class="article-body">
+                            <div class="img-wrapper">
+                                <picture>
+                                    <img width="705" height="400" src="{{'https://medpravda.ua/gallery/' . getCategoryName($special->image->category_id) . '/large/' . $special->image->path}}" alt="">
+                                </picture>
+                            </div>
+                            <div class="content-box">
+                                <div class="article-header">
+                                    <h3>
+                                        <a href="{{route('ru.pub', ['id' => $special->article->id])}}">{{$special->article->title}}</a>
+                                    </h3>
+                                </div>
+{{--                                <div class="article-author special-author">--}}
+{{--                                    --}}
+{{--                                </div>--}}
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            @endif
+        </div>
+    </div>
+    @endif
+
+    @if($columns['count'] != 0)
+        <div class="mp-box box-columns">
+            <div class="mp-box-title">
+                <h2>
+                    <a>Колонки</a>
+                </h2>
+            </div>
+            <div class="grid">
+                @foreach($columns['items'] as $column)
+                    <div class="article">
+                        <div class="article-body">
+                            <div class="content-box">
+                                <div class="article-header">
+                                    <h3>
+                                        <a href="{{route('ru.pub', ['id' => $column->article->id])}}">{{$column->article->title}}</a>
+                                    </h3>
+                                </div>
+                                <div class="article-author">
+                                    <div class="author-img-box">
+                                        <img width="160" height="160" src="{{asset('/gallery/' . getCategoryName($column->article->dependency->creator->avatar->category_id) . '/medium/' . $column->article->dependency->creator->avatar->path)}}" alt="">
+                                    </div>
+                                    <div class="author-content-box">
+                                        <span class="author-name">{{$column->editor->name}}</span>
+                                        <span class="author-position"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    @endif
+
+    @if($podcasts['count'] != 0)
+        <div class="mp-box box-podcasts">
+            <div class="mp-box-title">
+                <h2>
+                    <a>Подкасты</a>
+                </h2>
+            </div>
+            <div class="grid">
+                @foreach($podcasts['items'] as $podcast)
+
+                    <div class="article">
+                        <div class="article-body">
+                            <div class="article-favicon">
+                                <img src="{{asset('img/FrontBox/home/podcast.svg')}}" alt="">
+                            </div>
+                            <div class="content-box">
+                                <div class="article-header">
+                                    <h3>
+                                        <a href="{{route('ru.pub', ['id' => $podcast->article->id])}}">{{$podcast->article->title}}</a>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="article-category">
+                                @Без категории
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    @endif
+
+    @if($protocols['count'] != 0)
+        <div class="mp-box box-protocols">
+            <div class="mp-box-title">
+                <h2>
+                    <a>Протоколы лечения</a>
+                </h2>
+            </div>
+            <div class="grid">
+                @foreach($protocols['items'] as $protocol)
+                    <div class="article">
+                        <div class="article-body">
+                            <div class="content-box">
+                                <div class="article-header">
+                                    <h3>
+                                        <a href="{{route('ru.pub', ['id' => $protocol->article->id])}}">{{$protocol->article->title}}</a>
+                                    </h3>
+                                </div>
+                                <div class="article-author">
+                                    <div class="author-img-box">
+                                        <img width="160" height="160" src="{{asset('/gallery/' . getCategoryName($protocol->article->dependency->creator->avatar->category_id) . '/medium/' . $protocol->article->dependency->creator->avatar->path)}}" alt="">
+                                    </div>
+                                    <div class="author-content-box">
+                                        <span class="author-name">{{$protocol->editor->name}}</span>
+                                        <span class="author-position"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    @endif
+
     <div class="mp-box box-directory">
         <div class="mp-box-title center-align">
             <h2>
@@ -458,365 +591,3 @@
         </div>
     </div>
 </div>
-
-
-
-{{--<div class="mp-box special">--}}
-{{--    <div class="title-box">--}}
-{{--        <h2>Спецпроекты</h2>--}}
-{{--    </div>--}}
-{{--    <div class="grid">--}}
-{{--        <div class="article">--}}
-{{--            <div class="article-body">--}}
-{{--                <div class="img-wrapper">--}}
-{{--                    <picture>--}}
-{{--                        <img width="705" height="400" src="https://img.pravda.com/images/doc/1/2/12c06f0-705-395.jpg" alt="">--}}
-{{--                    </picture>--}}
-{{--                </div>--}}
-{{--                <div class="content-box">--}}
-{{--                    <div class="article-header">--}}
-{{--                        <h3>--}}
-{{--                            <a href="#">Спецоперація "Крим": від курорту і автономії до депресивної околиці</a>--}}
-{{--                        </h3>--}}
-{{--                    </div>--}}
-{{--                    <div class="article-author special-author">--}}
-{{--                        При поддержке Европейского союза--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--        <div class="article">--}}
-{{--            <div class="article-body">--}}
-{{--                <div class="img-wrapper">--}}
-{{--                    <picture>--}}
-{{--                        <img width="705" height="400" src="https://img.pravda.com/images/doc/0/8/085e8f0-400-224.-3jpg.jpg" alt="">--}}
-{{--                    </picture>--}}
-{{--                </div>--}}
-{{--                <div class="content-box">--}}
-{{--                    <div class="article-header">--}}
-{{--                        <h3>--}}
-{{--                            <a href="#">Инклюзия в руках каждого: что можно сделать прямо сейчас для помощи детям с инвалидностью</a>--}}
-{{--                        </h3>--}}
-{{--                    </div>--}}
-{{--                    <div class="article-author special-author">--}}
-{{--                        При поддержке бренда "Агуша"--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--        <div class="article">--}}
-{{--            <div class="article-body">--}}
-{{--                <div class="img-wrapper">--}}
-{{--                    <picture>--}}
-{{--                        <img width="705" height="400" src="https://img.pravda.com/images/doc/2/6/26bc138-oil-pipeline-mountains-400.jpg" alt="">--}}
-{{--                    </picture>--}}
-{{--                </div>--}}
-{{--                <div class="content-box">--}}
-{{--                    <div class="article-header">--}}
-{{--                        <h3>--}}
-{{--                            <a href="#">Кто будет удерживать украинскую ГТС с 2025 и сколько это будет стоить?</a>--}}
-{{--                        </h3>--}}
-{{--                    </div>--}}
-{{--                    <div class="article-author special-author">--}}
-{{--                        При поддержке консалтинговой компании ExPro Consulting--}}
-{{--                        При поддержке консалтинговой компании ExPro Consulting--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--</div>--}}
-
-{{--<div class="mp-box columns">--}}
-{{--    <div class="title-box right-align">--}}
-{{--        <h2>Колонки</h2>--}}
-{{--    </div>--}}
-{{--    <div class="grid">--}}
-{{--        <div class="article">--}}
-{{--            <div class="article-body">--}}
-{{--                <div class="content-box">--}}
-{{--                    <div class="article-header">--}}
-{{--                        <h3>--}}
-{{--                            <a href="#">Почему визит премьера Грузии не отменяет курс Тбилиси на дистанцирование от Украины</a>--}}
-{{--                        </h3>--}}
-{{--                    </div>--}}
-{{--                    <div class="article-author">--}}
-{{--                        <div class="author-img-box">--}}
-{{--                            <img width="160" height="160" src="https://img.pravda.com/images/doc/9/e/9e2a057-kandelaki31_160x160.jpg" alt="">--}}
-{{--                        </div>--}}
-{{--                        <div class="author-content-box">--}}
-{{--                            <span class="author-name">Георгий Канделаки</span>--}}
-{{--                            <span class="author-position">экс-депутат Парламента Грузии, журналист</span>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--        <div class="article">--}}
-{{--            <div class="article-body">--}}
-{{--                <div class="content-box">--}}
-{{--                    <div class="article-header">--}}
-{{--                        <h3>--}}
-{{--                            <a href="#">Донбасс и не только: чего ожидать от встречи Зеленского и Байдена?</a>--}}
-{{--                        </h3>--}}
-{{--                    </div>--}}
-{{--                    <div class="article-author">--}}
-{{--                        <div class="author-img-box">--}}
-{{--                            <img width="160" height="160" src="https://img.pravda.com/images/doc/4/a/4a822dd-1denyshchenko_160x160.jpg" alt="">--}}
-{{--                        </div>--}}
-{{--                        <div class="author-content-box">--}}
-{{--                            <span class="author-name">Денис Денищенко</span>--}}
-{{--                            <span class="author-position">эксперт по вопросам международных отношений</span>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--        <div class="article">--}}
-{{--            <div class="article-body">--}}
-{{--                <div class="content-box">--}}
-{{--                    <div class="article-header">--}}
-{{--                        <h3>--}}
-{{--                            <a href="#">Почему визит премьера Грузии не отменяет курс Тбилиси на дистанцирование от Украины</a>--}}
-{{--                        </h3>--}}
-{{--                    </div>--}}
-{{--                    <div class="article-author">--}}
-{{--                        <div class="author-img-box">--}}
-{{--                            <img width="160" height="160" src="https://img.pravda.com/images/doc/9/e/9e2a057-kandelaki31_160x160.jpg" alt="">--}}
-{{--                        </div>--}}
-{{--                        <div class="author-content-box">--}}
-{{--                            <span class="author-name">Георгий Канделаки</span>--}}
-{{--                            <span class="author-position">экс-депутат Парламента Грузии, журналист</span>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--        <div class="article">--}}
-{{--            <div class="article-body">--}}
-{{--                <div class="content-box">--}}
-{{--                    <div class="article-header">--}}
-{{--                        <h3>--}}
-{{--                            <a href="#">Донбасс и не только: чего ожидать от встречи Зеленского и Байдена?</a>--}}
-{{--                        </h3>--}}
-{{--                    </div>--}}
-{{--                    <div class="article-author">--}}
-{{--                        <div class="author-img-box">--}}
-{{--                            <img width="160" height="160" src="https://img.pravda.com/images/doc/4/a/4a822dd-1denyshchenko_160x160.jpg" alt="">--}}
-{{--                        </div>--}}
-{{--                        <div class="author-content-box">--}}
-{{--                            <span class="author-name">Денис Денищенко</span>--}}
-{{--                            <span class="author-position">эксперт по вопросам международных отношений</span>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--        <div class="article">--}}
-{{--            <div class="article-body">--}}
-{{--                <div class="content-box">--}}
-{{--                    <div class="article-header">--}}
-{{--                        <h3>--}}
-{{--                            <a href="#">Почему визит премьера Грузии не отменяет курс Тбилиси на дистанцирование от Украины</a>--}}
-{{--                        </h3>--}}
-{{--                    </div>--}}
-{{--                    <div class="article-author">--}}
-{{--                        <div class="author-img-box">--}}
-{{--                            <img width="160" height="160" src="https://img.pravda.com/images/doc/9/e/9e2a057-kandelaki31_160x160.jpg" alt="">--}}
-{{--                        </div>--}}
-{{--                        <div class="author-content-box">--}}
-{{--                            <span class="author-name">Георгий Канделаки</span>--}}
-{{--                            <span class="author-position">экс-депутат Парламента Грузии, журналист</span>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--        <div class="article">--}}
-{{--            <div class="article-body">--}}
-{{--                <div class="content-box">--}}
-{{--                    <div class="article-header">--}}
-{{--                        <h3>--}}
-{{--                            <a href="#">Почему визит премьера Грузии не отменяет курс Тбилиси на дистанцирование от Украины</a>--}}
-{{--                        </h3>--}}
-{{--                    </div>--}}
-{{--                    <div class="article-author">--}}
-{{--                        <div class="author-img-box">--}}
-{{--                            <img width="160" height="160" src="https://img.pravda.com/images/doc/9/e/9e2a057-kandelaki31_160x160.jpg" alt="">--}}
-{{--                        </div>--}}
-{{--                        <div class="author-content-box">--}}
-{{--                            <span class="author-name">Георгий Канделаки</span>--}}
-{{--                            <span class="author-position">экс-депутат Парламента Грузии, журналист</span>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--</div>--}}
-
-{{--<div class="mp-box podcast">--}}
-{{--    <div class="title-box">--}}
-{{--        <h2>Подкасты</h2>--}}
-{{--    </div>--}}
-{{--    <div class="grid">--}}
-{{--        <div class="article">--}}
-{{--            <div class="article-body">--}}
-{{--                <div class="article-favicon">--}}
-{{--                    <img src="{{asset('img/FrontBox/home/podcast.svg')}}" alt="">--}}
-{{--                </div>--}}
-{{--                <div class="content-box">--}}
-{{--                    <div class="article-header">--}}
-{{--                        <h3>--}}
-{{--                            <a href="#">Кто такие талибы, как США оказались в Афганистане и почему оттуда ушли? Говорим о последних событиях в Афганистане</a>--}}
-{{--                        </h3>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--                <div class="article-category">--}}
-{{--                    @Долбанные вопросы--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--        <div class="article">--}}
-{{--            <div class="article-body">--}}
-{{--                <div class="article-favicon">--}}
-{{--                    <img src="{{asset('img/FrontBox/home/podcast.svg')}}" alt="">--}}
-{{--                </div>--}}
-{{--                <div class="content-box">--}}
-{{--                    <div class="article-header">--}}
-{{--                        <h3>--}}
-{{--                            <a href="#">Кто такие талибы, как США оказались в Афганистане и почему оттуда ушли? Говорим о последних событиях в Афганистане</a>--}}
-{{--                        </h3>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--                <div class="article-category">--}}
-{{--                    @Долбанные вопросы--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--        <div class="article">--}}
-{{--            <div class="article-body">--}}
-{{--                <div class="article-favicon">--}}
-{{--                    <img src="{{asset('img/FrontBox/home/podcast.svg')}}" alt="">--}}
-{{--                </div>--}}
-{{--                <div class="content-box">--}}
-{{--                    <div class="article-header">--}}
-{{--                        <h3>--}}
-{{--                            <a href="#">Кто такие талибы, как США оказались в Афганистане и почему оттуда ушли? Говорим о последних событиях в Афганистане</a>--}}
-{{--                        </h3>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--                <div class="article-category">--}}
-{{--                    @Долбанные вопросы--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--        <div class="article">--}}
-{{--            <div class="article-body">--}}
-{{--                <div class="article-favicon">--}}
-{{--                    <img src="{{asset('img/FrontBox/home/podcast.svg')}}" alt="">--}}
-{{--                </div>--}}
-{{--                <div class="content-box">--}}
-{{--                    <div class="article-header">--}}
-{{--                        <h3>--}}
-{{--                            <a href="#">Кто такие талибы, как США оказались в Афганистане и почему оттуда ушли? Говорим о последних событиях в Афганистане</a>--}}
-{{--                        </h3>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--                <div class="article-category">--}}
-{{--                    @Долбанные вопросы--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--</div>--}}
-
-
-{{--protocols--}}
-{{--<div class="mp-box protocols">--}}
-{{--    <div class="title-box">--}}
-{{--        <h2>Протоколы лечения</h2>--}}
-{{--    </div>--}}
-{{--    <div class="grid">--}}
-{{--        <div class="article">--}}
-{{--            <div class="article-body">--}}
-{{--                <div class="content-box">--}}
-{{--                    <div class="article-header">--}}
-{{--                        <h3>--}}
-{{--                            <a href="#">УНІФІКОВАНИЙ КЛІНІЧНИЙ ПРОТОКОЛ ПЕРВИННОЇ, ВТОРИННОЇ (СПЕЦІАЛІЗОВАНОЇ) ТА ТРЕТИННОЇ (ВИСОКОСПЕЦІАЛІЗОВАНОЇ) МЕДИЧНОЇ ДОПОМОГИ ДІТЯМ ВІЛ-ІНФЕКЦІЯ</a>--}}
-{{--                        </h3>--}}
-{{--                    </div>--}}
-{{--                    <div class="article-author">--}}
-{{--                        <div class="author-img-box">--}}
-{{--                            <img width="160" height="160" src="https://img.pravda.com/images/doc/9/e/9e2a057-kandelaki31_160x160.jpg" alt="">--}}
-{{--                        </div>--}}
-{{--                        <div class="author-content-box">--}}
-{{--                            <span class="author-name">Георгий Канделаки</span>--}}
-{{--                            <span class="author-position">экс-депутат Парламента Грузии, журналист</span>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--        <div class="article">--}}
-{{--            <div class="article-body">--}}
-{{--                <div class="content-box">--}}
-{{--                    <div class="article-header">--}}
-{{--                        <h3>--}}
-{{--                            <a href="#">УНІФІКОВАНИЙ КЛІНІЧНИЙ ПРОТОКОЛ ПЕРВИННОЇ, ВТОРИННОЇ (СПЕЦІАЛІЗОВАНОЇ) ТА ТРЕТИННОЇ (ВИСОКОСПЕЦІАЛІЗОВАНОЇ) МЕДИЧНОЇ ДОПОМОГИ ДІТЯМ ВІЛ-ІНФЕКЦІЯ</a>--}}
-{{--                        </h3>--}}
-{{--                    </div>--}}
-{{--                    <div class="article-author">--}}
-{{--                        <div class="author-img-box">--}}
-{{--                            <img width="160" height="160" src="https://img.pravda.com/images/doc/9/e/9e2a057-kandelaki31_160x160.jpg" alt="">--}}
-{{--                        </div>--}}
-{{--                        <div class="author-content-box">--}}
-{{--                            <span class="author-name">Георгий Канделаки</span>--}}
-{{--                            <span class="author-position">экс-депутат Парламента Грузии, журналист</span>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--        <div class="article">--}}
-{{--            <div class="article-body">--}}
-{{--                <div class="content-box">--}}
-{{--                    <div class="article-header">--}}
-{{--                        <h3>--}}
-{{--                            <a href="#">УНІФІКОВАНИЙ КЛІНІЧНИЙ ПРОТОКОЛ ПЕРВИННОЇ, ВТОРИННОЇ (СПЕЦІАЛІЗОВАНОЇ) ТА ТРЕТИННОЇ (ВИСОКОСПЕЦІАЛІЗОВАНОЇ) МЕДИЧНОЇ ДОПОМОГИ ДІТЯМ ВІЛ-ІНФЕКЦІЯ</a>--}}
-{{--                        </h3>--}}
-{{--                    </div>--}}
-{{--                    <div class="article-author">--}}
-{{--                        <div class="author-img-box">--}}
-{{--                            <img width="160" height="160" src="https://img.pravda.com/images/doc/9/e/9e2a057-kandelaki31_160x160.jpg" alt="">--}}
-{{--                        </div>--}}
-{{--                        <div class="author-content-box">--}}
-{{--                            <span class="author-name">Георгий Канделаки</span>--}}
-{{--                            <span class="author-position">экс-депутат Парламента Грузии, журналист</span>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--        <div class="article">--}}
-{{--            <div class="article-body">--}}
-{{--                <div class="content-box">--}}
-{{--                    <div class="article-header">--}}
-{{--                        <h3>--}}
-{{--                            <a href="#">УНІФІКОВАНИЙ КЛІНІЧНИЙ ПРОТОКОЛ ПЕРВИННОЇ, ВТОРИННОЇ (СПЕЦІАЛІЗОВАНОЇ) ТА ТРЕТИННОЇ (ВИСОКОСПЕЦІАЛІЗОВАНОЇ) МЕДИЧНОЇ ДОПОМОГИ ДІТЯМ ВІЛ-ІНФЕКЦІЯ</a>--}}
-{{--                        </h3>--}}
-{{--                    </div>--}}
-{{--                    <div class="article-author">--}}
-{{--                        <div class="author-img-box">--}}
-{{--                            <img width="160" height="160" src="https://img.pravda.com/images/doc/9/e/9e2a057-kandelaki31_160x160.jpg" alt="">--}}
-{{--                        </div>--}}
-{{--                        <div class="author-content-box">--}}
-{{--                            <span class="author-name">Георгий Канделаки</span>--}}
-{{--                            <span class="author-position">экс-депутат Парламента Грузии, журналист</span>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--</div>--}}

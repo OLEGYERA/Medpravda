@@ -18,6 +18,7 @@ Route::name('ru.')->namespace('OLEGYERA\Web')->group(function () {
         Route::get('/news', 'NewsView@ru')->name('news');
         Route::get('/articles', 'ArticlesView@ru')->name('articles');
         Route::get('/interviews', 'InterviewView@ru')->name('interviews');
+        Route::get('/{alias}', 'InterviewView@ru')->name('optionally');
 
     });
 

@@ -10,13 +10,20 @@ use Fresh\Medpravda\MediaArticle;
 use Fresh\Medpravda\MediaCategory;
 
 use Fresh\Medpravda\Repositories\CatalogRepository;
+use Illuminate\Support\Facades\Cache;
 
 class MediaView extends Launch
 {
-    protected $lang;
+
+
 
     public function ru($id){
+        $this->lang = 'ru';
+        $this->targeting_url = 'pub_' . $id;
+        $this->branding_url = 'pub_' . $id;
+
         $publication = MediaArticle::findOrFail($id);
+
         if(isset($publication->dependency->structure)){
             $structure_settings = $publication->dependency->structure->setting;
         }
@@ -24,31 +31,36 @@ class MediaView extends Launch
             abort(404);
         }
 
-        if(!$structure_settings->fullWidth){
-            $this->fullWidth = false;
-        }
+        $breadcrumbs = $this->generateBreadCrumbs($publication->dependency->category);
 
-        $this->targeting_url = 'pub_' . $id;
-        $this->branding_url = 'pub_' . $id;
+        if(!$structure_settings->fullWidth) $this->fullWidth = false;
 
-        $this->lang = 'ru';
-        $this->title =  $publication->title;
 
-//        dd($structure_settings->float);
+        $cache_result = [
+            'publication' => $publication,
+            'breadcrumbs' => $breadcrumbs,
+            'structure_settings' => $structure_settings,
+            'aside_articles' => MediaArticle::orderBy('view', 'desc')->take(6)->get()
+
+        ];
+
+        $this->title =  $cache_result['publication']->title;
 
         $publication->view = $publication->view + 1;
         $publication->save();
 
-        $this->Page = view('OLEGYERA.Web.pages.media.simple.pub.ru')->with([
-            'publication' => $publication,
-            'side_articles' => MediaArticleDep::where('category_id', 2)->orderBy('created_at', 'desc')->take(3)->get()
-        ])->render();
+        $this->Page = view('OLEGYERA.Web.pages.media.simple.pub.ru')->with($cache_result)->render();
         return $this->Render();
     }
 
 
     public function ua($id){
+        $this->lang = 'ua';
+        $this->targeting_url = 'pub_' . $id;
+        $this->branding_url = 'pub_' . $id;
+
         $publication = MediaArticle::findOrFail($id);
+
         if(isset($publication->dependency->structure)){
             $structure_settings = $publication->dependency->structure->setting;
         }
@@ -56,26 +68,54 @@ class MediaView extends Launch
             abort(404);
         }
 
-        if(!$structure_settings->fullWidth){
-            $this->fullWidth = false;
-        }
+        $breadcrumbs = $this->generateBreadCrumbs($publication->dependency->category);
 
-        $this->targeting_url = 'pub_' . $id;
-        $this->branding_url = 'pub_' . $id;
+        if(!$structure_settings->fullWidth) $this->fullWidth = false;
 
-        $this->lang = 'ua';
-        $this->title =  $publication->title;
 
-//        dd($structure_settings->float);
-
-        $publication->view = $publication->view + 1;
-        $publication->save();
-
-        $this->Page = view('OLEGYERA.Web.pages.media.simple.pub.ua')->with([
+        $cache_result = [
             'publication' => $publication,
-            'side_articles' => MediaArticleDep::where('category_id', 2)->orderBy('created_at', 'desc')->take(3)->get()
-        ])->render();
+            'breadcrumbs' => $breadcrumbs,
+            'structure_settings' => $structure_settings,
+            'aside_articles' => MediaArticle::orderBy('view', 'desc')->take(6)->get()
+
+        ];
+
+        $this->title =  $cache_result['publication']->utitle;
+
+//        $publication->view = $publication->view + 1;
+//        $publication->save();
+
+        $this->Page = view('OLEGYERA.Web.pages.media.simple.pub.ua')->with($cache_result)->render();
         return $this->Render();
     }
 
+    private function generateBreadCrumbs($category, $breadcrumbs = []){
+        array_unshift($breadcrumbs, [
+            'title' => $this->lang == 'ru' ? $category->title : $category->utitle,
+            'alias' => route($this->lang.'.tags.optionally', ['alias' => $category->alias])
+        ]);
+
+        if($category->parent_id != null)
+            return $this->generateBreadCrumbs(MediaCategory::find($category->parent_id), $breadcrumbs);
+
+
+        $fullBreadCrumbsLength = count($breadcrumbs);
+
+        while (count($breadcrumbs) > 2)
+            array_shift($breadcrumbs);
+
+        if($fullBreadCrumbsLength > 2)
+            array_unshift($breadcrumbs, [
+                'title' => '...',
+                'alias' => null
+            ]);
+
+        array_unshift($breadcrumbs, [
+            'title' => $this->lang == 'ru' ? 'Главная' : 'Головна',
+            'alias' => route($this->lang.'.home')
+        ]);
+
+        return $breadcrumbs;
+    }
 }

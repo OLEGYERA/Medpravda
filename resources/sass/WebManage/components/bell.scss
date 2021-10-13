@@ -1,0 +1,41 @@
+@import "../customization";
+
+.bell{
+    z-index: 2;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    .bell-circle{
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $dark-blue;
+        transition: .6s;
+        box-shadow: 1px -1px 15px 2px rgb(35 34 34 / 20%);
+        img{
+            width: 19px;
+            height: 19px;
+            animation: running rotating 18s linear infinite;
+        }
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+
+    &.disabled{
+        .bell-circle{
+            box-shadow: inset 1px -1px 5px 6px rgb(35 34 34 / 10%);
+            background-color: $orange;
+            img{
+                animation-play-state: paused;
+            }
+            &:hover{
+                transform: scale(.9);
+            }
+        }
+    }
+}

@@ -4,11 +4,15 @@ namespace Fresh\Medpravda\Http\Controllers\OLEGYERA\Web;
 use Fresh\Medpravda\Http\Controllers\Controller;
 
 use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\Auth;
 use Jenssegers\Agent\Agent;
+
 
 class Launch extends Controller
 {
     //seo props
+
+
     protected $title;
     protected $description = null;
 
@@ -17,7 +21,6 @@ class Launch extends Controller
     protected $Page = true;
     protected $fullWidth = true;
     protected $lang = null;
-    protected $breadcrumbs = [];
 
 
     //adriver props
@@ -29,9 +32,15 @@ class Launch extends Controller
 
 
 
+
+
     public function Render()
     {
+
+
         header('Vary: User-Agent');
+
+        $this->renderPack = Arr::add($this->renderPack, 'isAdmin', $this->checkAdmin()); //check admin
 
         $this->renderPack = Arr::add($this->renderPack, 'title', $this->title);
         $this->renderPack = Arr::add($this->renderPack, 'description', $this->description);
@@ -55,19 +64,10 @@ class Launch extends Controller
     }
 
 
-    public function getLastMod($item){
-        $last_mods = [$item->updated_at, $item->instruction->updated_at, $item->instruction_ua->updated_at, $item->instruction_adaptive->updated_at, $item->instruction_adaptive_ua->updated_at];
-        $hight_val = null;
 
-        foreach ($last_mods as $last_mod){
-            if($hight_val != null){
-                if($hight_val < $last_mod){
-                    $hight_val = $last_mod;
-                }
-            }else{
-                $hight_val = $last_mod;
-            }
-        }
-        return $hight_val;
+
+    private function checkAdmin(){
+        return false;
+        return Auth::check() ? Auth::user()->getAdminData() : false;
     }
 }

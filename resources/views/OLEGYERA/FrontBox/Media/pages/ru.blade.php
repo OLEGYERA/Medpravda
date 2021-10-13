@@ -7,7 +7,7 @@
 <div class="full-content @if($structure_settings->bgTop) full @endif">
     <div class="media-wrap">
         @if($structure_settings->bgTop)
-            <div class="article-preloader" style="background-image: url({{asset('/gallery/' . getCategoryName($article->dependency->image->category_id) . '/large/' . $article->dependency->image->path)}});">
+            <div class="article-preloader" style="background-image: url({{'https://medpravda.ua/gallery/' . getCategoryName($article->dependency->image->category_id) . '/large/' . $article->dependency->image->path}});">
                 <div class="preloader-content">
                     <div class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
                         <div class="breadcrumb"

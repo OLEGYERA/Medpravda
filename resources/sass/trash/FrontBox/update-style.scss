@@ -756,96 +756,96 @@ body{
                         }
                     }
                     &.columns{
-                        .grid{
-                            @include wrap-on;
-                            align-items: flex-start;
-                            .article{
-                                width: 25%;
-                                .article-body{
-                                    background-color: #EFEFEF;
-                                    padding: 15px;
-                                    height: 100%;
-
-                                    .content-box{
-                                        .article-header{
-                                            min-height: 100px;
-                                            font-size: em(24);
-                                            padding: 0;
-                                        }
-
-                                        .article-author{
-                                            min-height: 80px;
-                                            margin-top: 15px;
-                                            display: flex;
-                                            align-items: center;
-                                        }
-                                    }
-                                }
-                                &:first-child{
-                                    width: 60%;
-                                    .article-body{
-                                        .content-box{
-                                            .article-header{
-                                                font-size: em(28);
-                                            }
-                                            .article-author{
-                                                .author-img-box{
-                                                    margin-right: 15px;
-                                                    min-height: 80px;
-                                                    min-width: 80px;
-                                                }
-                                                .author-content-box{
-                                                    .author-name{
-                                                        font-size: em(22);
-                                                    }
-                                                    .author-position{
-                                                        font-size: em(18);
-                                                    }
-                                                }
-                                            }
-                                        }
-
-                                    }
-
-                                }
-                                &:nth-child(2){
-                                    width: 40%;
-                                    .content-box{
-                                        .article-author{
-                                            .author-img-box{
-                                                margin-right: 15px;
-                                                min-width: 65px;
-                                                min-height: 65px;
-                                            }
-                                            .author-content-box{
-                                                .author-name{
-                                                    font-size: em(20);
-                                                }
-                                                .author-position{
-                                                    font-size: em(16);
-                                                }
-                                            }
-                                        }
-                                    }
-
-                                }
-                                &:nth-child(n+3){
-                                    .article-body{
-                                        .content-box{
-                                            .article-header{
-                                                font-size: em(20);
-                                                min-height: 80px;
-                                            }
-                                            .article-author{
-                                                min-height: 55px;
-                                            }
-                                        }
-
-                                    }
-
-                                }
-                            }
-                        }
+                        //.grid{
+                        //    @include wrap-on;
+                        //    align-items: flex-start;
+                        //    .article{
+                        //        width: 25%;
+                        //        .article-body{
+                        //            background-color: #EFEFEF;
+                        //            padding: 15px;
+                        //            height: 100%;
+                        //
+                        //            .content-box{
+                        //                .article-header{
+                        //                    min-height: 100px;
+                        //                    font-size: em(24);
+                        //                    padding: 0;
+                        //                }
+                        //
+                        //                .article-author{
+                        //                    min-height: 80px;
+                        //                    margin-top: 15px;
+                        //                    display: flex;
+                        //                    align-items: center;
+                        //                }
+                        //            }
+                        //        }
+                        //        &:first-child{
+                        //            width: 60%;
+                        //            .article-body{
+                        //                .content-box{
+                        //                    .article-header{
+                        //                        font-size: em(28);
+                        //                    }
+                        //                    .article-author{
+                        //                        .author-img-box{
+                        //                            margin-right: 15px;
+                        //                            min-height: 80px;
+                        //                            min-width: 80px;
+                        //                        }
+                        //                        .author-content-box{
+                        //                            .author-name{
+                        //                                font-size: em(22);
+                        //                            }
+                        //                            .author-position{
+                        //                                font-size: em(18);
+                        //                            }
+                        //                        }
+                        //                    }
+                        //                }
+                        //
+                        //            }
+                        //
+                        //        }
+                        //        &:nth-child(2){
+                        //            width: 40%;
+                        //            .content-box{
+                        //                .article-author{
+                        //                    .author-img-box{
+                        //                        margin-right: 15px;
+                        //                        min-width: 65px;
+                        //                        min-height: 65px;
+                        //                    }
+                        //                    .author-content-box{
+                        //                        .author-name{
+                        //                            font-size: em(20);
+                        //                        }
+                        //                        .author-position{
+                        //                            font-size: em(16);
+                        //                        }
+                        //                    }
+                        //                }
+                        //            }
+                        //
+                        //        }
+                        //        &:nth-child(n+3){
+                        //            .article-body{
+                        //                .content-box{
+                        //                    .article-header{
+                        //                        font-size: em(20);
+                        //                        min-height: 80px;
+                        //                    }
+                        //                    .article-author{
+                        //                        min-height: 55px;
+                        //                    }
+                        //                }
+                        //
+                        //            }
+                        //
+                        //        }
+                        //    }
+                        //}
                     }
                     &.podcast{
                         .grid{
@@ -1476,47 +1476,47 @@ body{
                             }
                         }
                         &.columns{
-                            .grid{
-                                justify-content: space-between;
-                                .article{
-                                    &:nth-child(n+1){
-                                        width: 33.33%;
-                                        .article-body{
-                                            padding: 10px;
-                                            .content-box{
-                                                .article-header{
-                                                    font-size: em(18);
-                                                    min-height: 70px;
-                                                    padding: 0;
-                                                }
-                                                .article-author{
-                                                    font-weight: 300;
-                                                    line-height: 1.1em;
-                                                    margin: 5px 0;
-                                                    font-size: em(12);
-                                                    min-height: 55px;
-                                                    .author-img-box{
-                                                        margin-right: 10px;
-                                                        min-width: 55px;
-                                                        min-height: 55px;
-                                                    }
-                                                    .author-content-box{
-                                                        .author-name{
-                                                            font-size: em(17);
-                                                            line-height: 1.1em;
-                                                            font-weight: 400;
-                                                        }
-                                                        .author-position{
-                                                            font-size: em(14);
-                                                        }
-                                                    }
-
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
+                            //.grid{
+                            //    justify-content: space-between;
+                            //    .article{
+                            //        &:nth-child(n+1){
+                            //            width: 33.33%;
+                            //            .article-body{
+                            //                padding: 10px;
+                            //                .content-box{
+                            //                    .article-header{
+                            //                        font-size: em(18);
+                            //                        min-height: 70px;
+                            //                        padding: 0;
+                            //                    }
+                            //                    .article-author{
+                            //                        font-weight: 300;
+                            //                        line-height: 1.1em;
+                            //                        margin: 5px 0;
+                            //                        font-size: em(12);
+                            //                        min-height: 55px;
+                            //                        .author-img-box{
+                            //                            margin-right: 10px;
+                            //                            min-width: 55px;
+                            //                            min-height: 55px;
+                            //                        }
+                            //                        .author-content-box{
+                            //                            .author-name{
+                            //                                font-size: em(17);
+                            //                                line-height: 1.1em;
+                            //                                font-weight: 400;
+                            //                            }
+                            //                            .author-position{
+                            //                                font-size: em(14);
+                            //                            }
+                            //                        }
+                            //
+                            //                    }
+                            //                }
+                            //            }
+                            //        }
+                            //    }
+                            //}
                         }
                         &.podcast{
                             .grid{

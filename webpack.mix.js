@@ -22,7 +22,8 @@ mix.browserSync('http://medpravda.loc/');
 //     .sass('resources/sass/ManageBox/basic-reactive.scss', 'public/css/ManageBox');
 
 mix.sass('resources/sass/update-style.scss', 'public/css/FrontBox')
-mix.js('resources/js/Web/launch.js', 'public/Web/js')
+    .sass('resources/sass/WebManage/web-manager.scss', 'public/css/FrontBox');
+mix.js('resources/js/WebManage/manage-launcher.js', 'public/Web/js');
 
 
 //

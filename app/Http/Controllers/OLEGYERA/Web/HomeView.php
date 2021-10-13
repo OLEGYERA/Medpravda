@@ -48,8 +48,8 @@ class HomeView extends Launch
 
         $this->Page = view('OLEGYERA.Web.pages.home.ru')->with([
             'popular' => [
-                'count' => MediaArticleDep::where('category_id', 3)->count(),
-                'data' => MediaArticleDep::where('category_id', 3)->orderBy('created_at', 'desc')->take(14)->get(),
+                'count' => MediaArticle::count(),
+                'data' => MediaArticle::orderBy('view', 'desc')->take(14)->get(),
             ],
             'news' => [
                 'count' => MediaArticleDep::where('category_id', 1)->count(),
@@ -64,6 +64,22 @@ class HomeView extends Launch
                 'count' => MediaArticleDep::where('category_id', 2)->count(),
                 'last' => MediaArticleDep::where('category_id', 2)->orderBy('created_at', 'desc')->take(7)->get(),
                 'popular' => MediaArticleDep::where('category_id', 2)->orderBy('created_at', 'asc')->take(4)->get(),
+            ],
+            'columns' => [
+                'count' => MediaArticleDep::where('category_id', 13)->count(),
+                'items' => MediaArticleDep::where('category_id', 13)->orderBy('created_at', 'desc')->take(6)->get(),
+            ],
+            'podcasts' => [
+                'count' => MediaArticleDep::where('category_id', 14)->count(),
+                'items' => MediaArticleDep::where('category_id', 14)->orderBy('created_at', 'desc')->take(6)->get(),
+            ],
+            'protocols' => [
+                'count' => MediaArticleDep::where('category_id', 15)->count(),
+                'items' => MediaArticleDep::where('category_id', 15)->orderBy('created_at', 'desc')->take(6)->get(),
+            ],
+            'specials' => [
+                'count' => MediaArticleDep::where('category_id', 9)->count(),
+                'items' => MediaArticleDep::where('category_id', 9)->orderBy('created_at', 'desc')->take(3)->get(),
             ],
             'catalog' => $this->medicamentCatalog,
             'drugs' => [
@@ -94,8 +110,8 @@ class HomeView extends Launch
 
         $this->Page = view('OLEGYERA.Web.pages.home.ua')->with([
             'popular' => [
-                'count' => MediaArticleDep::all()->count(),
-                'data' => MediaArticleDep::orderBy('created_at', 'desc')->take(14)->get(),
+                'count' => MediaArticle::count(),
+                'data' => MediaArticle::orderBy('view', 'desc')->take(14)->get(),
             ],
             'news' => [
                 'count' => MediaArticleDep::where('category_id', 1)->count(),
@@ -110,6 +126,22 @@ class HomeView extends Launch
                 'count' => MediaArticleDep::where('category_id', 2)->count(),
                 'last' => MediaArticleDep::where('category_id', 2)->orderBy('created_at', 'desc')->take(7)->get(),
                 'popular' => MediaArticleDep::where('category_id', 2)->orderBy('created_at', 'asc')->take(4)->get(),
+            ],
+            'columns' => [
+                'count' => MediaArticleDep::where('category_id', 13)->count(),
+                'items' => MediaArticleDep::where('category_id', 13)->orderBy('created_at', 'desc')->take(6)->get(),
+            ],
+            'podcasts' => [
+                'count' => MediaArticleDep::where('category_id', 14)->count(),
+                'items' => MediaArticleDep::where('category_id', 14)->orderBy('created_at', 'desc')->take(6)->get(),
+            ],
+            'protocols' => [
+                'count' => MediaArticleDep::where('category_id', 15)->count(),
+                'items' => MediaArticleDep::where('category_id', 15)->orderBy('created_at', 'desc')->take(6)->get(),
+            ],
+            'specials' => [
+                'count' => MediaArticleDep::where('category_id', 9)->count(),
+                'items' => MediaArticleDep::where('category_id', 9)->orderBy('created_at', 'desc')->take(3)->get(),
             ],
             'catalog' => $this->medicamentCatalog,
             'drugs' => [

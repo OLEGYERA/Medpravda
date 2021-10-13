@@ -5,7 +5,8 @@
     'title' => $title,
     'description' => $description,
     'fullWidth' => $fullWidth,
-    'is_mobile' => $is_mobile
+    'is_mobile' => $is_mobile,
+    'is_admin' => $isAdmin
 ])
 
 @if(!empty($branding_url) && !$is_mobile)
